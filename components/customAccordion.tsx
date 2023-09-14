@@ -10,7 +10,7 @@ export default function CustomAccordion(props: any) {
   return (
     <Accordion
       sx={{ bgcolor: "#F5F6F6", boxShadow: "none", maxWidth: "80%", mt: 2 }}
-      expanded={props.expanded}
+      
     >
       <AccordionSummary
         expandIcon={<AddIcon />}

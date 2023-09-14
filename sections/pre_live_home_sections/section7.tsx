@@ -47,10 +47,10 @@ export default function Section7() {
           </Typography>
         </Grid>
         <Grid item xs={6}>
-          <CustomAccordion question="Can I cancel my subscription anytime?" expanded={false}/>
-          <CustomAccordion question="Do you use my data for anything?" expanded={false}/>
-          <CustomAccordion question="I would like to request a feature!" expanded={true}/>
-          <CustomAccordion question="When does my discount apply?" expanded={false}/>
+          <CustomAccordion question="Can I cancel my subscription anytime?" />
+          <CustomAccordion question="Do you use my data for anything?" />
+          <CustomAccordion question="I would like to request a feature!" />
+          <CustomAccordion question="When does my discount apply?" />
           
         </Grid>
       </Grid>

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Grid, Typography, TextField, Button, useMediaQuery } from "@mui/material";
+import { Grid, Typography, TextField, Button, useMediaQuery, InputAdornment } from "@mui/material";
 import Image from "next/image";
 import { useTheme } from '@mui/material/styles';
 
@@ -30,33 +30,32 @@ export default function TopBanner() {
         </Typography>
         <Typography variant="body1" sx={{ mt: 1 }}>
           Eliminate hours wasted finding, cleaning, visualizing and transforming
-          data using <br /> the power of AI.
-        </Typography>
-        <Typography variant="body1" sx={{ mt: 1 }}>
+          data using <br /> the power of AI. <br />
           Register and get a free premium report to your inbox.
         </Typography>
+        
         <Grid container spacing={0} sx={{ mt: 2 }}>
           <Grid item xs={7}>
             <TextField
-              label="Email Address"
+              label="Email"
               variant="outlined"
-              sx={{ width: "28vw" }}
+              sx={{ width: "35vw", p:0 }}
               value={email}
               size="small"
               onChange={({ target }) => setEmail(target.value)}
+              InputProps={{endAdornment: <InputAdornment position="end"><Button
+                variant="contained"
+                style={{
+                  backgroundColor: "#73F3C4",
+                  color: "black",
+                  textTransform: "none",
+                }}
+              >
+                Get free premium report
+              </Button>
+              </InputAdornment>,
+              style: {padding: 0}}}
             />
-          </Grid>
-          <Grid item xs={5}>
-            <Button
-              variant="contained"
-              style={{
-                backgroundColor: "#73F3C4",
-                color: "black",
-                textTransform: "none",
-              }}
-            >
-              Get free premium report
-            </Button>
           </Grid>
         </Grid>
       </Grid>

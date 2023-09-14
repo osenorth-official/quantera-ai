@@ -42,7 +42,7 @@ export default function Section2() {
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Stack direction="row" spacing={10} alignItems={"center"}>
+          <Stack direction="row" spacing={2} alignItems={"center"} sx={{ml: 20}}>
             <CustomCard>
               <Stack direction="row" spacing={8} sx={{m: 3}}>
                 <Typography variant="h2" sx={{ fontWeight: "500" }}>
@@ -52,7 +52,7 @@ export default function Section2() {
                   src="/click-tap.png"
                   alt="banner"
                   height={15}
-                  width={55}
+                  width={60}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2}}>Clicks away are all<br /> your answers.</Typography>
@@ -66,7 +66,7 @@ export default function Section2() {
                   src="/Group 8.png"
                   alt="banner"
                   height={20}
-                  width={55}
+                  width={60}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2,}}>Publically traded<br /> companies.</Typography>
@@ -80,12 +80,16 @@ export default function Section2() {
                   src="/cube-five.png"
                   alt="banner"
                   height={20}
-                  width={55}
+                  width={60}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2}}>Speeden your research<br /> by many folds.</Typography>
             </CustomCard>
           </Stack>
+        </Grid>
+        <Grid item xs={12} sx={{ bgcolor: 'black'}}>
+          <Typography variant="h3" align="center" style={{color: "white"}}>"This tool is going to level the finance space for <br /> everyone."</Typography>
+          <Typography variant="caption" align="right" style={{color: "white", marginLeft: "80%"}}>- private equity advisor</Typography>
         </Grid>
       </Grid>
     </>

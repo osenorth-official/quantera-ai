@@ -44,7 +44,7 @@ export default function Section2() {
         <Grid item xs={12}>
           <Stack direction="row" spacing={2} alignItems={"center"} sx={{ml: 20}}>
             <CustomCard>
-              <Stack direction="row" spacing={8} sx={{m: 3}}>
+              <Stack direction="row" spacing={10} sx={{m: 3}}>
                 <Typography variant="h2" sx={{ fontWeight: "500" }}>
                   2
                 </Typography>

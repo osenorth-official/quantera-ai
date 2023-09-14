@@ -16,6 +16,21 @@ export default function Home() {
       <Box sx={{ display: "flex", bgcolor: "#F1F8F7", minHeight: "100vh", minWidth: "100vw"}}>
         <Section2 />
       </Box>
+      <Box sx={{ display: "flex", bgcolor: "#73F3C4", minHeight: "100vh", minWidth: "100vw"}}>
+
+      </Box>
+      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
+
+      </Box>
+      <Box sx={{ display: "flex", bgcolor: "#73F3C4", minHeight: "100vh", minWidth: "100vw"}}>
+
+      </Box>
+      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
+
+      </Box>
+      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
+
+      </Box>
     </ThemeProvider>
   );
 }

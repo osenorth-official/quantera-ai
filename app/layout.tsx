@@ -16,6 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap"
+        rel="stylesheet"
+      />
       <body className={urbanist.className}>{children}</body>
     </html>
   )

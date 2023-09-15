@@ -12,7 +12,7 @@ export default function ReviewCard() {
             <Avatar
               alt="Remy Sharp"
               src="/avatar_25.jpg"
-              sx={{ width: 60, height: 60, mt: "50%" }}
+              sx={{ width: 34, height: 34, mt: "70%" }}
             />
           </Grid>
           <Grid item xs={10}>
@@ -20,15 +20,15 @@ export default function ReviewCard() {
               name="read-only"
               value={5}
               readOnly
-              style={{ color: "black" }}
+              style={{ color: "black", fontSize: 18 }}
             />
 
-            <Typography variant="body1" align="left">
+            <Typography variant="body1" align="left" sx={{fontSize: "1rem", fontWeight: 600}}>
               The speed at which we are able <br />
               to answer market related questions has been never seen <br />{" "}
               before.
             </Typography>
-            <Typography variant="caption" style={{ color: "#5C7C6F" }}>
+            <Typography variant="caption" style={{ color: "#5C7C6F", fontSize: "0.75rem", fontWeight: 600 }}>
               Investment Fund Manager
             </Typography>
           </Grid>

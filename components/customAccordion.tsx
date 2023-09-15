@@ -17,10 +17,10 @@ export default function CustomAccordion(props: any) {
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography>{props.question}</Typography>
+        <Typography sx={{fontSize: "1.875rem", fontWeight: 600}}>{props.question}</Typography>
       </AccordionSummary>
       <AccordionDetails sx={{ mr: 10 }}>
-        <Typography>
+        <Typography sx={{fontSize: "1.625rem", fontWeight: 600}}>
           Of course, we are always happy to hear from people who have ideas!
           Send them along to <br />
           <a href="mailto:contact@quantera.com">contact@quantera.com</a>

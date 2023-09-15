@@ -5,7 +5,7 @@ export default function Section3() {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} sx={{ mt: 10 }}>
-        <Typography variant="h3" align="center">
+        <Typography variant="h3" align="center" sx={{ fontSize: "5.125rem", fontWeight: 900}}>
           Discover our powerful features.
         </Typography>
         <Typography variant="body1" align="center" sx={{ mt: 3 }}>
@@ -35,18 +35,18 @@ export default function Section3() {
             width={350}
           />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={5}>
           <Image
             src="/REVENUE CHART-2.png"
             alt="banner"
-            height={350}
-            width={350}
+            height={450}
+            width={450}
           />
         </Grid>
         <Grid item xs={4} sx={{ mt: 13 }}>
           <Image src="/Top Content.png" alt="banner" height={350} width={400} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <Image
             src="/Historical Graph.png"
             alt="banner"

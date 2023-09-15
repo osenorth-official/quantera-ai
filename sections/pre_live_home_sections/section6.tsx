@@ -5,12 +5,12 @@ export default function Section6() {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} sx={{ mt: 10 }}>
-        <Typography variant="h3" align="center">
+        <Typography variant="h3" align="center" sx={{ fontSize: "5.125rem", fontWeight: 900}}>
           What people say about us
         </Typography>
       </Grid>
       <Grid item xs={12} sx={{ mt: 1 }}>
-        <Typography variant="body1" align="center">
+        <Typography variant="body1" align="center" sx={{ fontSize: "1.5rem", fontWeight: 600}}>
           See how our users get the most out of our platform.
         </Typography>
       </Grid>
@@ -28,7 +28,7 @@ export default function Section6() {
         </Stack>
       </Grid>
       <Grid item xs={12} sx={{ mt: 10 }}>
-        <Typography variant="h3" align="center">
+        <Typography variant="h3" align="center" sx={{ fontSize: "5.125rem", fontWeight: 900}}>
           There is something for <br />
           <span
             style={{ backgroundColor: "black", color: "white", marginTop: 4 }}

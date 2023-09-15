@@ -42,7 +42,7 @@ export default function Section2() {
             investors can get the most by saving them time.
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} sx={{ mb: 8}}>
           <Stack direction="row" spacing={1} alignItems={"center"} sx={{ml: 25}}>
             <CustomCard>
               <Stack direction="row" spacing={10} sx={{m: 3}}>
@@ -88,9 +88,9 @@ export default function Section2() {
             </CustomCard>
           </Stack>
         </Grid>
-        <Grid item xs={12} sx={{ bgcolor: 'black'}}>
-          <Typography variant="h3" align="center" style={{color: "white"}}>"This tool is going to level the finance space for <br /> everyone."</Typography>
-          <Typography variant="caption" align="right" style={{color: "white", marginLeft: "80%"}}>- private equity advisor</Typography>
+        <Grid item xs={12} sx={{ bgcolor: 'black', pb: "3.5rem"}}>
+          <Typography variant="h3" align="center" style={{color: "white", fontSize: "3.25rem", fontWeight: 600, marginTop: "3.5rem", }}>"This tool is going to level the finance space for <br /> everyone."</Typography>
+          <Typography variant="body1" align="center" style={{color: "white", marginLeft: "70%", fontSize: "1.375rem", fontWeight: 600}}>- private equity advisor</Typography>
         </Grid>
       </Grid>
     </>

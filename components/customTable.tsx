@@ -105,28 +105,28 @@ export default function CustomTable() {
         borderColor: "black",
         borderWidth: 2,
         borderRadius: 5,
-        p: 4,
+        p: 5.2,
       }}
     >
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Plans</TableCell>
+            <TableCell ><Typography variant="body1" sx={{ fontSize:"1.375rem", fontWeight: 600}}>Plans</Typography></TableCell>
             <TableCell>
-              <Typography variant="h6">Free</Typography>
+              <Typography variant="h6" sx={{ fontSize:"2rem", fontWeight: 900}}>Free</Typography>
             </TableCell>
             <TableCell>
-              <Typography variant="h6">Premium</Typography>
+              <Typography variant="h6" sx={{ fontSize:"2rem", fontWeight: 900}}>Premium</Typography>
             </TableCell>
             <TableCell>
-              <Typography variant="h6">Pro</Typography>
+              <Typography variant="h6" sx={{ fontSize:"2rem", fontWeight: 900}}>Pro</Typography>
             </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           <TableRow>
             <TableCell>
-              Pricing
+            <Typography variant="body1" sx={{ fontSize:"1.375rem", fontWeight: 600}}>Pricing</Typography>
               <br />
               <ToggleButtonGroup
                 color="primary"
@@ -140,11 +140,11 @@ export default function CustomTable() {
               </ToggleButtonGroup>
             </TableCell>
             <TableCell>
-              <Typography variant="h4">
-                <span style={{ fontSize: 20 }}>$</span> 0
+              <Typography variant="h4" sx={{ fontSize: "3.125rem", fontWeight: 900}}>
+                <span style={{ fontSize: "2rem", fontWeight: 900 }}>$</span> 0
               </Typography>
-              <Typography variant="caption">/year</Typography>
-              <Typography variant="body1" sx={{ mt: 2 }}>
+              <Typography variant="caption" sx={{ fontSize: "0.875rem", fontWeight: 600}}>/year</Typography>
+              <Typography variant="body1" sx={{ mt: 2, fontSize: "1.375rem", fontWeight: 600 }}>
                 Base features that covers 80%+ of the platform.
               </Typography>
               <Button
@@ -155,17 +155,19 @@ export default function CustomTable() {
                   color: "black",
                   textTransform: "none",
                   marginTop: 4,
+                  fontSize: "1rem",
+                  fontWeight: 900
                 }}
               >
                 Get Started
               </Button>
             </TableCell>
             <TableCell>
-              <Typography variant="h4">
-                <span style={{ fontSize: 20 }}>$</span> 199
+              <Typography variant="h4" sx={{ fontSize: "3.125rem", fontWeight: 900}}>
+                <span style={{ fontSize: "2rem", fontWeight: 900 }}>$</span> 199
               </Typography>
-              <Typography variant="caption">/year</Typography>
-              <Typography variant="body1" sx={{ mt: 2 }}>
+              <Typography variant="caption" sx={{ fontSize: "0.875rem", fontWeight: 600}}>/year</Typography>
+              <Typography variant="body1" sx={{ mt: 2, fontSize: "1.375rem", fontWeight: 600 }}>
                 Listen to live earnings all in one spot and insights delivered
                 to you.
               </Typography>
@@ -177,14 +179,16 @@ export default function CustomTable() {
                   color: "black",
                   textTransform: "none",
                   marginTop: 4,
+                  fontSize: "1rem",
+                  fontWeight: 900
                 }}
               >
                 Get Started
               </Button>
             </TableCell>
             <TableCell>
-              <Typography variant="h4">Signup</Typography>
-              <Typography variant="body1" sx={{ mt: 3 }}>
+              <Typography variant="h4" sx={{ fontSize: "3.125rem", fontWeight: 900}}>Signup</Typography>
+              <Typography variant="body1" sx={{ mt: 3, fontSize: "1.375rem", fontWeight: 600 }}>
                 Talk to 30 years of financial data, signup to be the first know.
               </Typography>
               <Button
@@ -195,6 +199,8 @@ export default function CustomTable() {
                   color: "black",
                   textTransform: "none",
                   marginTop: 4,
+                  fontSize: "1rem",
+                  fontWeight: 900
                 }}
                 endIcon={<ArrowForwardIcon />}
               >
@@ -204,10 +210,10 @@ export default function CustomTable() {
           </TableRow>
           {tableData.map((item, index) => (
             <TableRow key={index}>
-              <TableCell>{item.first}</TableCell>
-              <TableCell>{item.second}</TableCell>
-              <TableCell>{item.third}</TableCell>
-              <TableCell>{item.fourth}</TableCell>
+              <TableCell> <Typography variant="body1" sx={{fontSize: "1.125rem", fontWeight: 600 }}>{item.first}</Typography></TableCell>
+              <TableCell><Typography variant="body1" sx={{fontSize: "1rem", fontWeight: 600 }}>{item.second}</Typography></TableCell>
+              <TableCell><Typography variant="body1" sx={{fontSize: "1rem", fontWeight: 600 }}>{item.third}</Typography></TableCell>
+              <TableCell><Typography variant="body1" sx={{fontSize: "1rem", fontWeight: 600 }}>{item.fourth}</Typography></TableCell>
             </TableRow>
           ))}
         </TableBody>

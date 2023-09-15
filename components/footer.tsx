@@ -20,15 +20,16 @@ export default function Footer() {
       spacing={2}
       sx={{
         bgcolor: "black",
-        mt: 5,
+        mt: "12.5rem",
         isplay: "flex",
         minHeight: "35vh",
         minWidth: "100vw",
+        p: 11 
       }}
     >
       <Grid item xs={5} sx={{ ml: 10 }}>
         <Image src="/Logo.png" alt="banner" height={60} width={240} />
-        <Typography variant="body1" style={{ color: "white" }} align="left">
+        <Typography variant="body1" style={{ color: "white", fontSize:"1.25rem", fontWeight:600 }} align="left">
           Data visualisation and stock insights have
           <br />
           taken a back seat. We bring data back to
@@ -42,19 +43,19 @@ export default function Footer() {
             <LinkedInIcon style={{ color: "white", fontSize: 35 }} />
           </IconButton>
         </Stack>
-        <Typography variant="body1" style={{ color: "white" }} align="left">
+        <Typography variant="body1" style={{ color: "white", fontSize:"0.875rem", fontWeight:600 }} align="left">
           <CopyrightIcon /> {new Date().getFullYear()} Quantera AI. All rights
           reserved.
         </Typography>
       </Grid>
       <Grid item xs={6} sx={{ mt: 5 }}>
-        <Typography variant="h5" style={{ color: "white" }} align="right">
+        <Typography variant="h5" style={{ color: "white", fontSize:"2rem", fontWeight:900 }} align="right">
           Recieve a free premium report by signing up
         </Typography>
         <TextField
           label="Email"
           variant="outlined"
-          sx={{ width: "30vw", p: 0, bgcolor: 'white', borderRadius: 2, ml:"39%", mt: 2 }}
+          sx={{ width: "30vw", p: 0, bgcolor: 'white', borderRadius: 2, ml:"32%", mt: 2 }}
           value={email}
           size="small"
           onChange={({ target }) => setEmail(target.value)}

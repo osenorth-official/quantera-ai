@@ -22,13 +22,13 @@ export default function TopBanner() {
     //   }}
     >
       <Grid item xs={ !md ? 6 : 12} sx={{ m: 5,}}>
-        <Typography variant="h2" component="h2">
+        <Typography variant="h2" component="h2" style={{ fontWeight: 900}}>
           <span style={{ backgroundColor: "black", color: "white" }}>
-            Empowering i
-          </span>
-          nvestors through AI powered insights.
+            Empowering
+          </span><span> </span>
+          investors through AI powered insights.
         </Typography>
-        <Typography variant="body1" sx={{ mt: 1 }}>
+        <Typography variant="body1" sx={{ mt: 1 }} style={{ fontWeight: 600}}>
           Eliminate hours wasted finding, cleaning, visualizing and transforming
           data using <br /> the power of AI. <br />
           Register and get a free premium report to your inbox.
@@ -49,6 +49,7 @@ export default function TopBanner() {
                   backgroundColor: "#73F3C4",
                   color: "black",
                   textTransform: "none",
+                  fontWeight: 900,
                 }}
               >
                 Get free premium report
@@ -59,12 +60,12 @@ export default function TopBanner() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12} sx={{ ml:{lg: 30, xl: 40},mr: 'auto', position: "relative", display: {lg: 'block', xs: 'none'} }}>
+      <Grid item xs={9.5} sx={{ ml:'auto',mr: 'auto',mt: 12,p:0, position: "relative", display: {lg: 'block', xs: 'none'} , minHeight: "80vh"}}>
         <Image
           src="/Banner.png"
           alt="banner"
-          height={260}
-          width={900}
+          fill
+          objectFit={'contain'}
         />
       </Grid>
     </Grid>

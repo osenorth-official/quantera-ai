@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Urbanist } from 'next/font/google'
 
-const urbanist = Urbanist({ subsets: ['latin'] })
+const urbanist = Urbanist({ subsets: ['latin'], weight: ['100','200','300','400','500','600','700','800','900'] })
 
 export const metadata: Metadata = {
   title: 'Quantera',
@@ -16,10 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link
-        href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap"
-        rel="stylesheet"
-      />
+     
       <body className={urbanist.className}>{children}</body>
     </html>
   )

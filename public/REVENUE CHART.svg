@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="510px" height="427px" viewBox="0 0 510 427" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>REVENUE CHART</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="496" height="413" rx="7.128"></rect>
+        <filter x="-1.4%" y="-1.7%" width="105.6%" height="106.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="7" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.202578671 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-PAGE-Pre-Live" transform="translate(-1247, -3039)">
+            <g id="Discover-features" transform="translate(0, 2716)">
+                <g id="REVENUE-CHART" transform="translate(1247, 323)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <rect stroke="#000000" stroke-width="1.76" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.88" y="0.88" width="494.24" height="411.24" rx="7.128"></rect>
+                    </g>
+                    <g id="Morgan" transform="translate(265.1058, 60.5498)">
+                        <text id="Mac" font-family="Urbanist-Bold, Urbanist" font-size="11.17314" font-weight="bold" letter-spacing="-0.117051947" fill="#333333">
+                            <tspan x="26.3043427" y="11.7039654">Mac</tspan>
+                        </text>
+                        <path d="M8.03743806,0 C12.4734341,0 16.0748761,3.64395621 16.0748761,8.13231812 C16.0748761,12.62068 12.4734341,16.2646362 8.03743806,16.2646362 C3.60144204,16.2646362 0,12.62068 0,8.13231812 C0,3.64395621 3.60144204,0 8.03743806,0 Z" id="Fill-4-Copy" fill="#6D7385"></path>
+                    </g>
+                    <g id="Morgan" transform="translate(384.1799, 60.5498)">
+                        <text id="Services" font-family="Urbanist-Bold, Urbanist" font-size="11.17314" font-weight="bold" letter-spacing="-0.117051947" fill="#333333">
+                            <tspan x="26.3778526" y="11.7039654">Services</tspan>
+                        </text>
+                        <path d="M8.05989941,0 C12.5082922,0 16.1197988,3.64395621 16.1197988,8.13231812 C16.1197988,12.62068 12.5082922,16.2646362 8.05989941,16.2646362 C3.61150659,16.2646362 0,12.62068 0,8.13231812 C0,3.64395621 3.61150659,0 8.05989941,0 Z" id="Fill-4-Copy" fill="#F44336"></path>
+                    </g>
+                    <g id="Brothers" transform="translate(137.4974, 60.5498)">
+                        <text id="iPhone" font-family="Urbanist-Bold, Urbanist" font-size="11.17314" font-weight="bold" letter-spacing="-0.117051947" fill="#333333">
+                            <tspan x="26.29766" y="11.7039654">iPhone</tspan>
+                        </text>
+                        <path d="M8.03539612,0 C12.4702652,0 16.0707922,3.64395621 16.0707922,8.13231812 C16.0707922,12.62068 12.4702652,16.2646362 8.03539612,16.2646362 C3.60052708,16.2646362 0,12.62068 0,8.13231812 C0,3.64395621 3.60052708,0 8.03539612,0 Z" id="Fill-4-Copy-2" fill="#FFE359"></path>
+                    </g>
+                    <g id="Goldman" transform="translate(26.5513, 61.7696)">
+                        <text id="iPad" font-family="Urbanist-Bold, Urbanist" font-size="11.17314" font-weight="bold" letter-spacing="-0.117051947" fill="#333333">
+                            <tspan x="26.2647899" y="11.5535875">iPad</tspan>
+                        </text>
+                        <path d="M8.02535247,0 C12.4546783,0 16.0507049,3.64395621 16.0507049,8.13231812 C16.0507049,12.62068 12.4546783,16.2646362 8.02535247,16.2646362 C3.59602669,16.2646362 0,12.62068 0,8.13231812 C0,3.64395621 3.59602669,0 8.02535247,0 Z" id="Fill-4" fill="#4CAF50"></path>
+                    </g>
+                    <g id="column" transform="translate(31.4351, 106.3419)">
+                        <g id="Group-11" transform="translate(25.0205, 4.387)" stroke="#BBBBBB" stroke-dasharray="2.632798" stroke-width="0.43879968">
+                            <line x1="1.43875633" y1="0.719259898" x2="389.902964" y2="0.719259898" id="Path-8"></line>
+                            <line x1="0" y1="52.5059726" x2="388.464208" y2="52.5059726" id="Path-8-Copy"></line>
+                            <line x1="0" y1="104.292685" x2="388.464208" y2="104.292685" id="Path-8-Copy-2"></line>
+                            <line x1="0" y1="153.202358" x2="388.464208" y2="153.202358" id="Path-8-Copy-3"></line>
+                            <line x1="0" y1="202.112031" x2="388.464208" y2="202.112031" id="Path-8-Copy-4"></line>
+                            <line x1="0" y1="251.021704" x2="388.464208" y2="251.021704" id="Path-8-Copy-5"></line>
+                        </g>
+                        <rect id="Rectangle" fill="#F44336" x="37.7537841" y="89.6186804" width="36.004553" height="166.509294" rx="1.31639904"></rect>
+                        <rect id="Rectangle" fill="#F44336" x="93.9560132" y="119.05436" width="36.004553" height="137.073614" rx="1.31639904"></rect>
+                        <rect id="Rectangle" fill="#F44336" x="154.549041" y="54.4715998" width="36.004553" height="201.656375" rx="1.31639904"></rect>
+                        <rect id="Rectangle" fill="#F44336" x="210.75127" y="23.7179044" width="36.004553" height="232.41007" rx="1.31639904"></rect>
+                        <rect id="Rectangle" fill="#F44336" x="268.270739" y="11.8557647" width="36.004553" height="244.27221" rx="1.31639904"></rect>
+                        <rect id="Rectangle" fill="#F44336" x="322.716649" y="93.1333884" width="36.004553" height="162.994586" rx="1.31639904"></rect>
+                        <rect id="Rectangle" fill="#F44336" x="378.918878" y="57.9863079" width="36.004553" height="162.994586" rx="1.31639904"></rect>
+                        <rect id="Rectangle" fill="#FFE359" x="37.7537841" y="110.706929" width="36.004553" height="145.421046"></rect>
+                        <rect id="Rectangle-Copy-3" fill="#FFE359" x="93.9560132" y="139.263932" width="36.004553" height="116.864043"></rect>
+                        <rect id="Rectangle-Copy-6" fill="#FFE359" x="154.549041" y="86.1039723" width="36.004553" height="170.024002"></rect>
+                        <rect id="Rectangle-Copy-9" fill="#FFE359" x="210.75127" y="68.9697705" width="36.004553" height="187.158204"></rect>
+                        <rect id="Rectangle-Copy-12" fill="#FFE359" x="268.270739" y="105.434867" width="36.004553" height="150.693108"></rect>
+                        <rect id="Rectangle-Copy-15" fill="#FFE359" x="322.716649" y="149.808056" width="36.004553" height="106.319919"></rect>
+                        <rect id="Rectangle-Copy-18" fill="#FFE359" x="378.918878" y="68.9697705" width="36.004553" height="187.158204"></rect>
+                        <rect id="Rectangle" fill="#4CAF50" x="37.7537841" y="211.315447" width="36.004553" height="44.8125277"></rect>
+                        <rect id="Rectangle-Copy-4" fill="#4CAF50" x="93.9560132" y="188.469844" width="36.004553" height="67.65813"></rect>
+                        <rect id="Rectangle-Copy-7" fill="#4CAF50" x="154.549041" y="217.026847" width="36.004553" height="39.1011271"></rect>
+                        <rect id="Rectangle-Copy-10" fill="#4CAF50" x="210.75127" y="188.469844" width="36.004553" height="67.65813"></rect>
+                        <rect id="Rectangle-Copy-13" fill="#4CAF50" x="268.270739" y="211.315447" width="36.004553" height="44.8125277"></rect>
+                        <rect id="Rectangle-Copy-16" fill="#4CAF50" x="322.716649" y="188.469844" width="36.004553" height="67.65813"></rect>
+                        <rect id="Rectangle-Copy-19" fill="#4CAF50" x="378.918878" y="227.131633" width="36.004553" height="28.9963414"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#6D7385" x="37.7537841" y="135.749224" width="36.004553" height="75.5662231"></rect>
+                        <rect id="Rectangle-Copy-5" fill="#6D7385" x="93.9560132" y="160.791518" width="36.004553" height="27.6783259"></rect>
+                        <rect id="Rectangle-Copy-8" fill="#6D7385" x="154.549041" y="135.309885" width="36.004553" height="85.6710088"></rect>
+                        <rect id="Rectangle-Copy-11" fill="#6D7385" x="210.75127" y="156.837472" width="36.004553" height="31.6323725"></rect>
+                        <rect id="Rectangle-Copy-14" fill="#6D7385" x="268.270739" y="149.808056" width="36.004553" height="61.9467294"></rect>
+                        <rect id="Rectangle-Copy-17" fill="#6D7385" x="322.716649" y="180.122413" width="36.004553" height="31.6323725"></rect>
+                        <rect id="Rectangle-Copy-20" fill="#6D7385" x="378.918878" y="149.808056" width="36.004553" height="83.9136548"></rect>
+                        <text id="0" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="15.8016384" y="254.029224">0</tspan>
+                        </text>
+                        <text id="$-20B" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="0.000100786132" y="207.899021">$ 20B</tspan>
+                        </text>
+                        <text id="$-60B" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="0" y="108.608518">$ 60B</tspan>
+                        </text>
+                        <text id="$-40B" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="0" y="159.132446">$ 40B</tspan>
+                        </text>
+                        <text id="Q3-21" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="45.6639726" y="283.025905">Q3 21</tspan>
+                        </text>
+                        <text id="Q4-21" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="101.866087" y="283.025905">Q4 21</tspan>
+                        </text>
+                        <text id="Q1-22" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="161.141876" y="283.025905">Q1 22</tspan>
+                        </text>
+                        <text id="Q2-22" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="216.027757" y="283.025905">Q2 22</tspan>
+                        </text>
+                        <text id="Q3-22" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="277.498572" y="283.025905">Q3 22</tspan>
+                        </text>
+                        <text id="Q4-22" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="330.188535" y="283.025905">Q4 22</tspan>
+                        </text>
+                        <text id="Q1-23" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.00691109523" fill="#333333">
+                            <tspan x="388.146252" y="283.025905">Q1 23</tspan>
+                        </text>
+                        <text id="$-80B" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="0.000100786132" y="58.5239283">$ 80B</tspan>
+                        </text>
+                        <text id="$-100B" font-family="Urbanist-Bold, Urbanist" font-size="7.89839424" font-weight="bold" letter-spacing="-0.0827450939" fill="#333333">
+                            <tspan x="0.000688873532" y="8">$ 100B</tspan>
+                        </text>
+                    </g>
+                    <text id="Revenue-Segments" font-family="Urbanist-Bold, Urbanist" font-size="17.064432" font-weight="bold" fill="#333333">
+                        <tspan x="163.765764" y="31.829871">Revenue Segments</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

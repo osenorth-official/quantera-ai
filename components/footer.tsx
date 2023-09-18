@@ -69,6 +69,7 @@ export default function Footer() {
                     color: "black",
                     textTransform: "none",
                   }}
+                  disableElevation
                 >
                   Get premium report
                 </Button>

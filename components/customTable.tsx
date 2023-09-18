@@ -158,6 +158,7 @@ export default function CustomTable() {
                   fontSize: "1rem",
                   fontWeight: 900
                 }}
+                disableElevation
               >
                 Get Started
               </Button>
@@ -182,6 +183,7 @@ export default function CustomTable() {
                   fontSize: "1rem",
                   fontWeight: 900
                 }}
+                disableElevation
               >
                 Get Started
               </Button>
@@ -202,6 +204,7 @@ export default function CustomTable() {
                   fontSize: "1rem",
                   fontWeight: 900
                 }}
+                disableElevation
                 endIcon={<ArrowForwardIcon />}
               >
                 Early Access

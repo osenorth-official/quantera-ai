@@ -4,7 +4,8 @@ export default function ReviewCard() {
   return (
     <Card
       variant="outlined"
-      style={{ marginLeft: "1%", borderColor: "black", maxWidth: 450, borderWidth:3, borderRadius: 8 }}
+      style={{ marginLeft: "1%", borderColor: "black", maxWidth: 450, borderWidth:3, borderRadius: 8, }}
+      sx={{ boxShadow: 5}}
     >
       <CardContent>
         <Grid container spacing={1}>

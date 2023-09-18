@@ -42,7 +42,7 @@ export default function Home() {
       >
         <Section3 />
       </Box>
-      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw", }}>
+      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw", pl: "10%", pr: "10%" }}>
         <Section4 />
       </Box>
       <Box
@@ -51,6 +51,8 @@ export default function Home() {
           bgcolor: "#73F3C4",
           minHeight: "100vh",
           minWidth: "100vw",
+          pl: "10%",
+          pr: "10%"
         }}
       >
         <Section5 />

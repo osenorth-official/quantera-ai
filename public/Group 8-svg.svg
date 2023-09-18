@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="51px" viewBox="0 0 40 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Home-PAGE-Pre-Live" transform="translate(-1030, -2182)" stroke-width="5.6">
+            <g id="Group-15" transform="translate(0, 1610)">
+                <g id="The-3-Main" transform="translate(286, 492)">
+                    <g id="Group-8" transform="translate(746, 83)">
+                        <line x1="34.6153846" y1="45" x2="34.6153846" y2="16.875" id="Path" stroke="#000000"></line>
+                        <line x1="18" y1="45" x2="18" y2="0" id="Path" stroke="#4CAF50"></line>
+                        <line x1="1.38461538" y1="45" x2="1.38461538" y2="28.125" id="Path" stroke="#000000"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

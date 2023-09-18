@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="429px" height="268px" viewBox="0 0 429 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Historical Graph</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="421" height="260" rx="6.05879989"></rect>
+        <filter x="-1.0%" y="-1.5%" width="103.8%" height="106.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.202578671 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-0.6%" y="-2.5%" width="101.2%" height="117.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-5" x="293.633856" y="4.95762712" width="45.203405" height="29.7457627" rx="6.6528"></rect>
+        <filter x="-8.8%" y="-13.4%" width="135.4%" height="153.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.199464598 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-PAGE-Pre-Live" transform="translate(-1260, -3490)">
+            <g id="Discover-features" transform="translate(0, 2716)">
+                <g id="Historical-Graph" transform="translate(1260, 774)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <rect stroke="#000000" stroke-width="1.76" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.88" y="0.88" width="419.24" height="258.24" rx="6.05879989"></rect>
+                    </g>
+                    <g id="Price-Graph" mask="url(#mask-2)">
+                        <g transform="translate(-61.5665, 11.4374)">
+                            <g id="Growth-Graph" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                <g id="Group-15-Copy-2" stroke="#BBBBBB" stroke-dasharray="3.42144" stroke-width="0.57024">
+                                    <g id="Group-11" transform="translate(37.8139, 0)">
+                                        <line x1="1.72635268" y1="60.1237849" x2="467.841575" y2="60.1237849" id="Path-8"></line>
+                                        <line x1="1.72635268" y1="0.866977199" x2="467.841575" y2="0.866977199" id="Path-8"></line>
+                                        <line x1="0" y1="122.546143" x2="466.115222" y2="122.546143" id="Path-8-Copy"></line>
+                                        <line x1="0" y1="184.968501" x2="466.115222" y2="184.968501" id="Path-8-Copy-2"></line>
+                                        <line x1="0" y1="243.922951" x2="466.115222" y2="243.922951" id="Path-8-Copy-3"></line>
+                                    </g>
+                                </g>
+                                <g id="graph" transform="translate(48.2541, 97.454)" stroke="#53A8E2" stroke-width="1.71072">
+                                    <path d="M1.13923724,237.127114 C1.13923724,237.127114 6.84821586,235.194709 12.5986369,237.127114 C18.349058,239.059519 -5.12932726,144.306838 6.15944899,141.6928 C17.4482252,139.078761 31.0750065,128.419151 54.9989885,128.419151 C69.3880576,128.419151 70.7813123,116.762654 84.8065986,116.762654 C94.6607255,116.762654 103.120743,110.154707 119.197935,110.154707 C135.275127,110.154707 133.666346,138.781941 153.257534,138.781941 C172.848721,138.781941 174.379682,104.829868 191.10632,105.019812 C207.832958,105.209756 202.502267,150.370449 229.048059,150.370449 C246.942952,150.370449 258.891835,190.799563 266.132284,168.362836 C274.132633,143.571328 290.02034,113.996539 299.049775,113.778401 C309.587719,113.523819 322.026436,133.796819 329.090575,156.538559 C336.154714,179.280299 307.594054,184.103744 337.214223,197.825762 C366.834391,211.54778 372.350411,113.778401 395.315322,113.778401 C410.625262,113.778401 426.464171,98.6531385 442.832048,68.4026144" id="Path-2"></path>
+                                    <ellipse id="Oval-2" stroke-opacity="0.493093297" fill="#53A8E2" cx="377.941954" cy="160.376087" rx="2.84902517" ry="2.85648765"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.493093297" fill="#53A8E2" cx="437.751909" cy="2.00112765" rx="2.84902517" ry="2.85648765"></ellipse>
+                                </g>
+                                <path d="" id="Path-9" stroke="#979797" stroke-width="0.57024"></path>
+                            </g>
+                            <line x1="229.178323" y1="4.32385993" x2="229.178323" y2="382.387003" id="Line" stroke="#7FCBC4" stroke-width="0.7128" stroke-linecap="square" stroke-dasharray="3.96"></line>
+                        </g>
+                    </g>
+                    <text id="Full-historical-hist" mask="url(#mask-2)" font-family="Urbanist-Bold, Urbanist" font-size="17.6" font-weight="bold" letter-spacing="-0.821333599" fill="#162C5B">
+                        <tspan x="47.1509613" y="80.9144838">Full historical history for over 2000 companies</tspan>
+                    </text>
+                    <g id="Light_toggle" filter="url(#filter-4)" mask="url(#mask-2)">
+                        <g transform="translate(37.3734, 103.5593)">
+                            <rect id="Rectangle" fill="#F5F6F6" fill-rule="evenodd" x="0" y="0" width="347.35248" height="39.6610169" rx="6.6528"></rect>
+                            <g id="Rectangle" fill="none">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                            <text id="1D" fill="none" font-family="Urbanist-Bold, Urbanist" font-size="14.9688" font-weight="bold" letter-spacing="-0.156816022">
+                                <tspan x="21.3952424" y="24.6812973" fill="#162C5B">1D</tspan>
+                            </text>
+                            <text id="1W" fill="none" font-family="Urbanist-Bold, Urbanist" font-size="14.9688" font-weight="bold" letter-spacing="-0.156816022">
+                                <tspan x="71.0902895" y="24.6812973" fill="#162C5B">1W</tspan>
+                            </text>
+                            <text id="1M" fill="none" font-family="Urbanist-Bold, Urbanist" font-size="14.9688" font-weight="bold" letter-spacing="-0.156816022">
+                                <tspan x="118.551414" y="24.6812973" fill="#162C5B">1M</tspan>
+                            </text>
+                            <text id="6M" fill="none" font-family="Urbanist-Bold, Urbanist" font-size="14.9688" font-weight="bold" letter-spacing="-0.156816022">
+                                <tspan x="166.058125" y="24.6812973" fill="#162C5B">6M</tspan>
+                            </text>
+                            <text id="1Y" fill="none" font-family="Urbanist-Bold, Urbanist" font-size="14.9688" font-weight="bold" letter-spacing="-0.156816022">
+                                <tspan x="215.546842" y="24.6812973" fill="#162C5B">1Y</tspan>
+                            </text>
+                            <text id="5Y" fill="none" font-family="Urbanist-Bold, Urbanist" font-size="14.9688" font-weight="bold" letter-spacing="-0.156816022">
+                                <tspan x="257.031843" y="24.6812973" fill="#162C5B">5Y</tspan>
+                            </text>
+                            <text id="Max" fill="none" font-family="Urbanist-Bold, Urbanist" font-size="14.9688" font-weight="bold" letter-spacing="-0.156816022">
+                                <tspan x="301.72118" y="24.6812973" fill="#162C5B">Max</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

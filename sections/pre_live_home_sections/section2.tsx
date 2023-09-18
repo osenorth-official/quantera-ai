@@ -50,10 +50,10 @@ export default function Section2() {
                   2
                 </Typography>
                 <Image
-                  src="/click-tap.png"
+                  src="/click-tap-svg.svg"
                   alt="banner"
                   height={20}
-                  width={70}
+                  width={60}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600}}>Clicks away are all<br /> your answers.</Typography>
@@ -64,10 +64,10 @@ export default function Section2() {
                   2385
                 </Typography>
                 <Image
-                  src="/Group 8.png"
+                  src="/Group 8-svg.svg"
                   alt="banner"
                   height={20}
-                  width={70}
+                  width={60}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2,fontWeight: 600}}>Publically traded<br /> companies.</Typography>
@@ -78,10 +78,10 @@ export default function Section2() {
                   8x
                 </Typography>
                 <Image
-                  src="/cube-five.png"
+                  src="/cube-five-svg.svg"
                   alt="banner"
                   height={20}
-                  width={70}
+                  width={60}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600}}>Speeden your research<br /> by many folds.</Typography>

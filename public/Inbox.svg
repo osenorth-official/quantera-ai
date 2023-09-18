@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="405px" height="338px" viewBox="0 0 405 338" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Inbox</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="397" height="330" rx="5.70240002"></rect>
+        <filter x="-1.0%" y="-1.2%" width="104.0%" height="104.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.202578671 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <pattern id="pattern-4" patternUnits="objectBoundingBox" y="-0.0151179198%" height="100.015118%" width="100%">
+            <use xlink:href="#image-5" transform="scale(0.069687731,0.069687731)"></use>
+        </pattern>
+        <image id="image-5" width="240" height="240" xlink:href="data:image/png;base64,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"></image>
+        <rect id="path-6" x="0" y="0" width="387.317073" height="25.52"></rect>
+        <filter x="-0.1%" y="-2.0%" width="100.3%" height="103.9%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.894117647   0 0 0 0 0.909803922   0 0 0 0 0.921568627  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-8" x="0" y="0" width="178.02129" height="110" rx="0.755040035"></rect>
+        <rect id="path-10" x="0" y="0" width="175.172949" height="109.12" rx="0.75504"></rect>
+        <path d="M2.84252587,1.68170426 L0.275083149,0.0275689223 C0.220066519,-0.00918964077 0.146711013,-0.00918964077 0.0916943829,0.0275689223 C0.0366777531,0.0459482038 -3.33066907e-16,0.101086048 -3.33066907e-16,0.174603175 L-3.33066907e-16,3.48287385 C-3.33066907e-16,3.55639098 0.0366777531,3.61152882 0.0916943829,3.64828739 C0.128372136,3.66666667 0.146711013,3.66666667 0.183388766,3.66666667 C0.220066519,3.66666667 0.256744272,3.64828739 0.275083149,3.6299081 L2.84252587,1.97577277 C2.8975425,1.9390142 2.93422025,1.88387636 2.93422025,1.82873851 C2.93422025,1.77360067 2.8975425,1.70008354 2.84252587,1.68170426 Z M0.366777531,3.15204678 L0.366777531,0.505430242 L2.42073171,1.82873851 L0.366777531,3.15204678 Z" id="path-12"></path>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-PAGE-Pre-Live" transform="translate(-414, -3051)">
+            <g id="Discover-features" transform="translate(0, 2716)">
+                <g id="Inbox" transform="translate(414, 335)">
+                    <g id="Group-10">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#000000" stroke-width="1.76" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.88" y="0.88" width="395.24" height="328.24" rx="5.70240002"></rect>
+                        </g>
+                        <g id="Converstion" mask="url(#mask-2)">
+                            <g transform="translate(5.2816, 1.76)">
+                                <rect id="bg" fill="#F7F8F9" x="0" y="0" width="387.317073" height="326.48"></rect>
+                                <g id="Mail---Last" stroke-width="1" fill="none" transform="translate(6.1619, 31.68)">
+                                    <path d="M374.638094,0.20592 C374.92241,0.20592 375.17981,0.321161898 375.366131,0.507482839 C375.552452,0.693803779 375.667694,0.951203763 375.667694,1.23551993 L375.667694,294.59408 L0.20592,294.59408 L0.20592,1.23551993 C0.20592,0.951203763 0.321161898,0.693803779 0.507482839,0.507482839 C0.693803779,0.321161898 0.951203763,0.20592 1.23551993,0.20592 Z" id="bg" stroke="#E4E8EB" stroke-width="0.41184" fill="#FFFFFF"></path>
+                                    <g id="baseline-more_vert-24px" transform="translate(360.9091, 8.8)">
+                                        <polygon id="Shape" points="0 0 8.80266075 0 8.80266075 7.92 0 7.92"></polygon>
+                                        <path d="M4.40133038,2.64 C4.80478566,2.64 5.13488544,2.343 5.13488544,1.98 C5.13488544,1.617 4.80478566,1.32 4.40133038,1.32 C3.99787509,1.32 3.66777531,1.617 3.66777531,1.98 C3.66777531,2.343 3.99787509,2.64 4.40133038,2.64 Z M4.40133038,3.3 C3.99787509,3.3 3.66777531,3.597 3.66777531,3.96 C3.66777531,4.323 3.99787509,4.62 4.40133038,4.62 C4.80478566,4.62 5.13488544,4.323 5.13488544,3.96 C5.13488544,3.597 4.80478566,3.3 4.40133038,3.3 Z M4.40133038,5.28 C3.99787509,5.28 3.66777531,5.577 3.66777531,5.94 C3.66777531,6.303 3.99787509,6.6 4.40133038,6.6 C4.80478566,6.6 5.13488544,6.303 5.13488544,5.94 C5.13488544,5.577 4.80478566,5.28 4.40133038,5.28 Z" id="Shape" fill="#909191" fill-rule="nonzero"></path>
+                                    </g>
+                                    <g id="twotone-delete-24px" transform="translate(345.9446, 7.92)">
+                                        <g id="Bounding_Boxes">
+                                            <polygon id="Shape" points="0 0 8.80266075 0 8.80266075 8.8 0 8.8"></polygon>
+                                        </g>
+                                        <g id="Duotone" transform="translate(1.8339, 1.1)" fill="#909191" fill-rule="nonzero">
+                                            <g id="Group">
+                                                <rect id="Rectangle-path" opacity="0.3" x="1.10033259" y="2.2" width="2.93422025" height="3.66666667"></rect>
+                                                <g id="Shape">
+                                                    <polygon points="3.85116408 0.366666667 3.48438655 0 1.65049889 0 1.28372136 0.366666667 0 0.366666667 0 1.1 5.13488544 1.1 5.13488544 0.366666667"></polygon>
+                                                    <path d="M0.366777531,5.86666667 C0.366777531,6.27 0.69687731,6.6 1.10033259,6.6 L4.03455285,6.6 C4.43800813,6.6 4.76810791,6.27 4.76810791,5.86666667 L4.76810791,1.46666667 L0.366777531,1.46666667 L0.366777531,5.86666667 Z M1.10033259,2.2 L4.03455285,2.2 L4.03455285,5.86666667 L1.10033259,5.86666667 L1.10033259,2.2 Z"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g id="twotone-star-24px" transform="translate(330.98, 7.92)">
+                                        <g id="Bounding_Boxes">
+                                            <polygon id="Shape" points="0 0 8.80266075 0 8.80266075 8.8 0 8.8"></polygon>
+                                            <polygon id="Shape" points="0 0 8.80266075 0 8.80266075 8.8 0 8.8"></polygon>
+                                        </g>
+                                        <g id="Duotone" transform="translate(0.7336, 0.7333)" fill-rule="nonzero">
+                                            <g id="Group">
+                                                <polygon id="Shape" fill="#FFDD00" points="3.69711752 4.87666667 2.318034 5.709 2.68481153 4.13966667 1.46711013 3.08366667 3.07359571 2.94433333 3.69711752 1.46666667 4.3243071 2.948 5.93079268 3.08733333 4.71309128 4.14333333 5.07986881 5.71266667"></polygon>
+                                                <path d="M7.33555063,2.65466667 L4.69842018,2.42733333 L3.66777531,0 L2.63713045,2.431 L0,2.65466667 L2.00260532,4.389 L1.40109017,6.96666667 L3.66777531,5.599 L5.93446046,6.96666667 L5.33661308,4.389 L7.33555063,2.65466667 Z M3.66777531,4.91333333 L2.2886918,5.74566667 L2.65546933,4.17633333 L1.43776792,3.12033333 L3.04425351,2.981 L3.66777531,1.50333333 L4.29496489,2.98466667 L5.90145048,3.124 L4.68374908,4.18 L5.05052661,5.74933333 L3.66777531,4.91333333 Z" id="Shape" fill="#909191"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <text id="May-3,-2023,-07:11-P" opacity="0.800000012" font-family="Urbanist-Bold, Urbanist" font-size="4.94208" font-weight="bold" fill="#808080">
+                                        <tspan x="275.557878" y="14.68">May 3, 2023, 07:11 PM</tspan>
+                                    </text>
+                                    <g id="baseline-arrow_right-24px" opacity="0.600000024" transform="translate(46.214, 20.68) rotate(-270) translate(-46.214, -20.68)translate(42.2528, 16.72)">
+                                        <polygon id="Shape" points="0 7.92 0 -2.55551726e-13 7.92239468 -2.55551726e-13 7.92239468 7.92"></polygon>
+                                        <polygon id="Shape" fill="#909191" fill-rule="nonzero" opacity="0.799954734" points="2.64079823 5.28 4.40133038 3.52 2.64079823 1.76"></polygon>
+                                    </g>
+                                    <text id="to-me" opacity="0.800000012" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="4.94208" font-weight="normal" line-spacing="8.2368" fill="#212223">
+                                        <tspan x="28.1685144" y="20.84">to me</tspan>
+                                    </text>
+                                    <text id="QuanteraAI" font-family="Urbanist-SemiBold, Urbanist" font-size="5.76576" font-weight="500" line-spacing="8.2368" fill="#212223">
+                                        <tspan x="28.1731455" y="12.92">QuanteraAI</tspan>
+                                    </text>
+                                    <ellipse id="Profile-pic" fill="url(#pattern-4)" cx="14.5243902" cy="16.28" rx="8.36252772" ry="8.36"></ellipse>
+                                </g>
+                                <g id="Subject-bar" stroke-width="1" fill="none" transform="translate(0, 0.88)">
+                                    <g id="bg">
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                    </g>
+                                    <g id="Actions" transform="translate(331.8603, 8.8)">
+                                        <g id="baseline-unfold_more-24px" transform="translate(33.098, 0)">
+                                            <polygon id="Shape" points="0 0 8.27450111 0 8.27450111 8.8 0 8.8"></polygon>
+                                            <path d="M4.13725055,2.13766667 L5.23017424,3.3 L5.71630118,2.783 L4.13725055,1.1 L2.55475222,2.783 L3.04432687,3.3 L4.13725055,2.13766667 Z M4.13725055,6.66233333 L3.04432687,5.5 L2.55819993,6.017 L4.13725055,7.7 L5.71974889,6.017 L5.23017424,5.5 L4.13725055,6.66233333 Z" id="Shape" fill="#808080" fill-rule="nonzero"></path>
+                                        </g>
+                                        <g id="twotone-print-24px" transform="translate(16.549, 0)">
+                                            <g id="Bounding_Boxes">
+                                                <polygon id="Shape" points="0 0 8.27450111 0 8.27450111 8.8 0 8.8"></polygon>
+                                            </g>
+                                            <g id="Duotone" transform="translate(0.6895, 1.1)" fill="#909191" fill-rule="nonzero">
+                                                <g id="Group">
+                                                    <g>
+                                                        <rect id="Rectangle-path" opacity="0.3" x="2.06862528" y="0.733333333" width="2.75816704" height="1.1"></rect>
+                                                        <ellipse id="Oval" cx="5.51633407" cy="3.11666667" rx="1" ry="1"></ellipse>
+                                                        <path d="M5.86110495,1.83333333 L5.51633407,1.83333333 L5.51633407,0 L1.37908352,0 L1.37908352,1.83333333 L1.03431264,1.83333333 C0.461992979,1.83333333 0,2.32466667 0,2.93333333 L0,4.4 L0,5.13333333 L1.37908352,5.13333333 L1.37908352,6.6 L5.51633407,6.6 L5.51633407,5.13333333 L6.89541759,5.13333333 L6.89541759,4.4 L6.89541759,2.93333333 C6.89541759,2.32466667 6.43342461,1.83333333 5.86110495,1.83333333 Z M2.06862528,0.733333333 L4.82679231,0.733333333 L4.82679231,1.83333333 L2.06862528,1.83333333 L2.06862528,0.733333333 Z M4.82679231,5.86666667 L2.06862528,5.86666667 L2.06862528,4.4 L4.82679231,4.4 L4.82679231,5.86666667 Z M6.20587583,4.4 L5.51633407,4.4 L5.51633407,3.66666667 L1.37908352,3.66666667 L1.37908352,4.4 L0.689541759,4.4 L0.689541759,2.93333333 C0.689541759,2.73166667 0.844688655,2.56666667 1.03431264,2.56666667 L1.37908352,2.56666667 L5.51633407,2.56666667 L5.86110495,2.56666667 C6.05072894,2.56666667 6.20587583,2.73166667 6.20587583,2.93333333 L6.20587583,4.4 Z" id="Shape"></path>
+                                                    </g>
+                                                    <g opacity="0.3" transform="translate(0.6895, 2.5667)" id="Shape">
+                                                        <path d="M0.689541759,1.1 L4.82679231,1.1 L4.82679231,1.83333333 L5.51633407,1.83333333 L5.51633407,0.366666667 C5.51633407,0.165 5.36118718,0 5.17156319,0 L4.82679231,0 L0.689541759,0 L0.34477088,0 C0.155146896,0 0,0.165 0,0.366666667 L0,1.83333333 L0.689541759,1.83333333 L0.689541759,1.1 Z M4.82679231,0.183333333 C5.0164163,0.183333333 5.17156319,0.348333333 5.17156319,0.55 C5.17156319,0.751666667 5.0164163,0.916666667 4.82679231,0.916666667 C4.63716833,0.916666667 4.48202143,0.751666667 4.48202143,0.55 C4.48202143,0.348333333 4.63716833,0.183333333 4.82679231,0.183333333 Z"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g id="twotone-forward-24px">
+                                            <g id="Bounding_Boxes">
+                                                <polygon id="Shape" points="0 0 8.27450111 0 8.27450111 8.8 0 8.8"></polygon>
+                                            </g>
+                                            <g id="Duotone" transform="translate(1.3791, 1.4667)" fill="#909191" fill-rule="nonzero">
+                                                <g id="Group">
+                                                    <polygon id="Shape" opacity="0.3" points="3.4477088 3.66666667 3.4477088 4.09566667 4.54063248 2.93333333 3.4477088 1.771 3.4477088 2.2 0.689541759 2.2 0.689541759 3.66666667"></polygon>
+                                                    <path d="M5.51633407,2.93333333 L2.75816704,0 L2.75816704,1.46666667 L0,1.46666667 L0,4.4 L2.75816704,4.4 L2.75816704,5.86666667 L5.51633407,2.93333333 Z M0.689541759,3.66666667 L0.689541759,2.2 L3.4477088,2.2 L3.4477088,1.771 L4.54063248,2.93333333 L3.4477088,4.09566667 L3.4477088,3.66666667 L0.689541759,3.66666667 Z" id="Shape"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g id="Lable" transform="translate(191.898, 8.8)">
+                                        <path d="M22.531664,0.20592 C22.8159802,0.20592 23.0733802,0.321161905 23.2597012,0.507482858 C23.4460221,0.693803811 23.561264,0.951203811 23.561264,1.23552 L23.561264,7.56448 C23.561264,7.84879619 23.4460221,8.10619619 23.2597012,8.29251714 C23.0733802,8.47883809 22.8159802,8.59408 22.531664,8.59408 L1.23552,8.59408 C0.951203811,8.59408 0.693803811,8.47883809 0.507482858,8.29251714 C0.321161905,8.10619619 0.20592,7.84879619 0.20592,7.56448 L0.20592,1.23552 C0.20592,0.951203811 0.321161905,0.693803811 0.507482858,0.507482858 C0.693803811,0.321161905 0.951203811,0.20592 1.23552,0.20592 Z" id="Rectangle-4" stroke-opacity="0.6" stroke="#909191" stroke-width="0.41184" fill-opacity="0.1" fill="#909191"></path>
+                                        <g id="baseline-close-24px" transform="translate(16.6787, 1.76)">
+                                            <polygon id="Shape" points="0 0 5.00361769 0 5.00361769 5.28 0 5.28"></polygon>
+                                            <polygon id="Shape" fill="#909191" fill-rule="nonzero" points="3.96119734 1.4102 3.6672348 1.1 2.50180885 2.3298 1.33638289 1.1 1.04242035 1.4102 2.20784631 2.64 1.04242035 3.8698 1.33638289 4.18 2.50180885 2.9502 3.6672348 4.18 3.96119734 3.8698 2.79577139 2.64"></polygon>
+                                        </g>
+                                        <text id="Inbox" font-family="Urbanist-SemiBold, Urbanist" font-size="4.94208" font-weight="500" fill="#909191">
+                                            <tspan x="2.16659024" y="6.13419166">Inbox</tspan>
+                                        </text>
+                                    </g>
+                                    <g id="Lable" transform="translate(219.1863, 8.8)">
+                                        <path d="M22.531664,0.20592 C22.8159802,0.20592 23.0733802,0.321161905 23.2597012,0.507482858 C23.4460221,0.693803811 23.561264,0.951203811 23.561264,1.23552 L23.561264,7.56448 C23.561264,7.84879619 23.4460221,8.10619619 23.2597012,8.29251714 C23.0733802,8.47883809 22.8159802,8.59408 22.531664,8.59408 L1.23552,8.59408 C0.951203811,8.59408 0.693803811,8.47883809 0.507482858,8.29251714 C0.321161905,8.10619619 0.20592,7.84879619 0.20592,7.56448 L0.20592,1.23552 C0.20592,0.951203811 0.321161905,0.693803811 0.507482858,0.507482858 C0.693803811,0.321161905 0.951203811,0.20592 1.23552,0.20592 Z" id="Rectangle-4" stroke-opacity="0.6" stroke="#4285F4" stroke-width="0.41184" fill-opacity="0.1" fill="#4285F4"></path>
+                                        <g id="baseline-close-24px" transform="translate(16.6787, 1.76)">
+                                            <polygon id="Shape" points="0 0 5.00361769 0 5.00361769 5.28 0 5.28"></polygon>
+                                            <polygon id="Shape" fill="#4285F4" fill-rule="nonzero" points="3.96119734 1.4102 3.6672348 1.1 2.50180885 2.3298 1.33638289 1.1 1.04242035 1.4102 2.20784631 2.64 1.04242035 3.8698 1.33638289 4.18 2.50180885 2.9502 3.6672348 4.18 3.96119734 3.8698 2.79577139 2.64"></polygon>
+                                        </g>
+                                        <text id="Stocks" font-family="Urbanist-SemiBold, Urbanist" font-size="4.94208" font-weight="500" fill="#4285F4">
+                                            <tspan x="2.17792516" y="6.13419166">Stocks</tspan>
+                                        </text>
+                                    </g>
+                                    <text id="Earnings-of-your-fav" font-family="Urbanist-SemiBold, Urbanist" font-size="9.06048" font-weight="500" line-spacing="11.53152" fill="#212223">
+                                        <tspan x="14.9887523" y="15.16">Earnings of your favorites - Quantera AI</tspan>
+                                    </text>
+                                </g>
+                                <rect id="Rectangle" fill="#FFE359" x="6.16186253" y="65.12" width="375.873614" height="213.84"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(69.6127, 82.72)" fill="#000000">
+                        <text id="Earnings-from-your-f" font-family="Urbanist-Black, Urbanist" font-size="15.84" font-weight="800" letter-spacing="-0.739200187">
+                            <tspan x="36.9864026" y="15">Earnings from your favorites</tspan>
+                        </text>
+                        <text id="Remember:-You-can-li" font-family="Urbanist-SemiBold, Urbanist" font-size="7.04" font-weight="500" letter-spacing="-0.328533453">
+                            <tspan x="47.790082" y="29.88">Remember: You can listen to the earnings recordning here</tspan>
+                        </text>
+                    </g>
+                    <text id="Starting-with-AirBnB" font-family="Urbanist-Black, Urbanist" font-size="10.9824" font-weight="800" letter-spacing="-0.512512165" fill="#000000">
+                        <tspan x="24.5351984" y="166.873469">Starting with AirBnB</tspan>
+                    </text>
+                    <g id="Graphs" transform="translate(11.4435, 173.36)">
+                        <g id="Margins-Graph" transform="translate(191.898, 0)">
+                            <g id="dashboard-copy-2">
+                                <mask id="mask-9" fill="white">
+                                    <use xlink:href="#path-8"></use>
+                                </mask>
+                                <rect stroke="#000000" stroke-width="0.352" x="0.176" y="0.176" width="177.66929" height="109.648" rx="0.755040035"></rect>
+                                <text id="Margins" mask="url(#mask-9)" font-family="Urbanist-Bold, Urbanist" font-size="5.436288" font-weight="bold" fill="#162C5B">
+                                    <tspan x="75.6661854" y="5.42335439">Margins</tspan>
+                                </text>
+                            </g>
+                            <g id="Group-3" transform="translate(15.9549, 32.6149)">
+                                <g id="Group-15-Copy-2">
+                                    <g id="Group-11" transform="translate(7.1201, 1.4987)" stroke="#BBBBBB" stroke-dasharray="0.9060481" stroke-width="0.18876">
+                                        <line x1="0.473545317" y1="0.235516328" x2="128.330781" y2="0.235516328" id="Path-8"></line>
+                                        <line x1="0" y1="17.1926919" x2="127.857236" y2="17.1926919" id="Path-8-Copy"></line>
+                                        <line x1="0" y1="34.1498675" x2="127.857236" y2="34.1498675" id="Path-8-Copy-2"></line>
+                                        <line x1="0" y1="50.1649778" x2="127.857236" y2="50.1649778" id="Path-8-Copy-3"></line>
+                                        <line x1="0" y1="66.1800881" x2="127.857236" y2="66.1800881" id="Path-8-Copy-4"></line>
+                                    </g>
+                                    <text id="$--50B" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                        <tspan x="0.0276334475" y="68.4743536">$ -50B</tspan>
+                                    </text>
+                                    <text id="$-50B" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                        <tspan x="0" y="35.9722859">$ 50B</tspan>
+                                    </text>
+                                    <text id="$-100B" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                        <tspan x="0.015129936" y="19.486143">$ 100B</tspan>
+                                    </text>
+                                    <text id="$-150B" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                        <tspan x="0.015129936" y="3">$ 150B</tspan>
+                                    </text>
+                                </g>
+                                <g id="graph" transform="translate(9.9849, 11.8736)" stroke-width="0.453024">
+                                    <path d="M0.922912764,61.4049414 C0.922912764,61.4049414 6.70844166,61.0572136 9.80499731,60.347104 C12.901553,59.6369944 14.0694491,34.8183938 15.4686138,32.9272874 C16.8677784,31.0361811 21.3350346,43.9802265 24.3747853,43.7995049 C28.6472456,43.5454954 26.6520026,36.0752265 32.2736501,30.0065988 C37.8952976,23.9379712 40.1030016,33.5594592 44.2183605,37.5868092 C48.3337195,41.6141592 47.766344,28.2962204 52.421214,28.5288709 C57.0760839,28.7615213 60.1468315,40.5780608 67.3857831,40.9973573 C74.6247346,41.4166539 70.5992059,61.2073228 75.3118367,61.0397356 C80.0244675,60.8721484 80.0928065,36.223803 82.0305275,42.4016484 C83.9682485,48.5794938 84.3742569,50.0122007 92.4991853,53.7398181 C97.9158043,56.2248964 103.228257,48.6143441 108.436545,30.9081613 L120.155192,0.621269574" id="Path-2" stroke="#53A8E2"></path>
+                                    <path d="M0.312497248,50.4375544 C0.312497248,50.4375544 1.8784925,49.9126122 3.45585558,50.4375544 C5.03321866,50.9624966 6.56633938,51.8577736 9.66289503,51.147664 C12.7594507,50.4375544 14.0694491,51.2820375 15.4686138,49.3909311 C16.8677784,47.4998248 21.3350346,46.7759396 24.3747853,46.595218 C28.6472456,46.3412084 26.7218177,59.6531284 32.3434651,53.5845007 C37.9651126,47.5158731 40.1030016,47.8486594 44.2183605,51.8760094 C48.3337195,55.9033594 47.688419,51.643359 52.343289,51.8760094 C56.9981589,52.1086598 60.1042053,35.3037039 67.3431569,35.7230005 C74.5821084,36.142297 75.3118367,49.3909311 77.0305716,49.3909311 C78.7493064,49.3909311 80.0928065,53.4640337 82.0305275,59.6418791 C83.9682485,65.8197245 85.7804945,54.5164051 93.9054229,58.2440225 C102.030351,61.97164 101.022161,54.5164051 107.499053,54.5164051 C111.816981,54.5164051 116.035694,55.7589442 120.155192,58.2440225" id="Path-2" stroke="#FFE359"></path>
+                                    <path d="M0.312497248,5.3955103 C0.312497248,5.3955103 1.8784925,4.8705681 3.45585558,5.3955103 C5.03321866,5.92045251 6.56633938,6.81572953 9.66289503,6.10561992 C12.7594507,5.3955103 14.0694491,6.23999337 15.4686138,4.34888702 C16.8677784,2.45778066 21.3350346,1.73389553 24.3747853,1.55317393 C28.6472456,1.29916434 30.1559844,1.39785654 32.3434651,1.39785654 C34.5309459,1.39785654 40.1030016,2.80661527 44.2183605,6.83396531 C48.3337195,10.8613153 47.688419,6.60131487 52.343289,6.83396531 C56.9981589,7.06661575 59.9479567,10.9188732 67.1869083,11.3381697 C74.4258598,11.7574663 75.3118367,4.34888702 77.0305716,4.34888702 C78.7493064,4.34888702 80.0928065,8.42198956 82.0305275,14.599835 C83.9682485,20.7776804 85.7804945,9.474361 93.9054229,13.2019784 C102.030351,16.9295959 101.022161,9.474361 107.499053,9.474361 C111.816981,9.474361 116.035694,8.33536678 120.155192,6.05737834" id="Path-2" stroke="#4CAF50"></path>
+                                    <ellipse id="Oval-2" stroke-opacity="0.493093297" stroke="#53A8E2" fill="#53A8E2" cx="84.9211271" cy="49.0026376" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.502013733" stroke="#FFE359" fill="#FFE359" cx="84.9211271" cy="60.4961247" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.493093297" stroke="#53A8E2" fill="#53A8E2" cx="103.670962" cy="43.5665289" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.502013733" stroke="#FFE359" fill="#FFE359" cx="103.670962" cy="55.8366029" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.493093297" stroke="#53A8E2" fill="#53A8E2" cx="120.077067" cy="0.543610877" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.502013733" stroke="#FFE359" fill="#FFE359" cx="120.077067" cy="58.1663638" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.493093297" stroke="#53A8E2" fill="#53A8E2" cx="64.2963087" cy="39.9942288" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.502013733" stroke="#FFE359" fill="#FFE359" cx="64.2963087" cy="36.7325635" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.493093297" stroke="#53A8E2" fill="#53A8E2" cx="42.8902472" cy="36.111294" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.502013733" stroke="#FFE359" fill="#FFE359" cx="42.8902472" cy="50.711129" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.493093297" stroke="#53A8E2" fill="#53A8E2" cx="21.4841858" cy="41.3920853" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.502013733" stroke="#FFE359" fill="#FFE359" cx="21.4841858" cy="46.9835115" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.493093297" stroke="#53A8E2" fill="#53A8E2" cx="0.546870183" cy="61.2055474" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.502013733" stroke="#FFE359" fill="#FFE359" cx="0.546870183" cy="50.4004942" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.500105851" stroke="#4CAF50" fill="#4CAF50" cx="84.9211271" cy="15.4540806" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.500105851" stroke="#4CAF50" fill="#4CAF50" cx="103.670962" cy="10.7945588" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.500105851" stroke="#4CAF50" fill="#4CAF50" cx="120.077067" cy="6.13503704" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.500105851" stroke="#4CAF50" fill="#4CAF50" cx="64.2963087" cy="10.9498762" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.500105851" stroke="#4CAF50" fill="#4CAF50" cx="42.8902472" cy="5.66908486" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.500105851" stroke="#4CAF50" fill="#4CAF50" cx="21.4841858" cy="1.94146742" rx="1" ry="1"></ellipse>
+                                    <ellipse id="Oval-2" stroke-opacity="0.500105851" stroke="#4CAF50" fill="#4CAF50" cx="0.546870183" cy="5.35845007" rx="1" ry="1"></ellipse>
+                                </g>
+                            </g>
+                            <path d="" id="Path-9" stroke="#979797" stroke-width="0.18876"></path>
+                            <g id="Group-18" transform="translate(28.1685, 17.6)">
+                                <text id="Gross-Margin" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#162C5B">
+                                    <tspan x="8.50069925" y="4.06482773">Gross Margin</tspan>
+                                </text>
+                                <path d="M2.59743588,0 C4.03100404,0 5.19487177,1.18294 5.19487177,2.64 C5.19487177,4.09706 4.03100404,5.28 2.59743588,5.28 C1.16386773,5.28 0,4.09706 0,2.64 C0,1.18294 1.16386773,0 2.59743588,0 Z" id="Fill-4" fill="#53A8E2"></path>
+                            </g>
+                            <g id="Group-17" transform="translate(115.3149, 16.72)">
+                                <text id="Profit-Margin" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#162C5B">
+                                    <tspan x="8.51198099" y="4.06482773">Profit Margin</tspan>
+                                </text>
+                                <path d="M2.60088308,0 C4.0363538,0 5.20176616,1.18294 5.20176616,2.64 C5.20176616,4.09706 4.0363538,5.28 2.60088308,5.28 C1.16541236,5.28 0,4.09706 0,2.64 C0,1.18294 1.16541236,0 2.60088308,0 Z" id="Fill-4-Copy" fill="#4CAF50"></path>
+                            </g>
+                            <g id="Group-16" transform="translate(69.541, 16.72)">
+                                <text id="Operating-Margin" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#162C5B">
+                                    <tspan x="8.40847926" y="4.06482773">Operating  Margin</tspan>
+                                </text>
+                                <path d="M2.56925755,0 C3.98727362,0 5.1385151,1.18294 5.1385151,2.64 C5.1385151,4.09706 3.98727362,5.28 2.56925755,5.28 C1.15124149,5.28 0,4.09706 0,2.64 C0,1.18294 1.15124149,0 2.56925755,0 Z" id="Fill-4-Copy-2" fill="#FFE359"></path>
+                            </g>
+                        </g>
+                        <g id="REVENUE-CHART" transform="translate(13.204, 0)">
+                            <g id="stacked-column">
+                                <mask id="mask-11" fill="white">
+                                    <use xlink:href="#path-10"></use>
+                                </mask>
+                                <rect stroke="#000000" stroke-width="0.352" x="0.176" y="0.176" width="174.820949" height="108.768" rx="0.75504"></rect>
+                            </g>
+                            <g id="column" transform="translate(8.9189, 20.2978)">
+                                <g id="Group-11" transform="translate(8.7882, 1.9489)" stroke="#BBBBBB" stroke-dasharray="0.9060481" stroke-width="0.18876">
+                                    <line x1="0" y1="0.256189823" x2="138.46742" y2="0.256189823" id="Path-8-Copy"></line>
+                                    <line x1="0" y1="18.701857" x2="138.46742" y2="18.701857" id="Path-8-Copy-2"></line>
+                                    <line x1="0" y1="36.122765" x2="138.46742" y2="36.122765" id="Path-8-Copy-3"></line>
+                                    <line x1="0" y1="53.5436729" x2="138.46742" y2="53.5436729" id="Path-8-Copy-4"></line>
+                                    <line x1="0" y1="70.9645808" x2="138.46742" y2="70.9645808" id="Path-8-Copy-5"></line>
+                                </g>
+                                <path d="M55.4115071,56.8951505 L67.3392221,56.8951505 C67.5894204,56.8951505 67.7922461,57.0979763 67.7922461,57.3481745 L67.7922461,73.1696872 L67.7922461,73.1696872 L54.9584831,73.1696872 L54.9584831,57.3481745 C54.9584831,57.0979763 55.1613089,56.8951505 55.4115071,56.8951505 Z" id="Rectangle-Copy-7" fill="#4CAF50"></path>
+                                <path d="M13.780032,62.0591862 L25.707747,62.0591862 C25.9579453,62.0591862 26.160771,62.262012 26.160771,62.5122102 L26.160771,73.1696872 L26.160771,73.1696872 L13.327008,73.1696872 L13.327008,62.5122102 C13.327008,62.262012 13.5298338,62.0591862 13.780032,62.0591862 Z" id="Rectangle" fill="#4CAF50"></path>
+                                <path d="M33.8132231,72.2307716 L45.7409381,72.2307716 C45.9911363,72.2307716 46.1939621,72.4335974 46.1939621,72.6837956 L46.1939621,73.1696872 L46.1939621,73.1696872 L33.3601991,73.1696872 L33.3601991,72.6837956 C33.3601991,72.4335974 33.5630248,72.2307716 33.8132231,72.2307716 Z" id="Rectangle-Copy-4" fill="#4CAF50"></path>
+                                <path d="M75.4446981,49.070854 L87.3724131,49.070854 C87.6226114,49.070854 87.8254371,49.2736798 87.8254371,49.523878 L87.8254371,73.1696872 L87.8254371,73.1696872 L74.9916741,73.1696872 L74.9916741,49.523878 C74.9916741,49.2736798 75.1944999,49.070854 75.4446981,49.070854 Z" id="Rectangle-Copy-10" fill="#4CAF50"></path>
+                                <path d="M95.9474171,65.5018767 L107.875132,65.5018767 C108.12533,65.5018767 108.328156,65.7047024 108.328156,65.9549007 L108.328156,73.1696872 L108.328156,73.1696872 L95.4943931,73.1696872 L95.4943931,65.9549007 C95.4943931,65.7047024 95.6972188,65.5018767 95.9474171,65.5018767 Z" id="Rectangle-Copy-13" fill="#4CAF50"></path>
+                                <path d="M115.354571,28.1017394 L127.282286,28.1017394 C127.532484,28.1017394 127.73531,28.3045651 127.73531,28.5547634 L127.73531,73.1696872 L127.73531,73.1696872 L114.901547,73.1696872 L114.901547,28.5547634 C114.901547,28.3045651 115.104373,28.1017394 115.354571,28.1017394 Z" id="Rectangle-Copy-16" fill="#4CAF50"></path>
+                                <path d="M135.387762,8.07154035 L147.315477,8.07154035 C147.565675,8.07154035 147.768501,8.27436611 147.768501,8.52456435 L147.768501,73.1696872 L147.768501,73.1696872 L134.934738,73.1696872 L134.934738,8.52456435 C134.934738,8.27436611 135.137564,8.07154035 135.387762,8.07154035 Z" id="Rectangle-Copy-19" fill="#4CAF50"></path>
+                                <text id="0" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="5.5339391" y="72.634148">0</tspan>
+                                </text>
+                                <text id="$-20B" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="0" y="56.2052162">$ 20B</tspan>
+                                </text>
+                                <text id="$-60B" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="0" y="20.839396">$ 60B</tspan>
+                                </text>
+                                <text id="$-40B" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="0" y="38.835278">$ 40B</tspan>
+                                </text>
+                                <text id="Q3-21" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="16.2759728" y="82.9643102">Q3 21</tspan>
+                                </text>
+                                <text id="Q4-21" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="36.3095408" y="82.9643102">Q4 21</tspan>
+                                </text>
+                                <text id="Q1-22" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="57.4382969" y="82.9643102">Q1 22</tspan>
+                                </text>
+                                <text id="Q2-22" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="77.0175444" y="82.9643102">Q2 22</tspan>
+                                </text>
+                                <text id="Q3-22" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="98.9289496" y="82.9643102">Q3 22</tspan>
+                                </text>
+                                <text id="Q4-22" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="117.709964" y="82.9643102">Q4 22</tspan>
+                                </text>
+                                <text id="Q1-23" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.00237837587" fill="#8D9AA9">
+                                    <tspan x="138.353608" y="82.9643102">Q1 23</tspan>
+                                </text>
+                                <text id="$-80B" font-family="Urbanist-Bold, Urbanist" font-size="2.718144" font-weight="bold" letter-spacing="-0.0284757998" fill="#8D9AA9">
+                                    <tspan x="0" y="3">$ 80B</tspan>
+                                </text>
+                            </g>
+                            <text id="Net-Income" font-family="Urbanist-Bold, Urbanist" font-size="5.436288" font-weight="bold" fill="#162C5B">
+                                <tspan x="72.1996802" y="10.28">Net Income</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <rect id="Rectangle" fill="#FFFFFF" x="11.443459" y="278.96" width="375.873614" height="46.64"></rect>
+                    <g id="Smart-Suggesion" transform="translate(39.1925, 290.4)">
+                        <g transform="translate(0.4195, 0)">
+                            <rect id="base" stroke="#E4E8EB" stroke-width="0.41184" fill="#FFFFFF" x="0.20592" y="0.20592" width="69.0954" height="12.78816" rx="2.0592"></rect>
+                            <text id="Looking-forward-to-i" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="5.76576" font-weight="normal" fill="#4285F4">
+                                <tspan x="3.51099964" y="9.77271683">Looking forward to it!</tspan>
+                            </text>
+                        </g>
+                        <g id="Smart-Suggesion-Copy" transform="translate(75.2421, 0)">
+                            <rect id="base" stroke="#E4E8EB" stroke-width="0.41184" fill="#FFFFFF" x="0.20592" y="0.20592" width="68.2489139" height="12.78816" rx="2.0592"></rect>
+                            <text id="You’re-welcome!" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="5.76576" font-weight="normal" fill="#4285F4">
+                                <tspan x="9.69016835" y="9.52">You’re welcome!</tspan>
+                            </text>
+                        </g>
+                        <g id="Smart-Suggesion-Copy-2" transform="translate(149.1169, 0)">
+                            <rect id="base" stroke="#E4E8EB" stroke-width="0.41184" fill="#FFFFFF" x="0.20592" y="0.20592" width="51.5238584" height="12.78816" rx="2.0592"></rect>
+                            <text id="This-is-great!" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="5.76576" font-weight="normal" fill="#4285F4">
+                                <tspan x="6.40359348" y="9.77271683">This is great!</tspan>
+                            </text>
+                        </g>
+                        <g id="Response-Action-Panel" transform="translate(0, 19.1547)">
+                            <g id="Btn-Reply" transform="translate(0, 0)">
+                                <rect id="Surface" stroke="#E4E8EB" stroke-width="0.41184" fill="#FFFFFF" x="0.20592" y="0.20592" width="36.1664647" height="13.1988267" rx="1.23552"></rect>
+                                <g id="baseline-reply-24px" transform="translate(5.8468, 3.4027)">
+                                    <polygon id="Shape" points="0 0 6.72704455 0 6.72704455 6.80533333 0 6.80533333"></polygon>
+                                    <path d="M2.80293523,2.41022222 L2.80293523,1.276 L0.840880569,3.26088889 L2.80293523,5.24577778 L2.80293523,4.0832 C4.20440284,4.0832 5.18543017,4.53688889 5.88616398,5.52933333 C5.60587046,4.11155556 4.76498989,2.69377778 2.80293523,2.41022222 Z" id="Shape" fill="#909191" fill-rule="nonzero" opacity="0.300000012"></path>
+                                    <path d="M2.80293523,1.276 L2.80293523,2.41022222 C4.76498989,2.69377778 5.60587046,4.11155556 5.88616398,5.52933333 C5.18543017,4.53688889 4.20440284,4.0832 2.80293523,4.0832 L2.80293523,5.24577778 L0.840880569,3.26088889 L2.80293523,1.276 Z M2.35979346,2.22456939 L1.45829511,3.14973044 L2.35979346,4.13856939 L2.35979346,3.61055309 C2.9536514,3.52258615 3.80501586,3.60321243 4.31569213,3.89781378 C4.18132192,3.19872464 3.30038492,2.92544574 2.35979346,2.78562792 L2.35979346,2.22456939 Z" id="Shape" fill="#909191" fill-rule="nonzero"></path>
+                                </g>
+                                <text id="Reply" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="4.94208" font-weight="normal" fill="#909191">
+                                    <tspan x="14.8500296" y="8.91490039">REPLY</tspan>
+                                </text>
+                            </g>
+                            <g id="Btn-Forward" transform="translate(40.0994, 0)">
+                                <rect id="Surface" stroke="#E4E8EB" stroke-width="0.41184" fill="#FFFFFF" x="0.20592" y="0.20592" width="42.473069" height="13.1988267" rx="1.23552"></rect>
+                                <g id="twotone-forward-24px" transform="translate(4.1256, 2.9773)">
+                                    <g id="Bounding_Boxes">
+                                        <polygon id="Shape" points="0 0 6.72704455 0 6.72704455 6.80533333 0 6.80533333"></polygon>
+                                    </g>
+                                    <g id="Duotone" transform="translate(1.1212, 1.1342)" fill="#909191" fill-rule="nonzero">
+                                        <g id="Group">
+                                            <polygon id="Shape" opacity="0.3" points="2.80293523 2.83555556 2.80293523 3.16731556 3.6914657 2.26844444 2.80293523 1.36957333 2.80293523 1.70133333 0.560587046 1.70133333 0.560587046 2.83555556"></polygon>
+                                            <path d="M4.48469637,2.26844444 L2.24234818,0 L2.24234818,1.13422222 L0,1.13422222 L0,3.40266667 L2.24234818,3.40266667 L2.24234818,4.53688889 L4.48469637,2.26844444 Z M0.560587046,2.83555556 L0.560587046,1.70133333 L2.80293523,1.70133333 L2.80293523,1.36957333 L3.6914657,2.26844444 L2.80293523,3.16731556 L2.80293523,2.83555556 L0.560587046,2.83555556 Z" id="Shape"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <text id="Forward" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="4.94208" font-weight="normal" fill="#909191">
+                                    <tspan x="13.2302491" y="8.91490039">FORWARD</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(176.0532, 124.08)">
+                        <g id="Button">
+                            <rect id="Rectangle" fill="#4B00FF" x="0" y="0" width="44.8935698" height="14.08" rx="1.8450432"></rect>
+                            <text id="Play" font-family="Urbanist-Bold, Urbanist" font-size="4.9201152" font-weight="bold" fill="#FFFFFF">
+                                <tspan x="17.6078516" y="8.75917949">Play</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-2" transform="translate(29.0488, 4.4)">
+                            <g id="icon-/-play" transform="translate(0.7336, 0.3667)">
+                                <mask id="mask-13" fill="white">
+                                    <use xlink:href="#path-12"></use>
+                                </mask>
+                                <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-12"></use>
+                                <g id="Icon-Color" mask="url(#mask-13)" fill="#FFFFFF">
+                                    <g transform="translate(-0.7336, -0.3667)" id="Shape">
+                                        <rect x="0" y="0" width="4.40133038" height="4.4"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.910620078 0.75862069 0.910620078 3.64137931 3.33894029 2.12413793"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

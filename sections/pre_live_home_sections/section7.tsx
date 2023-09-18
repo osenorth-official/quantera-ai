@@ -34,6 +34,7 @@ export default function Section7() {
             fontSize: "1rem", fontWeight: 900
           }}
           endIcon={<ArrowForwardIcon />}
+          disableElevation
         >
           Get in touch
         </Button>

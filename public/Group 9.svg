@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="367px" height="417px" viewBox="0 0 367 417" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="347" height="396.039604" rx="9.9"></rect>
+        <filter x="-4.9%" y="-3.3%" width="109.8%" height="108.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-PAGE-Pre-Live" transform="translate(-19, -2979)">
+            <g id="Discover-features" transform="translate(0, 2716)">
+                <g id="Calendar" transform="translate(29, 269)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <rect stroke="#000000" stroke-width="1.584" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.792" y="0.792" width="345.416" height="394.455604" rx="9.9"></rect>
+                    </g>
+                    <g id="Days" transform="translate(0, 99.0198)" fill="#000000" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="9.9" font-weight="normal" opacity="0.400000006">
+                        <text id="MON">
+                            <tspan x="12.7853481" y="10">MON</tspan>
+                        </text>
+                        <text id="TUE">
+                            <tspan x="64.4402239" y="10">TUE</tspan>
+                        </text>
+                        <text id="WED">
+                            <tspan x="112.411604" y="10">WED</tspan>
+                        </text>
+                        <text id="THU">
+                            <tspan x="162.857983" y="10">THU</tspan>
+                        </text>
+                        <text id="FRI">
+                            <tspan x="215.498992" y="10">FRI</tspan>
+                        </text>
+                        <text id="SAT">
+                            <tspan x="262.834703" y="10">SAT</tspan>
+                        </text>
+                        <text id="SUN">
+                            <tspan x="311.55535" y="10">SUN</tspan>
+                        </text>
+                    </g>
+                    <g id="Dates" transform="translate(0, 128.7153)">
+                        <rect id="Rectangle" fill="#FA1A64" x="203.242857" y="58.4529703" width="39.6571429" height="39.6039604" rx="19.8019802"></rect>
+                        <text id="1" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="22.0274428" y="11">1</tspan>
+                        </text>
+                        <text id="2" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="70.7693597" y="11">2</tspan>
+                        </text>
+                        <text id="3" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="120.201569" y="11">3</tspan>
+                        </text>
+                        <text id="4" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="169.674385" y="11">4</tspan>
+                        </text>
+                        <text id="5" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="219.396634" y="11">5</tspan>
+                        </text>
+                        <text id="6" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="268.857847" y="11">6</tspan>
+                        </text>
+                        <text id="7" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="318.82953" y="11">7</tspan>
+                        </text>
+                        <text id="8" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="20.989103" y="60.5049505">8</tspan>
+                        </text>
+                        <text id="9" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="70.5721331" y="60.5049505">9</tspan>
+                        </text>
+                        <text id="10" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="117.425896" y="60.5049505">10</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#FA1A64" x="70.3914286" y="85.1460396" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="75.3485714" y="85.1460396" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="19.8285714" y="85.1460396" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="24.7857143" y="85.1460396" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <text id="11" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="167.983457" y="60.5049505">11</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#D7D7D7" x="121.945714" y="85.1460396" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="121.945714" y="33.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="72.3742857" y="33.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="22.8028571" y="33.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <text id="12" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="216.725374" y="60.5049505">12</tspan>
+                        </text>
+                        <text id="13" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="266.157584" y="60.5049505">13</tspan>
+                        </text>
+                        <text id="14" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="315.630399" y="60.5049505">14</tspan>
+                        </text>
+                        <text id="15" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="18.3526479" y="110.009901">15</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#FA1A64" x="22.8028571" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <text id="16" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="67.8138616" y="110.009901">16</tspan>
+                        </text>
+                        <text id="17" font-family="Urbanist-SemiBold, Urbanist" font-size="11.88" font-weight="500" fill="#000000">
+                            <tspan x="118.867691" y="110.009901">17</tspan>
+                        </text>
+                        <text id="18" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="166.945117" y="110.009901">18</tspan>
+                        </text>
+                        <text id="19" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="216.528147" y="110.009901">19</tspan>
+                        </text>
+                        <text id="20" font-family="Urbanist-SemiBold, Urbanist" font-size="11.88" font-weight="500" fill="#000000">
+                            <tspan x="265.734637" y="110.009901">20</tspan>
+                        </text>
+                        <text id="21" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="315.868231" y="110.009901">21</tspan>
+                        </text>
+                        <text id="22" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="17.6101479" y="159.514851">22</tspan>
+                        </text>
+                        <text id="23" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="67.0423577" y="159.514851">23</tspan>
+                        </text>
+                        <text id="24" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="116.515173" y="159.514851">24</tspan>
+                        </text>
+                        <text id="25" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="166.237422" y="159.514851">25</tspan>
+                        </text>
+                        <text id="26" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="215.698636" y="159.514851">26</tspan>
+                        </text>
+                        <text id="27" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="265.670318" y="159.514851">27</tspan>
+                        </text>
+                        <text id="28" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="314.829891" y="159.514851">28</tspan>
+                        </text>
+                        <text id="29" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="17.4129213" y="209.019802">29</tspan>
+                        </text>
+                        <text id="30" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="66.8857366" y="209.019802">30</tspan>
+                        </text>
+                        <text id="31" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="117.443298" y="209.019802">31</tspan>
+                        </text>
+                        <text id="1" opacity="0.300000012" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="170.741729" y="209.019802">1</tspan>
+                        </text>
+                        <text id="2" opacity="0.300000012" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="219.483645" y="209.019802">2</tspan>
+                        </text>
+                        <text id="3" opacity="0.300000012" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="268.915855" y="209.019802">3</tspan>
+                        </text>
+                        <text id="4" opacity="0.300000012" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="11.88" font-weight="normal" fill="#000000">
+                            <tspan x="318.38867" y="209.019802">4</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#D7D7D7" x="70.3914286" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="75.3485714" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="69.4" y="233.660891" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="74.3571429" y="233.660891" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="118.971429" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="123.928571" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="19.8285714" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="24.7857143" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="169.534286" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="174.491429" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="219.105714" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="224.062857" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="118.971429" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="123.928571" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="169.534286" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="174.491429" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="218.114286" y="85.1460396" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="223.071429" y="85.1460396" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="218.114286" y="33.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="223.071429" y="33.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="223.071429" y="38.6113861" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="218.114286" y="38.6113861" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="222.08" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="227.037143" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="220.097143" y="138.611386" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="225.054286" y="138.611386" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="217.122857" y="134.65099" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="72.3742857" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="77.3314286" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="70.3914286" y="188.116337" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="75.3485714" y="188.116337" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="67.4171429" y="184.155941" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="171.517143" y="33.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="176.474286" y="33.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="169.534286" y="37.6212871" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="174.491429" y="37.6212871" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="166.56" y="33.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="171.517143" y="85.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="176.474286" y="85.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#D7D7D7" x="169.534286" y="89.6212871" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="174.491429" y="89.6212871" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                        <rect id="Rectangle" fill="#FA1A64" x="166.56" y="85.6608911" width="3.96571429" height="3.96039604" rx="1.98019802"></rect>
+                    </g>
+                    <g id="Header" transform="translate(29.7429, 15.8664)" fill="#000000">
+                        <text id="12" font-family=".SFNS-Regular, .AppleSystemUIFont" font-size="35.64" font-weight="normal">
+                            <tspan x="0" y="34">12</tspan>
+                        </text>
+                        <text id="Aug-2024" font-family="Urbanist-SemiBold, Urbanist" font-size="13.86" font-weight="500" line-spacing="23.76">
+                            <tspan x="243.571429" y="25.8701201">Aug 2024</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

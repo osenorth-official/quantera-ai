@@ -10,8 +10,8 @@ import Image from "next/image";
 
 const cardStyle = {
   display: "flex",
-  minHeight: 350,
-  minWidth: 300,
+  minHeight: 450,
+  minWidth: 450,
   alignItems: "center",
   justifyContent: "center",
   borderColor: "black",
@@ -43,16 +43,16 @@ export default function Section5() {
           Investment Fund Manager
         </Typography>
       </Grid>
-      <Grid item xs={12} sx={{ mt: "4.75rem" }}>
-        <Stack direction={"row"} spacing={0} sx={{ ml: "25%" }}>
+      <Grid item xs={12} sx={{ mt: "4.75rem",mb: "5rem", display:"flex", alignItems:"center", justifyContent: "center" }}>
+        <Stack direction={"row"} spacing={0} >
           <Card variant="outlined" style={cardStyle}>
             <CardContent>
               <Image
-                src="/noun-insight-4071852.png"
+                src="/noun-insight-407185221.svg"
                 alt="banner"
-                height={70}
-                width={70}
-                style={{ marginLeft: "30%", marginBottom: 4 }}
+                height={65}
+                width={65}
+                style={{ marginLeft: "auto", marginBottom: 4, marginRight: "auto" }}
               />
               <Typography variant="h3" align="center" sx={{ fontSize: "3rem", fontWeight: 900}}>
                 Create
@@ -65,11 +65,11 @@ export default function Section5() {
           <Card variant="outlined" style={cardStyle}>
             <CardContent>
               <Image
-                src="/noun-insight-4071852-1.png"
+                src="/noun-insight-4071852.svg"
                 alt="banner"
-                height={70}
-                width={70}
-                style={{ marginLeft: "30%", marginBottom: 4 }}
+                height={65}
+                width={65}
+                style={{ marginLeft: "auto", marginBottom: 4, marginRight: "auto" }}
               />
               <Typography variant="h3" align="center" sx={{ fontSize: "3rem", fontWeight: 900}}>
                 Insight
@@ -82,11 +82,11 @@ export default function Section5() {
           <Card variant="outlined" style={cardStyle}>
             <CardContent>
               <Image
-                src="/noun-insight-4071852-2.png"
+                src="/noun-insight-4071852-1.svg"
                 alt="banner"
-                height={70}
-                width={70}
-                style={{ marginLeft: "30%", marginBottom: 4 }}
+                height={65}
+                width={65}
+                style={{ marginLeft: "auto", marginBottom: 4, marginRight: "auto" }}
               />
               <Typography variant="h3" align="center" sx={{ fontSize: "3rem", fontWeight: 900}}>
                 Report

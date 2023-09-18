@@ -50,7 +50,9 @@ export default function TopBanner() {
                   color: "black",
                   textTransform: "none",
                   fontWeight: 900,
+                  
                 }}
+                disableElevation
               >
                 Get free premium report
               </Button>

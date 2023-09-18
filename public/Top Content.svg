@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="624px" height="188px" viewBox="0 0 624 188" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Top Content</title>
+    <defs>
+        <filter x="-1.3%" y="-4.6%" width="104.9%" height="117.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="7" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.195175918 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M29.4838895,17.4979297 L2.85327963,0.286851307 C2.28262371,-0.0956171022 1.52174914,-0.0956171022 0.951093211,0.286851307 C0.380437284,0.478085511 0,1.05178812 0,1.81672494 L0,36.2388817 C0,37.0038185 0.380437284,37.5775212 0.951093211,37.9599896 C1.33153049,38.1512238 1.52174914,38.1512238 1.90218642,38.1512238 C2.28262371,38.1512238 2.66306099,37.9599896 2.85327963,37.7687554 L29.4838895,20.557677 C30.0545455,20.1752086 30.4349827,19.601506 30.4349827,19.0278033 C30.4349827,18.4541007 30.0545455,17.6891639 29.4838895,17.4979297 Z M3.80437284,32.7966661 L3.80437284,5.25894062 L25.1088608,19.0278033 L3.80437284,32.7966661 Z" id="path-2"></path>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-PAGE-Pre-Live" transform="translate(-612, -3577)">
+            <g id="Discover-features" transform="translate(0, 2716)">
+                <g id="Top-Content" filter="url(#filter-1)" transform="translate(613, 862)">
+                    <rect id="Rectangle" stroke="#000000" stroke-width="1.76" fill="#FFFFFF" x="0" y="0" width="608" height="172" rx="13.9391999"></rect>
+                    <g id="Main-Stock-Info" transform="translate(147.3273, 40.8687)">
+                        <text id="Q2-Apple-earnings" font-family="Urbanist-Bold, Urbanist" font-size="42.768" font-weight="bold" fill="#162C5B">
+                            <tspan x="0" y="41">Q2 Apple earnings </tspan>
+                        </text>
+                        <text id="Available-for-2-week" font-family="Urbanist-Light, Urbanist" font-size="21.384" font-weight="300" fill="#8E98B0">
+                            <tspan x="1.39101628" y="83.8974314">Available for 2 weeks</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-2" transform="translate(47.2767, 50.7179)">
+                        <ellipse id="Oval" fill="#4B00FF" cx="34.6329114" cy="34.7307692" rx="34.6329114" ry="34.7307692"></ellipse>
+                        <g id="icon-/-play" transform="translate(23.351, 16.4445)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-2"></use>
+                            <g id="Icon-Color" mask="url(#mask-3)" fill="#FFFFFF">
+                                <g transform="translate(-7.6087, -3.8151)" id="Shape">
+                                    <rect x="0" y="0" width="45.6524741" height="45.7814685"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="Path-2" fill="#FFFFFF" points="25.1875719 20.5227273 25.1875719 50.5174825 50.3751438 34.7307692"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

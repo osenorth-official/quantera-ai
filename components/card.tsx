@@ -7,7 +7,7 @@ interface Props {
 
 export default function CustomCard({ children }: Props,) {
   return (
-    <Card variant="outlined" style={{marginLeft: "5%", borderColor: 'black', minWidth: 320}}>
+    <Card variant="outlined" style={{marginLeft: "5%", borderColor: 'black', width: 350}}>
       <CardContent>{children}</CardContent>
     </Card>
   );

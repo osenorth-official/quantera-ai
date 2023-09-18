@@ -62,7 +62,7 @@ export default function Footer() {
             <LinkedInIcon style={{ color: "white", fontSize: 35 }} />
           </IconButton>
           <IconButton aria-label="delete">
-            <LinkedInIcon style={{ color: "white", fontSize: 35 }} />
+           <Image src="/discord-mark-white.svg" alt="banner" height={30} width={30} />
           </IconButton>
         </Stack>
         <Typography

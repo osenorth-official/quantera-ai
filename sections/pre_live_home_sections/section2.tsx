@@ -43,10 +43,10 @@ export default function Section2() {
           </Typography>
         </Grid>
         <Grid item xs={12} sx={{ mb: 8}}>
-          <Stack direction="row" spacing={1} alignItems={"center"} sx={{ml: 25}}>
+          <Stack direction="row" spacing={10} alignItems={"center"} sx={{ml: 25}}>
             <CustomCard>
               <Stack direction="row" spacing={10} sx={{m: 3}}>
-                <Typography variant="h2" sx={{ fontWeight: "900", fontSize: "5rem" }}>
+                <Typography variant="h2" sx={{ fontWeight: "900", fontSize: "5rem", }} >
                   2
                 </Typography>
                 <Image
@@ -54,6 +54,7 @@ export default function Section2() {
                   alt="banner"
                   height={20}
                   width={60}
+                  style={{ marginLeft: "auto"}}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600}}>Clicks away are all<br /> your answers.</Typography>
@@ -66,8 +67,9 @@ export default function Section2() {
                 <Image
                   src="/Group 8-svg.svg"
                   alt="banner"
-                  height={20}
-                  width={60}
+                  height={15}
+                  width={45}
+                  style={{ marginLeft: "auto"}}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2,fontWeight: 600}}>Publically traded<br /> companies.</Typography>
@@ -82,6 +84,7 @@ export default function Section2() {
                   alt="banner"
                   height={20}
                   width={60}
+                  style={{ marginLeft: "auto"}}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600}}>Speeden your research<br /> by many folds.</Typography>

@@ -18,16 +18,16 @@ export default function Section2() {
         <Grid item xs={12}>
           <Stack direction="row" spacing={20} height={30} sx={{mt: 6.5}}>
             <Image
-              src="/Bitmap-1.png"
+              src="/Bitmap1111.svg"
               alt="banner"
               height={40}
               width={200}
-              style={{ marginLeft: "25%" }}
+              style={{ marginLeft: "25%", filter: "grayscale(100%)" }}
             />
 
-            <Image src="/Bitmap-3.png" alt="banner" height={60} width={100} />
+            <Image src="/Bitmap1.svg" alt="banner" height={60} width={100} style={{filter: "grayscale(100%)"}}/>
 
-            <Image src="/Bitmap-4.png" alt="banner" height={60} width={150} />
+            <Image src="/Bitmap111.svg" alt="banner" height={60} width={150} style={{filter: "grayscale(100%)"}}/>
           </Stack>
         </Grid>
         <Grid item xs={12}>

@@ -98,10 +98,10 @@ export default function CustomTable() {
     <TableContainer
       component={Paper}
       sx={{
-        ml: "13%",
+        ml: "7%",
         mt: 10,
         minWidth: 650,
-        maxWidth: "75vw",
+        maxWidth: "85vw",
         borderColor: "black",
         borderWidth: 2,
         borderRadius: 5,

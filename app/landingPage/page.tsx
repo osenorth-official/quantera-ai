@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar currRef={ref}/>
-      <Box sx={{ display: "flex", minHeight: "125vh", minWidth: "100vw" }}>
+      <Box sx={{ display: "flex", minHeight: "90vh", minWidth: "100vw" }}>
         <TopBanner />
       </Box>
       <Box

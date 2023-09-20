@@ -31,7 +31,8 @@ export default function Section5() {
       <Grid item xs={4} sx={{ mt: "8.25rem" }}>
         <Rating
           name="read-only"
-          value={5}
+          value={4.5}
+          precision={0.5}
           readOnly
           style={{ color: "black", fontSize: 18,  }}
         />

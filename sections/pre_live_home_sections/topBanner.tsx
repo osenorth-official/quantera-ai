@@ -45,8 +45,8 @@ export default function TopBanner() {
       //     backgroundAttachment: "scroll"
       //   }}
     >
-      <Grid item xs={!md ? 6 : 12} sx={{ m: 15 }}>
-        <Typography variant="h2" component="h2" style={{ fontWeight: 900 }}>
+      <Grid item xs={!md ? 7 : 12} sx={{ m: 15 }}>
+        <Typography variant="h1" component="h1" style={{ fontWeight: 900 }}>
           <span style={{ backgroundColor: "black", color: "white" }}>
             Empowering
           </span>
@@ -96,15 +96,15 @@ export default function TopBanner() {
       </Grid>
       <Grid
         item
-        xs={9.5}
+        xs={9.3}
         sx={{
           ml: "auto",
           mr: "auto",
-          mt: 12,
+          mt: 2,
           p: 0,
           position: "relative",
           display: { lg: "block", xs: "none" },
-          minHeight: "80vh",
+          minHeight: "75vh",
         }}
       >
         <Image src="/Banner.png" alt="banner" fill objectFit={"contain"} />

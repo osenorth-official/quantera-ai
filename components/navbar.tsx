@@ -23,7 +23,7 @@ export default function Navbar({currRef}: {currRef: any}) {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <Image src="/logo_black.png" alt="logo" width={110} height={20} />
+            <Image src="/logo AI_dark.png" alt="logo" width={150} height={60} />
           </IconButton>
           <Box
             sx={{

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon / send</title>
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgb(255,100,50);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(123,46,255);stop-opacity:1" />
+          </linearGradient>
+        <path d="M23,2.9 C23,2.8 23,2.7 22.9,2.6 C22.9,2.6 22.9,2.5 22.9,2.5 C22.9,2.4 22.8,2.3 22.7,2.2 C22.6,2.1 22.5,2.1 22.4,2 C22.4,2 22.3,2 22.3,2 C22.2,2 22.1,2 22,1.9 C22,2 22,2 22,2 C21.9,2 21.8,2 21.7,2.1 L1.7,9.1 C1.3,9.2 1,9.5 1,10 C1,10.4 1.2,10.8 1.6,11 L10.2,14.8 L14,23.4 C14.2,23.8 14.5,24 14.9,24 C14.9,24 14.9,24 14.9,24 C15.3,24 15.7,23.7 15.8,23.3 L22.8,3.3 C23,3.2 23,3.1 23,2.9 C23,3 23,3 23,2.9 Z M18.2,5.4 L10.8,12.8 L4.7,10.1 L18.2,5.4 Z M14.9,20.3 L12.2,14.2 L19.6,6.8 L14.9,20.3 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-/-send" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Icon-Color" mask="url(#mask-2)" fill="url(#grad1)">
+            <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

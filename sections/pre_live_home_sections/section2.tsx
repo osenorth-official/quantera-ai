@@ -42,7 +42,7 @@ export default function Section2() {
             investors can get the most by saving them time.
           </Typography>
         </Grid>
-        <Grid item xs={12} sx={{ mb: 8}}>
+        <Grid item xs={12} sx={{ mt: 6.5,mb: 8}}>
           <Stack direction="row" spacing={10} alignItems={"center"} sx={{ml: 25}}>
             <CustomCard>
               <Stack direction="row" spacing={10} sx={{m: 3}}>
@@ -57,7 +57,7 @@ export default function Section2() {
                   style={{ marginLeft: "auto"}}
                 />
               </Stack>
-              <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600}}>Clicks away are all<br /> your answers.</Typography>
+              <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600, fontSize: "1.5rem"}}>Clicks away are all<br /> your answers.</Typography>
             </CustomCard>
             <CustomCard>
             <Stack direction="row" spacing={8} sx={{m: 3}}>
@@ -72,11 +72,11 @@ export default function Section2() {
                   style={{ marginLeft: "auto"}}
                 />
               </Stack>
-              <Typography variant="body1" align="left" sx={{m: 2,fontWeight: 600}}>Publically traded<br /> companies.</Typography>
+              <Typography variant="body1" align="left" sx={{m: 2,fontWeight: 600, fontSize: "1.5rem"}}>Publically traded<br /> companies.</Typography>
             </CustomCard>
             <CustomCard>
             <Stack direction="row" spacing={8} sx={{m: 3}}>
-                <Typography variant="h2" sx={{ fontWeight: "900", fontSize: "5rem" }}>
+                <Typography variant="h2" sx={{ fontWeight: "900", fontSize: "5rem",  }}>
                   8x
                 </Typography>
                 <Image
@@ -87,7 +87,7 @@ export default function Section2() {
                   style={{ marginLeft: "auto"}}
                 />
               </Stack>
-              <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600}}>Speeden your research<br /> by many folds.</Typography>
+              <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600, fontSize: "1.5rem"}}>Speeden your research<br /> by many folds.</Typography>
             </CustomCard>
           </Stack>
         </Grid>

@@ -45,13 +45,13 @@ export default function TopBanner() {
       //     backgroundAttachment: "scroll"
       //   }}
     >
-      <Grid item xs={!md ? 6 : 12} sx={{ m: 5 }}>
+      <Grid item xs={!md ? 6 : 12} sx={{ m: 15 }}>
         <Typography variant="h2" component="h2" style={{ fontWeight: 900 }}>
           <span style={{ backgroundColor: "black", color: "white" }}>
             Empowering
           </span>
           <span> </span>
-          investors through AI powered insights.
+          investors <br /> through AI powered <br />insights.
         </Typography>
         <Typography variant="body1" sx={{ mt: 1 }} style={{ fontWeight: 600 }}>
           Eliminate hours wasted finding, cleaning, visualizing and transforming

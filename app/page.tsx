@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from "react";
 import { Box } from "@mui/material";
 import {
   TopBanner,
@@ -16,9 +17,10 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/theme/theme";
 
 export default function Home() {
+  const ref = useRef(null);
   return (
     <ThemeProvider theme={theme}>
-      <Navbar />
+      <Navbar currRef={ref}/>
       <Box sx={{ display: "flex", minHeight: "125vh", minWidth: "100vw" }}>
         <TopBanner />
       </Box>
@@ -58,7 +60,7 @@ export default function Home() {
         <Section5 />
       </Box>
       <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
-        <Section6 />
+        <Section6 currRef={ref}/>
       </Box>
       <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw", }}>
         <CustomTable />

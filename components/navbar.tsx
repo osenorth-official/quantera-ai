@@ -8,7 +8,10 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 
-export default function Navbar() {
+export default function Navbar({currRef}: {currRef: any}) {
+  const onPricingClick = () => {
+    currRef.current?.scrollIntoView({behavior: 'instant'});
+  }
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="relative" color="transparent" elevation={0}>
@@ -32,7 +35,7 @@ export default function Navbar() {
             <Typography variant="h6" component="div" sx={{ p: 1, mr: 4 }}>
               Blog
             </Typography>
-            <Typography variant="h6" component="div" sx={{ p: 1, ml: 4 }}>
+            <Typography variant="h6" component="div" sx={{ p: 1, ml: 4, cursor: "pointer" }} onClick={onPricingClick}>
               Pricing
             </Typography>
           </Box>

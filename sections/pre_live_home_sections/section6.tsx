@@ -1,7 +1,7 @@
 import { Grid, Typography, Stack, Rating, Avatar } from "@mui/material";
 import ReviewCard from "@/components/reviewCard";
 
-export default function Section6() {
+export default function Section6({currRef}: {currRef: any}) {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} sx={{ mt: 10 }}>
@@ -31,7 +31,7 @@ export default function Section6() {
           <ReviewCard />
         </Stack>
       </Grid>
-      <Grid item xs={12} sx={{ mt: 10 }}>
+      <Grid item xs={12} sx={{ mt: 10 }} ref={currRef}>
         <Typography variant="h3" align="center" sx={{ fontSize: "5.125rem", fontWeight: 900}}>
           There is something for <br />
           <span

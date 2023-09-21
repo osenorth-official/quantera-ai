@@ -7,11 +7,14 @@ import {
   IconButton,
 } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-export default function Navbar({currRef}: {currRef: any}) {
+export default function Navbar({ currRef }: { currRef: any }) {
+  const { push } = useRouter();
   const onPricingClick = () => {
-    currRef.current?.scrollIntoView({behavior: 'instant'});
-  }
+    currRef.current?.scrollIntoView({ behavior: "instant" });
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="relative" color="transparent" elevation={0}>
@@ -22,6 +25,7 @@ export default function Navbar({currRef}: {currRef: any}) {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
+            onClick={() => push("/landingPage")}
           >
             <Image src="/logo AI_dark.png" alt="logo" width={150} height={60} />
           </IconButton>
@@ -32,12 +36,23 @@ export default function Navbar({currRef}: {currRef: any}) {
               flexGrow: 1,
             }}
           >
-            <Typography variant="h6" component="div" sx={{ p: 1, mr: 4 }}>
-              Blog
-            </Typography>
-            <Typography variant="h6" component="div" sx={{ p: 1, ml: 4, cursor: "pointer" }} onClick={onPricingClick}>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ p: 1, mr: 4, cursor: "pointer" }}
+              onClick={onPricingClick}
+            >
               Pricing
             </Typography>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ p: 1, ml: 4, cursor: "pointer" }}
+              onClick={() => push("/blog")}
+            >
+              Blog
+            </Typography>
+            
           </Box>
           <Button
             variant="contained"

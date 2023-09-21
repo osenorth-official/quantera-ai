@@ -144,7 +144,7 @@ export default function CustomTable() {
               <Typography variant="h4" sx={{ fontSize: "3.125rem", fontWeight: 900}}>
                 <span style={{ fontSize: "2rem", fontWeight: 900, position:"relative",bottom: 10 }}>$</span> 0
               </Typography>
-              <Typography variant="caption" sx={{ fontSize: "0.875rem", fontWeight: 600, ml: 4}}>/year</Typography>
+              <Typography variant="caption" sx={{ fontSize: "0.875rem", fontWeight: 600, ml: 4}}>{alignment === "Annually" ? `/year`: `/month`}</Typography>
               <Typography variant="body1" sx={{ mt: 2, fontSize: "1.375rem", fontWeight: 500 }}>
                 Base features that covers 80%+ of the platform.
               </Typography>
@@ -169,9 +169,9 @@ export default function CustomTable() {
             </TableCell>
             <TableCell>
               <Typography variant="h4" sx={{ fontSize: "3.125rem", fontWeight: 900}} >
-                <span style={{ fontSize: "2rem", fontWeight: 900, position:"relative",bottom: 10}}>$</span> 199
+                <span style={{ fontSize: "2rem", fontWeight: 900, position:"relative",bottom: 10}}>$</span> {alignment === "Annually" ? 199 : 20}
               </Typography>
-              <Typography variant="caption" sx={{ fontSize: "0.875rem", fontWeight: 600, ml: 4}}>/year</Typography>
+              <Typography variant="caption" sx={{ fontSize: "0.875rem", fontWeight: 600, ml: 4}}>{alignment === "Annually" ? `/year`: `/month`}</Typography>
               <Typography variant="body1" sx={{ mt: 2, fontSize: "1.375rem", fontWeight: 500 }}>
                 Listen to live earnings all in one spot and insights delivered
                 to you.

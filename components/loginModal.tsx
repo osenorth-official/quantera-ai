@@ -324,7 +324,7 @@ export default function LoginModal(props: any) {
                 align="center"
                 sx={{ fontWeight: 600, fontSize: "1.125rem", color: "#6D7385" }}
               >
-                Don't have an account?{" "}
+                Dont have an account?{" "}
                 <span
                   style={{
                     color: "#6787E7",

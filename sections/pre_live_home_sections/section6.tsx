@@ -14,21 +14,27 @@ export default function Section6({currRef}: {currRef: any}) {
           See how our users get the most out of our platform.
         </Typography>
       </Grid>
-      <Grid item xs={12} sx={{ mt: 10, mr: "2%" }}>
+      <Grid item xs={12} sx={{ mt: 10, mr: "10%" , ml: '10%' }}>
         <Stack direction="row" spacing={1}>
           <ReviewCard />
           <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          
+        </Stack>
+      </Grid>
+      <Grid item xs={12} sx={{ mt: 3 }}>
+        <Stack direction="row" spacing={1} sx={{ml: "20%", mr: "20%"}}>
           <ReviewCard />
           <ReviewCard />
           <ReviewCard />
         </Stack>
       </Grid>
       <Grid item xs={12} sx={{ mt: 3 }}>
-        <Stack direction="row" spacing={1} sx={{ml: "10%", mr: "10%"}}>
+        <Stack direction="row" spacing={1} sx={{ml: "30%", mr: "30%"}}>
           <ReviewCard />
           <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
+         
         </Stack>
       </Grid>
       <Grid item xs={12} sx={{ mt: 10 }} ref={currRef}>

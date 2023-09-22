@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Box } from "@mui/material";
 import {
   TopBanner,
@@ -15,12 +15,15 @@ import Footer from "@/components/footer";
 import CustomTable from "@/components/customTable";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/theme/theme";
+import LoginModal from "@/components/loginModal";
 
 export default function Home() {
   const ref = useRef(null);
+  const [open, setOpen] = useState(false)
   return (
     <ThemeProvider theme={theme}>
-      <Navbar currRef={ref}/>
+      <Navbar currRef={ref} setOpen={setOpen}/>
+      <LoginModal open={open} handleClose={() => setOpen(!open)}/>
       <Box sx={{ display: "flex", minHeight: "90vh", minWidth: "100vw" }}>
         <TopBanner />
       </Box>

@@ -8,11 +8,36 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import { useEffect, useState } from "react";
 
-export default function Navbar({ currRef }: { currRef: any }) {
+export default function Navbar(props: any) {
   const { push } = useRouter();
+  const supabase = createClientComponentClient();
+  const [userDet, setUserDet] = useState({});
+  const [user, setUser] = useState(false);
+
+  useEffect(() => {
+    console.log(userDet);
+    supabase.auth
+      .getUser()
+      .then((data) => {
+        if (!data.error) {
+          setUserDet(data);
+          setUser(true);
+          console.log(data);
+        }
+      })
+      .catch((err) => console.log("error"));
+  }, []);
+
   const onPricingClick = () => {
-    currRef.current?.scrollIntoView({ behavior: "instant" });
+    props.currRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const Logout = async () => {
+    const { error } = await supabase.auth.signOut();
+    setUserDet({});
   };
 
   return (
@@ -53,6 +78,7 @@ export default function Navbar({ currRef }: { currRef: any }) {
               Blog
             </Typography>
           </Box>
+
           <Button
             variant="contained"
             style={{
@@ -60,8 +86,9 @@ export default function Navbar({ currRef }: { currRef: any }) {
               color: "white",
               textTransform: "none",
             }}
+            onClick={() => (user ? Logout() : props.setOpen(true))}
           >
-            Login
+            {user ? "Logout" : "Login"}
           </Button>
         </Toolbar>
       </AppBar>

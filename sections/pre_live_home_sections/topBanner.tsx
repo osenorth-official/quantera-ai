@@ -15,22 +15,22 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 export default function TopBanner() {
   const supabase = createClientComponentClient();
   const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState(false)
+  const [emailError, setEmailError] = useState(false);
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.down("md"));
 
   const onGetPremiumReport = async () => {
     setEmailError(false);
-    if(!email.match(/.+@.+/)){
+    if (!email.match(/.+@.+/)) {
       setEmailError(true);
-      return
+      return;
     }
     await supabase.from("email").insert([
       {
         email: email,
       },
     ]);
-    setEmail("")
+    setEmail("");
   };
   return (
     <Grid
@@ -46,28 +46,15 @@ export default function TopBanner() {
       //   }}
     >
       <Grid item xs={!md ? 7 : 12} sx={{ m: 15 }}>
-      <Typography
-  variant="h1"
-  component="h1"
-  style={{
-    fontWeight: 500,
-    fontSize: 82,
-  }}
->
-  <span style={{ backgroundColor: "black", color: "white" }}>
-    Empowering I
-  </span>
-  <span>
-    nvestors
-  </span>
-  <br />
-  through AI powered
-  <br />
-  insights.
-</Typography>
-
-
-        <Typography variant="body1" sx={{ mt: 1 }} style={{ fontWeight: 300 }}>
+        <Typography variant="h1" component="h1" style={{ fontWeight: 900 }}>
+          <span style={{ backgroundColor: "black", color: "white" }}>
+            Empowering
+          </span>
+          <span> </span>
+          investors <br /> through AI powered <br />
+          insights.
+        </Typography>
+        <Typography variant="body1" sx={{ mt: 1 }} style={{ fontWeight: 600 }}>
           Eliminate hours wasted finding, cleaning, visualizing and transforming
           data using <br /> the power of AI. <br />
           Register and get a free premium report to your inbox.
@@ -82,7 +69,7 @@ export default function TopBanner() {
               value={email}
               size="small"
               error={emailError}
-              helperText={emailError ? "Please enter a valid email.": ""}
+              helperText={emailError ? "Please enter a valid email." : ""}
               onChange={({ target }) => setEmail(target.value)}
               InputProps={{
                 endAdornment: (

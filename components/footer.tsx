@@ -57,7 +57,7 @@ export default function Footer() {
           taken a back seat. We bring data back to
           <br /> being readable.
         </Typography>
-        <Stack direction="row" spacing={1}>
+        <Stack direction="row" spacing={1} sx={{ ml: -1.25}}>
           <IconButton aria-label="delete">
             <LinkedInIcon style={{ color: "white", fontSize: 35 }} />
           </IconButton>

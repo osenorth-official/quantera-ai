@@ -1,7 +1,9 @@
 import { CardContent, Card, CardMedia, Typography } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 export default function BlogCards(props: any) {
     const item = props.item
+    const { push } = useRouter();
   return (
     <Card
       variant="outlined"
@@ -11,8 +13,10 @@ export default function BlogCards(props: any) {
         width: 500,
         borderWidth: 2.5,
         borderRadius: 10,
+        cursor: "pointer"
       }}
       sx={{ boxShadow: 5 }}
+      onClick={() => push(`/blog/${item.sequence}`)}
     >
       <CardMedia
         component="img"

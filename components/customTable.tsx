@@ -12,10 +12,32 @@ import {
   Button,
   Stack,
 } from "@mui/material";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CloseIcon from "@mui/icons-material/Close";
 import CheckIcon from "@mui/icons-material/Check";
+
+const theme = createTheme({
+  components: {
+    MuiToggleButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: '50px', // Capsule-like shape
+          color: 'black', // Font color
+          backgroundColor: 'white', // Background color for non-selected items
+          '&.Mui-selected': {
+            backgroundColor: '#F6F8FB', // Background color for selected item
+            color: 'black', // Font color for selected item
+          },
+          '&:hover': {
+            backgroundColor: '#F6F8FB', // Background color on hover
+          },
+        },
+      },
+    },
+  },
+});
 
 const tableData = [
   {
@@ -129,16 +151,19 @@ export default function CustomTable() {
             <TableCell >
             <Typography variant="body1" sx={{ fontSize:"1.375rem", fontWeight: 600}}>Pricing</Typography>
               <br />
+              <ThemeProvider theme={theme}>
               <ToggleButtonGroup
-                color="primary"
+              color="primary"
                 value={alignment}
                 exclusive
                 onChange={(_, val) => setAlignment(val)}
-                sx={{ m: 5, borderRadius: 15 }}
+                sx={{ m: 5 }}
               >
                 <ToggleButton value="Monthly">Monthly</ToggleButton>
                 <ToggleButton value="Annually">Annually</ToggleButton>
               </ToggleButtonGroup>
+            </ThemeProvider>
+            
             </TableCell>
             <TableCell>
               <Typography variant="h4" sx={{ fontSize: "3.125rem", fontWeight: 900}}>

@@ -43,9 +43,9 @@ export default function Section2() {
           </Typography>
         </Grid>
         <Grid item xs={12} sx={{ mt: 6.5,mb: 8}}>
-          <Stack direction="row" spacing={10} alignItems={"center"} sx={{ml: 25}}>
+          <Stack direction="row" spacing={10} alignItems={"center"} justifyContent={"center"} sx={{ml: 25, mr: 25}}>
             <CustomCard>
-              <Stack direction="row" spacing={10} sx={{m: 3}}>
+              <Stack direction="row" alignItems={"center"} justifyContent={"center"} spacing={10} sx={{m: 3}}>
                 <Typography variant="h2" sx={{ fontWeight: "900", fontSize: "5rem", }} >
                   2
                 </Typography>
@@ -54,7 +54,7 @@ export default function Section2() {
                   alt="banner"
                   height={20}
                   width={60}
-                  style={{ marginLeft: "auto"}}
+                  // style={{ marginLeft: "auto"}}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600, fontSize: "1.5rem"}}>Clicks away are all<br /> your answers.</Typography>
@@ -69,7 +69,7 @@ export default function Section2() {
                   alt="banner"
                   height={15}
                   width={45}
-                  style={{ marginLeft: "auto"}}
+                  // style={{ marginLeft: "auto"}}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2,fontWeight: 600, fontSize: "1.5rem"}}>Publically traded<br /> companies.</Typography>
@@ -84,7 +84,7 @@ export default function Section2() {
                   alt="banner"
                   height={20}
                   width={60}
-                  style={{ marginLeft: "auto"}}
+                  // style={{ marginLeft: "auto"}}
                 />
               </Stack>
               <Typography variant="body1" align="left" sx={{m: 2, fontWeight: 600, fontSize: "1.5rem"}}>Speeden your research<br /> by many folds.</Typography>

@@ -39,7 +39,7 @@ export default function Navbar({ currRef }: { currRef: any }) {
             <Typography
               variant="h6"
               component="div"
-              sx={{ p: 1, mr: 4, cursor: "pointer" }}
+              sx={{ p: 1, mr: 4, ml: -14, cursor: "pointer" }}
               onClick={onPricingClick}
             >
               Pricing
@@ -52,7 +52,6 @@ export default function Navbar({ currRef }: { currRef: any }) {
             >
               Blog
             </Typography>
-            
           </Box>
           <Button
             variant="contained"

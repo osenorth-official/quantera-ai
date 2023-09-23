@@ -16,6 +16,9 @@ import { useState } from "react";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import { logIn } from "@/redux/features/authSlice";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "@/redux/store";
 
 const style = {
   position: "absolute",
@@ -40,6 +43,7 @@ export default function LoginModal(props: any) {
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
+  const dispatch = useDispatch<AppDispatch>();
 
   const onSubmitClick = async () => {
     if (signup) {
@@ -85,6 +89,11 @@ export default function LoginModal(props: any) {
           password: password,
         })
         props.handleClose();
+        const tempData = {
+          email:  data.user!.email,
+          userName: data.user!.user_metadata.name
+        }
+        dispatch(logIn(tempData))
       }catch(err){
         console.log("Error while signing in")
       }

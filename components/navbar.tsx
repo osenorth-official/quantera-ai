@@ -9,27 +9,23 @@ import {
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
+import { useAppSelector } from "@/redux/store";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "@/redux/store";
+import { logOut } from "@/redux/features/authSlice";
 
 export default function Navbar(props: any) {
   const { push } = useRouter();
   const supabase = createClientComponentClient();
   const [userDet, setUserDet] = useState({});
   const [user, setUser] = useState(false);
+  const userDetails = useAppSelector((state) => state.authReducer.value);
+  const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
-    console.log(userDet);
-    supabase.auth
-      .getUser()
-      .then((data) => {
-        if (!data.error) {
-          setUserDet(data);
-          setUser(true);
-          console.log(data);
-        }
-      })
-      .catch((err) => console.log("error"));
-  }, []);
+    setUser(userDetails as unknown as SetStateAction<boolean>);
+  }, [userDetails]);
 
   const onPricingClick = () => {
     props.currRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -38,6 +34,7 @@ export default function Navbar(props: any) {
   const Logout = async () => {
     const { error } = await supabase.auth.signOut();
     setUserDet({});
+    dispatch(logOut());
   };
 
   return (
@@ -86,9 +83,9 @@ export default function Navbar(props: any) {
               color: "white",
               textTransform: "none",
             }}
-            onClick={() => (user ? Logout() : props.setOpen(true))}
+            onClick={() => (userDetails?.email ? Logout() : props.setOpen(true))}
           >
-            {user ? "Logout" : "Login"}
+            {userDetails?.email ? "Logout" : "Login"}
           </Button>
         </Toolbar>
       </AppBar>

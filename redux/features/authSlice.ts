@@ -8,7 +8,7 @@ type AuthState = {
   email: string;
   userName: string;
 };
-const localStorageObj = JSON.parse(localStorage.getItem("user") || "{}");
+const localStorageObj = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem("user") || "{}") : null;
 const initialState = {
   value: !localStorageObj
     ? {

@@ -16,14 +16,28 @@ import CustomTable from "@/components/customTable";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/theme/theme";
 import LoginModal from "@/components/loginModal";
+import ForgotPasswordModal from "@/components/forgotPasswordModal";
 
 export default function Home() {
   const ref = useRef(null);
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [openForgot, setOpenForgot] = useState(false);
   return (
     <ThemeProvider theme={theme}>
-      <Navbar currRef={ref} setOpen={setOpen}/>
-      <LoginModal open={open} handleClose={() => setOpen(!open)}/>
+      <Navbar currRef={ref} setOpen={setOpen} />
+      <LoginModal
+        open={open}
+        handleClose={() => setOpen(!open)}
+        openForgot={() => {
+          setOpen(!open);
+          setOpenForgot(!openForgot);
+        }}
+      />
+      <ForgotPasswordModal
+        open={openForgot}
+        handleClose={() => setOpenForgot(!openForgot)}
+        handleBack={() => {setOpenForgot(!openForgot); setOpen(!open)}}
+      />
       <Box sx={{ display: "flex", minHeight: "90vh", minWidth: "100vw" }}>
         <TopBanner />
       </Box>
@@ -47,7 +61,15 @@ export default function Home() {
       >
         <Section3 />
       </Box>
-      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw", pl: "10%", pr: "10%" }}>
+      <Box
+        sx={{
+          display: "flex",
+          minHeight: "100vh",
+          minWidth: "100vw",
+          pl: "10%",
+          pr: "10%",
+        }}
+      >
         <Section4 />
       </Box>
       <Box
@@ -57,15 +79,15 @@ export default function Home() {
           minHeight: "100vh",
           minWidth: "100vw",
           pl: "10%",
-          pr: "10%"
+          pr: "10%",
         }}
       >
         <Section5 />
       </Box>
       <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
-        <Section6 currRef={ref}/>
+        <Section6 currRef={ref} />
       </Box>
-      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw", }}>
+      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
         <CustomTable />
       </Box>
       <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>

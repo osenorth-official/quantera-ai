@@ -36,14 +36,6 @@ export default function TopBanner() {
     <Grid
       container
       spacing={2}
-      //   sx={{
-      //     backgroundImage: "url('/Banner.png')",
-      //     backgroundRepeat: "no-repeat",
-      //     backgroundPositionY: "100%",
-      //     backgroundPositionX: "50%",
-      //     backgroundSize: "60% 50%",
-      //     backgroundAttachment: "scroll"
-      //   }}
     >
       <Grid item xs={!md ? 7 : 12} sx={{ m: 15 }}>
         <Typography variant="h1" component="h1" style={{ fontWeight: 900 }}>

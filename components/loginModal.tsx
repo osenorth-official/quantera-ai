@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
@@ -45,6 +45,12 @@ export default function LoginModal(props: any) {
   const [passwordError, setPasswordError] = useState(false);
   const dispatch = useDispatch<AppDispatch>();
 
+  useEffect(() => {
+    setEmail("");
+    setPassword("");
+    setName("");
+  }, [signup]);
+
   const onSubmitClick = async () => {
     if (signup) {
       try {
@@ -75,7 +81,7 @@ export default function LoginModal(props: any) {
         console.log("error: ", err);
       }
     } else {
-      try{
+      try {
         if (email === "") {
           setEmailError(true);
           return;
@@ -85,17 +91,17 @@ export default function LoginModal(props: any) {
           return;
         }
         const { data, error } = await supabase.auth.signInWithPassword({
-          email:email,
+          email: email,
           password: password,
-        })
+        });
         props.handleClose();
         const tempData = {
-          email:  data.user!.email,
-          userName: data.user!.user_metadata.name
-        }
-        dispatch(logIn(tempData))
-      }catch(err){
-        console.log("Error while signing in")
+          email: data.user!.email,
+          userName: data.user!.user_metadata.name,
+        };
+        dispatch(logIn(tempData));
+      } catch (err) {
+        console.log("Error while signing in");
       }
     }
   };
@@ -228,7 +234,7 @@ export default function LoginModal(props: any) {
                     setName(target.value);
                   }}
                   InputProps={{
-                    style: { fontWeight: 700, fontSize: "1.5rem" },
+                    style: { fontWeight: 500, fontSize: "1.25rem" },
                   }}
                 />
               ) : null}
@@ -251,7 +257,7 @@ export default function LoginModal(props: any) {
                   setEmailError(false);
                   setEmail(target.value);
                 }}
-                InputProps={{ style: { fontWeight: 700, fontSize: "1.5rem" } }}
+                InputProps={{ style: { fontWeight: 500, fontSize: "1.25rem" } }}
               />
               <TextField
                 id="outlined-basic"
@@ -274,7 +280,7 @@ export default function LoginModal(props: any) {
                 error={emailError}
                 helperText={emailError ? "Please enter a password." : ""}
                 InputProps={{
-                  style: { fontWeight: 700, fontSize: "1.5rem" },
+                  style: { fontWeight: 500, fontSize: "1.25rem" },
                   endAdornment: (
                     <InputAdornment position="end">
                       <IconButton
@@ -313,7 +319,20 @@ export default function LoginModal(props: any) {
                     terms and conditions
                   </span>
                 </Typography>
-              ) : null}
+              ) : (
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontWeight: 600,
+                    fontSize: "1.125rem",
+                    textDecoration: "underline",
+                    cursor: "pointer",
+                  }}
+                  onClick={props.openForgot}
+                >
+                  Forgot my password
+                </Typography>
+              )}
               <Button
                 variant="contained"
                 sx={{

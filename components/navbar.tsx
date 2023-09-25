@@ -73,7 +73,7 @@ export default function Navbar(props: any) {
             <Typography
               variant="h6"
               component="div"
-              sx={{ p: 1, mr: 4,  cursor: "pointer" }}
+              sx={{ p: 1, mr: 3,ml:3,  cursor: "pointer" }}
               onClick={onPricingClick}
             >
               Pricing

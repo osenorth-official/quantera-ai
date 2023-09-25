@@ -19,6 +19,7 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { logIn } from "@/redux/features/authSlice";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
+import Link from 'next/link';
 
 const style = {
   position: "absolute",
@@ -314,9 +315,9 @@ export default function LoginModal(props: any) {
                       cursor: "pointer",
                       textDecoration: "underline",
                     }}
-                    onClick={() => console.log("terms and conditions clicked")}
-                  >
+                  ><Link href="/tnc" target="_blank">
                     terms and conditions
+                    </Link>
                   </span>
                 </Typography>
               ) : (

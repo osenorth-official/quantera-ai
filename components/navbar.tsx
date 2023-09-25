@@ -5,6 +5,10 @@ import {
   Typography,
   Button,
   IconButton,
+  Tooltip,
+  Avatar,
+  Menu,
+  MenuItem
 } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -14,6 +18,9 @@ import { useAppSelector } from "@/redux/store";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
 import { logOut } from "@/redux/features/authSlice";
+import * as React from 'react'
+
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export default function Navbar(props: any) {
   const { push } = useRouter();
@@ -22,9 +29,12 @@ export default function Navbar(props: any) {
   const [user, setUser] = useState(false);
   const userDetails = useAppSelector((state) => state.authReducer.value);
   const dispatch = useDispatch<AppDispatch>();
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
   useEffect(() => {
     setUser(userDetails as unknown as SetStateAction<boolean>);
+    
   }, [userDetails]);
 
   const onPricingClick = () => {
@@ -39,7 +49,23 @@ export default function Navbar(props: any) {
 
   const onFeatureClick = () => {
     props.featureRef.current?.scrollIntoView({ behavior: "smooth" });
-  }
+  };
+
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = async () => {
+    await Logout();
+    setAnchorElUser(null);
+  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -62,10 +88,10 @@ export default function Navbar(props: any) {
               flexGrow: 1,
             }}
           >
-             <Typography
+            <Typography
               variant="h6"
               component="div"
-              sx={{ p: 1, mr: 4,ml: -14,  cursor: "pointer" }}
+              sx={{ p: 1, mr: 4, ml: -14, cursor: "pointer" }}
               onClick={onFeatureClick}
             >
               Features
@@ -73,7 +99,7 @@ export default function Navbar(props: any) {
             <Typography
               variant="h6"
               component="div"
-              sx={{ p: 1, mr: 3,ml:3,  cursor: "pointer" }}
+              sx={{ p: 1, mr: 3, ml: 3, cursor: "pointer" }}
               onClick={onPricingClick}
             >
               Pricing
@@ -88,17 +114,58 @@ export default function Navbar(props: any) {
             </Typography>
           </Box>
 
-          <Button
-            variant="contained"
-            style={{
-              backgroundColor: "black",
-              color: "white",
-              textTransform: "none",
-            }}
-            onClick={() => (userDetails?.email ? Logout() : props.setOpen(true))}
-          >
-            {userDetails?.email ? "Logout" : "Login"}
-          </Button>
+          {!userDetails?.email ? (
+            <Button
+              variant="contained"
+              style={{
+                backgroundColor: "black",
+                color: "white",
+                textTransform: "none",
+              }}
+              onClick={() =>
+                userDetails?.email ? Logout() : props.setOpen(true)
+              }
+            >
+              Login
+            </Button>
+          ) : (
+            <Box sx={{ flexGrow: 0 }}>
+              <Tooltip title="Open settings">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <Avatar alt="Remy Sharp" src="" >{userDetails.userName?.charAt(0)}</Avatar>
+                  <Typography
+                    variant="body1"
+                    component="div"
+                    sx={{ fontWeight: 600, fontSize: "1.125rem", ml: 2}}
+                  >
+                    {userDetails.userName}
+                  </Typography>
+                </IconButton>
+              </Tooltip>
+              <Menu
+                sx={{ mt: "45px" }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
+              >
+                {settings.map((setting) => (
+                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                    <Typography textAlign="center">{setting}</Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+          )}
         </Toolbar>
       </AppBar>
     </Box>

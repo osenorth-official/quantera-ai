@@ -37,6 +37,10 @@ export default function Navbar(props: any) {
     dispatch(logOut());
   };
 
+  const onFeatureClick = () => {
+    props.featureRef.current?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="relative" color="transparent" elevation={0}>
@@ -58,10 +62,18 @@ export default function Navbar(props: any) {
               flexGrow: 1,
             }}
           >
+             <Typography
+              variant="h6"
+              component="div"
+              sx={{ p: 1, mr: 4,ml: -14,  cursor: "pointer" }}
+              onClick={onFeatureClick}
+            >
+              Features
+            </Typography>
             <Typography
               variant="h6"
               component="div"
-              sx={{ p: 1, mr: 4, ml: -14, cursor: "pointer" }}
+              sx={{ p: 1, mr: 4,  cursor: "pointer" }}
               onClick={onPricingClick}
             >
               Pricing

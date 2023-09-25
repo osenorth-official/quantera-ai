@@ -1,10 +1,10 @@
 import { Typography, Grid } from "@mui/material";
 import Image from "next/image";
 
-export default function Section3() {
+export default function Section3(props: any) {
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={12} sx={{ mt: 10 }}>
+    <Grid container spacing={2} >
+      <Grid item xs={12} sx={{ mt: 10 }} ref={props.featureRef}>
         <Typography
           variant="h3"
           align="center"

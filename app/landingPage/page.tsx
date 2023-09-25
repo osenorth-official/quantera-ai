@@ -20,11 +20,12 @@ import ForgotPasswordModal from "@/components/forgotPasswordModal";
 
 export default function Home() {
   const ref = useRef(null);
+  const featureRef = useRef(null);
   const [open, setOpen] = useState(false);
   const [openForgot, setOpenForgot] = useState(false);
   return (
     <ThemeProvider theme={theme}>
-      <Navbar currRef={ref} setOpen={setOpen} />
+      <Navbar currRef={ref} featureRef={featureRef} setOpen={setOpen} />
       <LoginModal
         open={open}
         handleClose={() => setOpen(!open)}
@@ -59,7 +60,7 @@ export default function Home() {
           minWidth: "100vw",
         }}
       >
-        <Section3 />
+        <Section3 featureRef={featureRef}/>
       </Box>
       <Box
         sx={{

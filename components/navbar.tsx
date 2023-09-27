@@ -114,7 +114,7 @@ export default function Navbar(props: any) {
             </Typography>
           </Box>
 
-          {!userDetails?.email ? (
+          {/* {!userDetails?.email ? (
             <Button
               variant="contained"
               style={{
@@ -165,7 +165,7 @@ export default function Navbar(props: any) {
                 ))}
               </Menu>
             </Box>
-          )}
+          )} */}
         </Toolbar>
       </AppBar>
     </Box>

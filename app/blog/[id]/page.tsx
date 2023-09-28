@@ -2,11 +2,12 @@
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/theme/theme";
 import Navbar from "@/components/navbar";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import Footer from "@/components/footer";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import moment from "moment";
+import RecommendedBlogCards from "@/components/recommendedBlogCard";
 
 interface Props {
   heading: string;
@@ -83,7 +84,33 @@ export default function BlogPage(props: any) {
               {blogDet.content}
             </Typography>
           </Grid>
+          <Grid
+            item
+            xs={7}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              mr: "auto",
+              ml: "auto",
+              mt: 2,
+            }}
+          >
+             <Typography variant="h2" sx={{ fontWeight: 700, fontSize: "3rem" }} align={"center"}>Short reads for market insights and macro trends</Typography>
+          </Grid>
+            <Grid item xs={7} sx={{
+              display: "flex",
+              justifyContent: "center",
+              mr: "auto",
+              ml: "auto",
+              mt: 2,
+            }}>
+              <Stack direction={"row"} spacing={6}>
+              <RecommendedBlogCards/>
+              <RecommendedBlogCards/>
+              </Stack>
+            </Grid>
         </Grid>
+        
       </Box>
       <Footer />
     </ThemeProvider>

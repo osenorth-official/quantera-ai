@@ -39,7 +39,7 @@ export default function Navbar(props: any) {
   }, [userDetails]);  
 
   const onPricingClick = () => {
-    if(pathname === '/blog'){
+    if(pathname !== '/landingPage'){
       push("/landingPage#section7")
     
     }
@@ -53,7 +53,7 @@ export default function Navbar(props: any) {
   };
 
   const onFeatureClick = () => {
-    if(pathname === '/blog'){
+    if(pathname !== '/landingPage'){
       push("/landingPage#section3")
     
     }

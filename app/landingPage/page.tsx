@@ -59,6 +59,7 @@ export default function Home() {
           minHeight: "100vh",
           minWidth: "100vw",
         }}
+        id="section3"
       >
         <Section3 featureRef={featureRef}/>
       </Box>
@@ -85,10 +86,10 @@ export default function Home() {
       >
         <Section5 />
       </Box>
-      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
+      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }} id="section6">
         <Section6 currRef={ref} />
       </Box>
-      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
+      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }} id="section7">
         <CustomTable />
       </Box>
       <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>

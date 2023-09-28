@@ -11,7 +11,7 @@ import {
   MenuItem
 } from "@mui/material";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { SetStateAction, useEffect, useState } from "react";
 import { useAppSelector } from "@/redux/store";
@@ -24,6 +24,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export default function Navbar(props: any) {
   const { push } = useRouter();
+  const pathname = usePathname()
   const supabase = createClientComponentClient();
   const [userDet, setUserDet] = useState({});
   const [user, setUser] = useState(false);
@@ -35,9 +36,13 @@ export default function Navbar(props: any) {
   useEffect(() => {
     setUser(userDetails as unknown as SetStateAction<boolean>);
     
-  }, [userDetails]);
+  }, [userDetails]);  
 
   const onPricingClick = () => {
+    if(pathname === '/blog'){
+      push("/landingPage#section7")
+    
+    }
     props.currRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -48,6 +53,10 @@ export default function Navbar(props: any) {
   };
 
   const onFeatureClick = () => {
+    if(pathname === '/blog'){
+      push("/landingPage#section3")
+    
+    }
     props.featureRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 

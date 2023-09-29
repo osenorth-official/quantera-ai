@@ -1,6 +1,6 @@
 "use client";
-import { useRef, useState } from "react";
-import { Box } from "@mui/material";
+import { useRef, useState, } from "react";
+import { Box,useMediaQuery } from "@mui/material";
 import {
   TopBanner,
   Section2,
@@ -13,6 +13,7 @@ import {
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import CustomTable from "@/components/customTable";
+import CustomTableMobile from "@/components/customTableMobile";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/theme/theme";
 import LoginModal from "@/components/loginModal";
@@ -22,6 +23,9 @@ export default function Home() {
   const ref = useRef(null);
   const [open, setOpen] = useState(false);
   const [openForgot, setOpenForgot] = useState(false);
+  const isMobile = useMediaQuery("(max-width: 600px)"); // Determine if it's a mobile screen
+
+
   return (
     <ThemeProvider theme={theme}>
       <Navbar currRef={ref} setOpen={setOpen} />
@@ -36,62 +40,83 @@ export default function Home() {
       <ForgotPasswordModal
         open={openForgot}
         handleClose={() => setOpenForgot(!openForgot)}
-        handleBack={() => {setOpenForgot(!openForgot); setOpen(!open)}}
+        handleBack={() => {
+          setOpenForgot(!openForgot);
+          setOpen(!open);
+        }}
       />
-      <Box sx={{ display: "flex", minHeight: "90vh", minWidth: "100vw" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+          minWidth: "100vw",
+        }}
+      >
         <TopBanner />
-      </Box>
-      <Box
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            bgcolor: "#F1F8F7",
+          }}
+        >
+          <Section2 />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            bgcolor: "#73F3C4",
+          }}
+        >
+          <Section3 />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            minHeight: "100vh",
+            padding: "10px", // Adjust padding for responsiveness
+          }}
+        >
+          <Section4 />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            bgcolor: "#73F3C4",
+            padding: "10px", // Adjust padding for responsiveness
+          }}
+        >
+          <Section5 />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Section6 currRef={ref} />
+        </Box>
+        <Box
         sx={{
           display: "flex",
-          bgcolor: "#F1F8F7",
-          minHeight: "100vh",
-          minWidth: "100vw",
+          flexDirection: "column",
+          padding: "10px", // Adjust padding for responsiveness
         }}
       >
-        <Section2 />
+        {isMobile ? <CustomTableMobile /> : <CustomTable />} {/* Conditionally render CustomTable based on screen size */}
       </Box>
-      <Box
-        sx={{
-          display: "flex",
-          bgcolor: "#73F3C4",
-          minHeight: "100vh",
-          minWidth: "100vw",
-        }}
-      >
-        <Section3 />
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          minHeight: "100vh",
-          minWidth: "100vw",
-          pl: "10%",
-          pr: "10%",
-        }}
-      >
-        <Section4 />
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          bgcolor: "#73F3C4",
-          minHeight: "100vh",
-          minWidth: "100vw",
-          pl: "10%",
-          pr: "10%",
-        }}
-      >
-        <Section5 />
-      </Box>
-      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
-        <Section6 currRef={ref} />
-      </Box>
-      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
-        <CustomTable />
-      </Box>
-      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
-        <Section7 />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Section7 />
+        </Box>
       </Box>
       <Footer />
     </ThemeProvider>

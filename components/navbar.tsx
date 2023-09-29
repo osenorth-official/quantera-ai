@@ -5,6 +5,8 @@ import {
   Typography,
   Button,
   IconButton,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -22,6 +24,8 @@ export default function Navbar(props: any) {
   const [user, setUser] = useState(false);
   const userDetails = useAppSelector((state) => state.authReducer.value);
   const dispatch = useDispatch<AppDispatch>();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   useEffect(() => {
     setUser(userDetails as unknown as SetStateAction<boolean>);
@@ -53,27 +57,31 @@ export default function Navbar(props: any) {
           </IconButton>
           <Box
             sx={{
-              display: "inline-flex",
-              justifyContent: "center",
+              display: "flex",
+              alignItems: "center",
               flexGrow: 1,
             }}
           >
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ p: 1, mr: 4, ml: -14, cursor: "pointer" }}
-              onClick={onPricingClick}
-            >
-              Pricing
-            </Typography>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ p: 1, ml: 4, cursor: "pointer" }}
-              onClick={() => push("/blog")}
-            >
-              Blog
-            </Typography>
+            {!isMobile && (
+              <>
+                <Typography
+                  variant="h6"
+                  component="div"
+                  sx={{ p: 1, mr: 4, cursor: "pointer" }}
+                  onClick={onPricingClick}
+                >
+                  Pricing
+                </Typography>
+                <Typography
+                  variant="h6"
+                  component="div"
+                  sx={{ p: 1, cursor: "pointer" }}
+                  onClick={() => push("/blog")}
+                >
+                  Blog
+                </Typography>
+              </>
+            )}
           </Box>
 
           <Button

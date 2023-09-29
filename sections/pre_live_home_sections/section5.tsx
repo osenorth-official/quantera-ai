@@ -1,104 +1,129 @@
-import {
-  Grid,
-  Typography,
-  Rating,
-  Card,
-  CardContent,
-  Stack,
-} from "@mui/material";
+import { Grid, Typography, Rating, Card, CardContent, Stack, useMediaQuery, Box } from "@mui/material";
 import Image from "next/image";
 
 const cardStyle = {
   display: "flex",
-  minHeight: 450,
-  minWidth: 450,
+  flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  borderColor: "black",
+  borderRadius: "5px",
+  minHeight: "400px", 
+  padding: "16px",
+  marginBottom: "16px",
+  borderColor: "rgba(0, 0, 0)",
+  border: "1.5px solid",
+  boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.5)"
+};
+
+const imageStyle = {
+  display: "block",
+  margin: "0 auto", // Center images horizontally
+};
+
+const desktopCardWrapperStyle = {
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-between",
+  "& > .MuiCard-root": {
+    borderRadius: "0",
+    "&:first-child": {
+      borderTopLeftRadius: "5px",
+      borderBottomLeftRadius: "5px",
+    },
+    "&:last-child": {
+      borderTopRightRadius: "5px",
+      borderBottomRightRadius: "5px",
+    },
+  },
 };
 
 export default function Section5() {
+  const isMobile = useMediaQuery("(max-width: 600px)");
+
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={8} sx={{ mt: "6.25rem" }}>
-        <Typography variant="h3"  sx={{ fontSize: "5.125rem", fontWeight: 900}}>
+    <Grid container spacing={2} justifyContent="center">
+      <Grid alignItems="center" item xs={12} sm={8} md={8} lg={8} xl={8}>
+        <Typography variant="h3" sx={{ mt: 10, ml: isMobile ? "3rem" : "8rem", fontSize: ["2.4rem", "3.2rem"], fontWeight: 900 }}>
           Streamline your workflow
         </Typography>
-        <Typography variant="body1" sx={{ mt: 2, fontSize: "1.5rem", fontWeight: 600 }} >
-          A platform that will smoothly integrate in your workstream.
+        <Typography variant="body1" sx={{ mt: 2, ml: isMobile ? "3rem" : "8rem", fontSize: ["1rem", "1.5rem"], fontWeight: 600 }}>
+          A platform that will smoothly integrate into your workstream.
         </Typography>
       </Grid>
-      <Grid item xs={4} sx={{ mt: "8.25rem" }}>
+      <Grid item xs={12} sm={4} md={4} lg={4} xl={4} sx={{ mt: isMobile ? "2rem" : "6rem", ml: isMobile ? "5rem" : "0rem" }}>
         <Rating
           name="read-only"
           value={4.5}
           precision={0.5}
           readOnly
-          style={{ color: "black", fontSize: 18,  }}
+          style={{ color: "black", fontSize: isMobile ? "0.6rem" : "1.2rem" }}
         />
-        <Typography variant="body1" sx={{ mt: 1, fontSize: "1rem", fontWeight: 600 }} align="left">
+        <Typography variant="body1" sx={{ mt: 1, fontSize: ["0.875rem", "1rem"], fontWeight: 600 }} align="left">
           The platform has been able to make
           <br /> insights the easiest thing to get.
         </Typography>
-        <Typography variant="caption" style={{ color: "#5C7C6F", fontSize: "0.75rem", fontWeight: 600 }}>
+        <Typography variant="caption" sx={{ color: "#5C7C6F", fontSize: ["0.625rem", "0.75rem"], fontWeight: 600 }}>
           Investment Fund Manager
         </Typography>
       </Grid>
-      <Grid item xs={12} sx={{ mt: "4.75rem",mb: "5rem", display:"flex", alignItems:"center", justifyContent: "center" }}>
-        <Stack direction={"row"} spacing={0} >
-          <Card variant="outlined" style={cardStyle}>
-            <CardContent>
-              <Image
-                src="/noun-insight-407185221.svg"
-                alt="banner"
-                height={65}
-                width={65}
-                style={{ marginLeft: "auto", marginBottom: 4, marginRight: "auto" }}
-              />
-              <Typography variant="h3" align="center" sx={{ fontSize: "3rem", fontWeight: 900}}>
-                Create
-              </Typography>
-              <Typography variant="body1" style={{ color: "#5C7C6F",fontSize: "1.25rem", fontWeight: 600 }}>
-                From any company with another
-              </Typography>
-            </CardContent>
-          </Card>
-          <Card variant="outlined" style={cardStyle}>
-            <CardContent>
-              <Image
-                src="/noun-insight-4071852.svg"
-                alt="banner"
-                height={65}
-                width={65}
-                style={{ marginLeft: "auto", marginBottom: 4, marginRight: "auto" }}
-              />
-              <Typography variant="h3" align="center" sx={{ fontSize: "3rem", fontWeight: 900}}>
-                Insight
-              </Typography>
-              <Typography variant="body1" style={{ color: "#5C7C6F", fontSize: "1.25rem", fontWeight: 600 }}>
-                From any company with another
-              </Typography>
-            </CardContent>
-          </Card>
-          <Card variant="outlined" style={cardStyle}>
-            <CardContent>
-              <Image
-                src="/noun-insight-4071852-1.svg"
-                alt="banner"
-                height={65}
-                width={65}
-                style={{ marginLeft: "auto", marginBottom: 4, marginRight: "auto" }}
-              />
-              <Typography variant="h3" align="center" sx={{ fontSize: "3rem", fontWeight: 900}}>
-                Report
-              </Typography>
-              <Typography variant="body1" style={{ color: "#5C7C6F" , fontSize: "1.25rem", fontWeight: 600}}>
-                From any company with another
-              </Typography>
-            </CardContent>
-          </Card>
+      <Grid item xs={12} sx={{ mt: isMobile ? "2rem" : "3rem" }}>
+        <Stack direction={isMobile ? "column" : "row"} spacing={0} justifyContent="center">
+          <Box sx={isMobile ? null : desktopCardWrapperStyle}>
+            <Card variant="outlined" sx={{ ...cardStyle, width: isMobile ? "100%" : "400px" }}>
+              <CardContent>
+                <Image
+                  src="/noun-insight-407185221.svg"
+                  alt="banner"
+                  height={65}
+                  width={65}
+                  style={imageStyle}
+                />
+                <Typography variant="h3" align="center" sx={{ fontSize: "2rem", fontWeight: 900 }}>
+                  Create
+                </Typography>
+                <Typography variant="body1" style={{ color: "#5C7C6F", fontSize: "1rem", fontWeight: 600 }}>
+                  From any company with another
+                </Typography>
+              </CardContent>
+            </Card>
+            <Card variant="outlined" sx={{ ...cardStyle, width: isMobile ? "100%" : "400px" }}>
+              <CardContent>
+                <Image
+                  src="/noun-insight-4071852.svg"
+                  alt="banner"
+                  height={65}
+                  width={65}
+                  style={imageStyle}
+                />
+                <Typography variant="h3" align="center" sx={{ fontSize: "2rem", fontWeight: 900 }}>
+                  Insight
+                </Typography>
+                <Typography variant="body1" style={{ color: "#5C7C6F", fontSize: "1rem", fontWeight: 600 }}>
+                  From any company with another
+                </Typography>
+              </CardContent>
+            </Card>
+            <Card variant="outlined" sx={{ ...cardStyle, width: isMobile ? "100%" : "400px" }}>
+              <CardContent>
+                <Image
+                  src="/noun-insight-4071852-1.svg"
+                  alt="banner"
+                  height={65}
+                  width={65}
+                  style={imageStyle}
+                />
+                <Typography variant="h3" align="center" sx={{ fontSize: "2rem", fontWeight: 900 }}>
+                  Report
+                </Typography>
+                <Typography variant="body1" style={{ color: "#5C7C6F", fontSize: "1rem", fontWeight: 600 }}>
+                  From any company with another
+                </Typography>
+              </CardContent>
+            </Card>
+          </Box>
         </Stack>
       </Grid>
     </Grid>
   );
 }
+

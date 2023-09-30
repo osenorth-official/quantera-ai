@@ -5,35 +5,45 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Box, Grid, Typography } from "@mui/material";
 import theme from "@/theme/theme";
 import BlogCards from "@/components/blogCards";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 
 export default function Blog() {
+  const supabase = createClientComponentClient();
+  const [blogsList, setBlogsList] = useState([] as any);
   const blogsAr = [
     {
       title: "Twitter's rebrand has got a lot more to do with X",
       sequence: 1,
       date: "5th November",
-      image: "/24c2337e-6b18-4702-be69-6f5a968e95ed.png"
+      image: "/24c2337e-6b18-4702-be69-6f5a968e95ed.png",
     },
     {
       title: "Global market trends are signallying this in 6 months",
       sequence: 2,
       date: "14th October",
-      image: "/24c2337e-6b18-4702-be69-6f5a968e95ed-1.png"
+      image: "/24c2337e-6b18-4702-be69-6f5a968e95ed-1.png",
     },
     {
       title: "What does it mean to have a yield curve flip",
       sequence: 3,
       date: "23rd September",
-      image: "/24c2337e-6b18-4702-be69-6f5a968e95ed-3.png"
+      image: "/24c2337e-6b18-4702-be69-6f5a968e95ed-3.png",
     },
     {
       title: "Real estate pricing has plateaued, here is what's next",
       sequence: 4,
       date: "14th October",
-      image: "/24c2337e-6b18-4702-be69-6f5a968e95ed-5.png"
+      image: "/24c2337e-6b18-4702-be69-6f5a968e95ed-5.png",
     },
   ];
+
+  useEffect(() => {
+    supabase
+      .from("blogs")
+      .select()
+      .then(({ data, error }) => setBlogsList(data));
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <Navbar currRef={undefined} />
@@ -62,9 +72,9 @@ export default function Blog() {
             </Typography>
           </Grid>
           <Grid container item xs={12} sx={{ ml: "18%", mt: 10 }}>
-            {blogsAr.map((item, index) => (
-              <Grid item xs={5} key={index} sx={{ mt: 5}}>
-                <BlogCards item={item}/>
+            {blogsList?.map((item: any, index: number) => (
+              <Grid item xs={5} key={index} sx={{ mt: 5 }}>
+                <BlogCards item={item} />
               </Grid>
             ))}
           </Grid>

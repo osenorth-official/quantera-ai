@@ -40,7 +40,6 @@ export default function Section2() {
             width={50}
             style={{ filter: "grayscale(100%)" }}
           />
-
           <Image
             src="/Bitmap111.svg"
             alt="banner"

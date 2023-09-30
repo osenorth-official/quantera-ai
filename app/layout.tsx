@@ -9,7 +9,7 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "Quantera",
+  title: "Quantera AI",
   description: "Empowering investors thorugh AI powered insights.",
 };
 

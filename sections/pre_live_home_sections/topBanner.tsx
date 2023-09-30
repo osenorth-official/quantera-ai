@@ -11,6 +11,7 @@ import {
 import Image from "next/image";
 import { useTheme } from "@mui/material/styles";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import CustomSnackbar from "@/components/snackbar";
 
 export default function TopBanner() {
   const supabase = createClientComponentClient();
@@ -19,6 +20,7 @@ export default function TopBanner() {
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.down("md"));
   const sm = useMediaQuery(theme.breakpoints.down("sm"));
+  const [openSnackbar, setOpenSnackbar] = useState(false)
 
   const onGetPremiumReport = async () => {
     setEmailError(false);
@@ -31,12 +33,15 @@ export default function TopBanner() {
         email: email,
       },
     ]);
+    setOpenSnackbar(true)
     setEmail("");
   };
 
   return (
     <Grid container spacing={2}>
+
       <Grid item xs={12} md={!md ? 7 : 12} sx={{ m: sm ? 2 : 15 }}>
+         <CustomSnackbar open={openSnackbar} setOpen={setOpenSnackbar} message={"Email Successfully Added."} />
         <Typography variant="h1" component="h1" sx={{ fontWeight: 900, fontSize: sm ? '3rem' : '5rem' }}>
           <span style={{ backgroundColor: "black", color: "white" }}>
             Empowering

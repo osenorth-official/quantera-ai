@@ -21,6 +21,7 @@ import ForgotPasswordModal from "@/components/forgotPasswordModal";
 
 export default function Home() {
   const ref = useRef(null);
+  const featureRef = useRef(null);
   const [open, setOpen] = useState(false);
   const [openForgot, setOpenForgot] = useState(false);
   const isMobile = useMediaQuery("(max-width: 600px)"); // Determine if it's a mobile screen
@@ -28,7 +29,7 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Navbar currRef={ref} setOpen={setOpen} />
+      <Navbar currRef={ref} featureRef={featureRef} setOpen={setOpen} />
       <LoginModal
         open={open}
         handleClose={() => setOpen(!open)}
@@ -69,8 +70,9 @@ export default function Home() {
             flexDirection: "column",
             bgcolor: "#73F3C4",
           }}
+           id="section3"
         >
-          <Section3 />
+          <Section3 featureRef={featureRef}/>
         </Box>
         <Box
           sx={{
@@ -97,16 +99,11 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
           }}
+          id="section6"
         >
           <Section6 currRef={ref} />
         </Box>
-        <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          padding: "10px", // Adjust padding for responsiveness
-        }}
-      >
+      <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }} id="section7">
         {isMobile ? <CustomTableMobile /> : <CustomTable />} {/* Conditionally render CustomTable based on screen size */}
       </Box>
         <Box

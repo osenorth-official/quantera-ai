@@ -1,0 +1,86 @@
+/* ColorModeToggle.module.css */
+
+.container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+  }
+  
+  .switch {
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .switch > label.switchInner {
+    margin: 0px;
+    
+    width: 146px;
+    height: 32px;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    background: #f2f2f2;
+    color: #000;
+    margin-left: 0px;
+  }
+  
+  .switch > label.switchInner:before {
+    content: attr(data-on);
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    top: 7px;
+    right: 13px;
+  }
+  
+  .switch > label.switchInner:after {
+    content: attr(data-off);
+    width: 76px;
+    height: 28px;
+    background: #fff;
+    border-radius: 26px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 5px 0px;
+    font-size: 14px;
+  }
+  
+  .switch input[type="checkbox"] {
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+  }
+  
+  /* Add styles for dark mode */
+  .darkMode > label.switchInner {
+    
+    color: #000;
+  }
+  
+  .darkMode > label.switchInner:before {
+    content: attr(data-off);
+    left: auto;
+    right: 13px;
+  }
+  
+  .darkMode > label.switchInner:after {
+    content: attr(data-on);
+    left: 68px;
+  }
+  
+  .purple-link {
+    color: rgb(255, 81, 255);
+   
+  }

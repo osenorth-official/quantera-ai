@@ -5,6 +5,8 @@ import {
   Typography,
   Button,
   IconButton,
+  useMediaQuery,
+  useTheme,
   Tooltip,
   Avatar,
   Menu,
@@ -30,6 +32,8 @@ export default function Navbar(props: any) {
   const [user, setUser] = useState(false);
   const userDetails = useAppSelector((state) => state.authReducer.value);
   const dispatch = useDispatch<AppDispatch>();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
@@ -92,12 +96,14 @@ export default function Navbar(props: any) {
           </IconButton>
           <Box
             sx={{
-              display: "inline-flex",
-              justifyContent: "center",
+              display: "flex",
+              alignItems: "center",
               flexGrow: 1,
             }}
           >
-            <Typography
+            {!isMobile && (
+              <>
+               <Typography
               variant="h6"
               component="div"
               sx={{ p: 1, mr: 4, ml: -14, cursor: "pointer" }}
@@ -121,6 +127,8 @@ export default function Navbar(props: any) {
             >
               Blog
             </Typography>
+              </>
+            )}
           </Box>
 
           {/* {!userDetails?.email ? (

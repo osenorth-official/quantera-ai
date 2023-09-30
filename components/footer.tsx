@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import {
   Grid,
@@ -32,37 +31,44 @@ export default function Footer() {
     ]);
     setEmail("");
   };
+
   return (
     <Grid
       container
       spacing={2}
       sx={{
         bgcolor: "black",
-        mt: "12.5rem",
-        isplay: "flex",
+        mt: { xs: "5rem", md: "12.5rem" },
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         minHeight: "35vh",
         minWidth: "100vw",
-        p: 11,
+        p: { xs: 2, md: 11 },
       }}
     >
-      <Grid item xs={5} sx={{ ml: 10 }}>
+      <Grid item xs={12} md={5} sx={{ mb: { xs: 2, md: 0 } }}>
         <Image src="/Logo.png" alt="banner" height={60} width={240} />
         <Typography
           variant="body1"
           style={{ color: "white", fontSize: "1.25rem", fontWeight: 600 }}
           align="left"
         >
-          Data visualisation and stock insights have
+          Data visualization and stock insights have
           <br />
           taken a back seat. We bring data back to
           <br /> being readable.
         </Typography>
-        <Stack direction="row" spacing={1} sx={{ ml: -1.25}}>
-          <IconButton aria-label="delete">
+        <Stack direction="row" spacing={1} sx={{ ml: -1.25, mb: 2, mt: 2 }}>
+          <IconButton aria-label="LinkedIn">
             <LinkedInIcon style={{ color: "white", fontSize: 35 }} />
           </IconButton>
-          <IconButton aria-label="delete">
-           <Image src="/discord-mark-white.svg" alt="banner" height={30} width={30} />
+          <IconButton aria-label="Discord">
+            <Image
+              src="/discord-mark-white.svg"
+              alt="banner"
+              height={30}
+              width={30}
+            />
           </IconButton>
         </Stack>
         <Typography
@@ -74,24 +80,26 @@ export default function Footer() {
           reserved.
         </Typography>
       </Grid>
-      <Grid item xs={6} sx={{ mt: 5 }}>
+      <Grid item xs={12} md={6} sx={{ mt: { xs: 5, md: 0 } }}>
         <Typography
           variant="h5"
           style={{ color: "white", fontSize: "2rem", fontWeight: 900 }}
           align="right"
         >
-          Recieve a free premium report by signing up
+          Receive a free premium report by signing up
         </Typography>
         <TextField
           label="Email"
           variant="outlined"
+         
           sx={{
-            width: "30vw",
+            width: { xs: "100%", md: "30vw" },
             p: 0,
+            alignItems: "right",
             bgcolor: "white",
             borderRadius: 2,
-            ml: "32%",
-            mt: 2,
+            mt: 5,
+            marginLeft: { xs: 0, md: "13rem" }, // Apply margin left only in desktop view
           }}
           value={email}
           size="small"
@@ -120,15 +128,13 @@ export default function Footer() {
         />
         <Typography
           variant="body1"
-          style={{ color: "white", marginTop: 5 }}
-          align="right"
+          style={{ color: "white", marginTop: 5, textAlign: "right" }}
         >
           Explore app
         </Typography>
         <Typography
           variant="body1"
-          style={{ color: "white", marginTop: 5 }}
-          align="right"
+          style={{ color: "white", marginTop: 5, textAlign: "right" }}
         >
           Contact us
         </Typography>

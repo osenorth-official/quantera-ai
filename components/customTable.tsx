@@ -17,6 +17,7 @@ import { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CloseIcon from "@mui/icons-material/Close";
 import CheckIcon from "@mui/icons-material/Check";
+import styles from '../app/styles1.module.css';
 
 const theme = createTheme({
   components: {
@@ -38,6 +39,10 @@ const theme = createTheme({
     },
   },
 });
+
+
+
+
 
 const tableData = [
   {
@@ -115,6 +120,14 @@ const tableData = [
 ];
 
 export default function CustomTable() {
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleColorMode = () => {
+    setIsDarkMode((prev) => !prev);
+    setAlignment(isDarkMode ? "Monthly" : "Annually");
+
+  };
   const [alignment, setAlignment] = useState("Annually");
 
   return (
@@ -128,6 +141,7 @@ export default function CustomTable() {
         borderColor: "black",
         borderWidth: 2,
         borderRadius: 5,
+        boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.5)",
         p: 5.2,
       }}
     >
@@ -151,7 +165,7 @@ export default function CustomTable() {
             <TableCell >
             <Typography variant="body1" sx={{ fontSize:"1.375rem", fontWeight: 600}}>Pricing</Typography>
               <br />
-              <ThemeProvider theme={theme}>
+              {/* <ThemeProvider theme={theme}>
               <ToggleButtonGroup
               color="primary"
                 value={alignment}
@@ -162,7 +176,21 @@ export default function CustomTable() {
                 <ToggleButton value="Monthly">Monthly</ToggleButton>
                 <ToggleButton value="Annually">Annually</ToggleButton>
               </ToggleButtonGroup>
-            </ThemeProvider>
+            </ThemeProvider> */}
+
+         <div className={styles.container}>
+         <label className={`${styles.switch} ${isDarkMode ? styles.darkMode : ''}`}>
+           <input
+          type="checkbox"
+          name="color_mode"
+          id="color_mode"
+          value="1"
+          checked={isDarkMode}
+          onChange={toggleColorMode}
+          />
+          <label htmlFor="color_mode" data-on="Annually" data-off="Monthly" className={styles.switchInner}></label>
+        </label>
+     </div>
             
             </TableCell>
             <TableCell>

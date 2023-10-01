@@ -99,6 +99,7 @@ export default function Navbar(props: any) {
               display: "flex",
               alignItems: "center",
               flexGrow: 1,
+              ml:"35%"
             }}
           >
             {!isMobile && (

@@ -20,11 +20,12 @@ export default function TopBanner() {
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.down("md"));
   const sm = useMediaQuery(theme.breakpoints.down("sm"));
-  const [openSnackbar, setOpenSnackbar] = useState(false)
+  const [openSnackbar, setOpenSnackbar] = useState(false);
 
   const onGetPremiumReport = async () => {
     setEmailError(false);
-    if (!email.match(/.+@.+/)) {
+    const emailReg = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
+    if (!email.match(emailReg)) {
       setEmailError(true);
       return;
     }
@@ -33,16 +34,32 @@ export default function TopBanner() {
         email: email,
       },
     ]);
-    setOpenSnackbar(true)
+    setOpenSnackbar(true);
     setEmail("");
   };
 
+  const  keyPress = (e:any) => {
+    if(e.keyCode == 13){
+      onGetPremiumReport();
+    }
+    if(email === ""){
+      setEmailError(false)
+    }
+ }
+
   return (
     <Grid container spacing={2}>
-
       <Grid item xs={12} md={!md ? 7 : 12} sx={{ m: sm ? 2 : 15 }}>
-         <CustomSnackbar open={openSnackbar} setOpen={setOpenSnackbar} message={"Email Successfully Added."} />
-        <Typography variant="h1" component="h1" sx={{ fontWeight: 900, fontSize: sm ? '3rem' : '5rem' }}>
+        <CustomSnackbar
+          open={openSnackbar}
+          setOpen={setOpenSnackbar}
+          message={"Email Successfully Added."}
+        />
+        <Typography
+          variant="h1"
+          component="h1"
+          sx={{ fontWeight: 900, fontSize: sm ? "3rem" : "5rem" }}
+        >
           <span style={{ backgroundColor: "black", color: "white" }}>
             Empowering
           </span>
@@ -50,7 +67,7 @@ export default function TopBanner() {
           investors <br /> through AI powered <br />
           insights.
         </Typography>
-        <Typography variant="body1" sx={{ mt: 1, fontWeight: 600  }}>
+        <Typography variant="body1" sx={{ mt: 1, fontWeight: 600 }}>
           Eliminate hours wasted finding, cleaning, visualizing and transforming
           data using <br /> the power of AI. <br />
           Register and get a free premium report to your inbox.
@@ -65,6 +82,7 @@ export default function TopBanner() {
               value={email}
               size="small"
               error={emailError}
+              onKeyDown={keyPress}
               helperText={emailError ? "Please enter a valid email." : ""}
               onChange={({ target }) => setEmail(target.value)}
               InputProps={{
@@ -92,27 +110,26 @@ export default function TopBanner() {
         </Grid>
       </Grid>
       <Grid
-  item
-  xs={12}
-  sx={{
-    ml: "auto",
-    mr: "auto",
-    mt: sm ? 2 : 0,
-    p: 0,
-    position: "relative",
-    minHeight: sm ? "25vh" : "80vh",
-    maxHeight: sm ? "25vh" : "none",
-  }}
->
-  <Image
-    src="/Banner.png"
-    alt="banner"
-    layout="fill"
-    objectFit="contain" // Change objectFit to "contain" to fit the image within the container
-    quality={100}
-  />
-</Grid>
-
+        item
+        xs={12}
+        sx={{
+          ml: "auto",
+          mr: "auto",
+          mt: sm ? 2 : 0,
+          p: 0,
+          position: "relative",
+          minHeight: sm ? "25vh" : "80vh",
+          maxHeight: sm ? "25vh" : "none",
+        }}
+      >
+        <Image
+          src="/Banner.png"
+          alt="banner"
+          layout="fill"
+          objectFit="contain" // Change objectFit to "contain" to fit the image within the container
+          quality={100}
+        />
+      </Grid>
     </Grid>
   );
 }

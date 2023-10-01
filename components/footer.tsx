@@ -20,7 +20,8 @@ export default function Footer() {
 
   const onGetPremiumReport = async () => {
     setEmailError(false);
-    if (!email.match(/.+@.+/)) {
+    const emailReg = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
+    if (!email.match(emailReg)) {
       setEmailError(true);
       return;
     }
@@ -31,6 +32,15 @@ export default function Footer() {
     ]);
     setEmail("");
   };
+
+  const  keyPress = (e:any) => {
+    if(e.keyCode == 13){
+      onGetPremiumReport();
+    }
+    if(email === ""){
+      setEmailError(false)
+    }
+ }
 
   return (
     <Grid
@@ -59,7 +69,7 @@ export default function Footer() {
           <br /> being readable.
         </Typography>
         <Stack direction="row" spacing={1} sx={{ ml: -1.25, mb: 2, mt: 2 }}>
-          <IconButton aria-label="LinkedIn">
+          <IconButton aria-label="LinkedIn" onClick={() => window.open("https://www.linkedin.com/company/quanteraai", "_blank")}>
             <LinkedInIcon style={{ color: "white", fontSize: 35 }} />
           </IconButton>
           <IconButton aria-label="Discord">
@@ -104,6 +114,7 @@ export default function Footer() {
           value={email}
           size="small"
           error={emailError}
+          onKeyDown={keyPress}
           helperText={emailError ? "Please enter a valid email." : ""}
           onChange={({ target }) => setEmail(target.value)}
           InputProps={{

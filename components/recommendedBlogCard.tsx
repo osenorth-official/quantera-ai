@@ -1,16 +1,27 @@
+"use client"
+import { useEffect, useState } from "react";
 import { Card, CardContent, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import moment from "moment";
 
-export default function RecommendedBlogCards() {
+export default function RecommendedBlogCards(props: any) {
+
+  const blogsList = props.blog;
+  const supabase = createClientComponentClient();
+  const imgUrl =
+  "https://yjasfeanlannyjroczqf.supabase.co/storage/v1/object/public/blog-images/";
+
   return (
     <Card
       variant="outlined"
       style={{
         marginLeft: "1%",
         borderColor: "black",
-        minWidth: 450,
+        width: 500,
         borderWidth: 3,
         borderRadius: 8,
+        maxHeight: 300
       }}
       sx={{ boxShadow: 5 }}
     >
@@ -18,7 +29,7 @@ export default function RecommendedBlogCards() {
         <Grid container spacing={1}>
           <Grid item xs={6}>
             <Image
-              src="/24c2337e-6b18-4702-be69-6f5a968e95ed-3.png"
+              src={blogsList ? imgUrl + blogsList['thumbnail']?.replace(" ", "%20") :"/24c2337e-6b18-4702-be69-6f5a968e95ed-3.png"}
               alt="banner"
               height={135}
               width={235}
@@ -30,13 +41,13 @@ export default function RecommendedBlogCards() {
               variant="h2"
               sx={{ fontWeight: 700, fontSize: "1.6rem" }}
             >
-              What does it mean to have a yield curve flip
+             {blogsList ? blogsList['heading']: "What does it mean to have a yield curve flip"}
             </Typography>
             <Typography
               variant="body1"
               sx={{ fontWeight: 500, fontSize: "0.75rem", mr: "auto", color: "#4A4A4A" }}
             >
-              12th September
+               {blogsList ? moment(blogsList.created_at, "", true).format("Do MMMM") : "12th September"}
             </Typography>
           </Stack>
           </Grid>

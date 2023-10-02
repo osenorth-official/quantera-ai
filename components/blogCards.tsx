@@ -11,7 +11,7 @@ export default function BlogCards(props: any) {
   const [queryParams, setQueryParams] = useState({})
 
   const onBlogClick = (props: any) => {
-    const queryParams = props.item
+    const queryParams = {id: props.item.id}
     const query = new URLSearchParams(queryParams).toString();
     push(`/blog/${item.id}?${query}`)
   }

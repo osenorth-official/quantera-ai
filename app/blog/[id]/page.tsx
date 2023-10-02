@@ -8,26 +8,33 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import moment from "moment";
 import RecommendedBlogCards from "@/components/recommendedBlogCard";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 
 interface Props {
   heading: string;
   created_at: string;
   cover: string;
   content: string;
+  linked_blogs_id: string;
 }
 
 export default function BlogPage(props: any) {
-  const [blogDet, setBlogDet] = useState<Props>({
-    heading: "",
-    created_at: "",
-    cover: "",
-    content: "",
-  });
+  const [blogDet, setBlogDet] = useState({} as any);
+  const supabase = createClientComponentClient();
+  
   const imgUrl =
     "https://yjasfeanlannyjroczqf.supabase.co/storage/v1/object/public/blog-images/";
 
   useEffect(() => {
-    setBlogDet(props.searchParams as Props);
+    console.log(props.searchParams)
+    const temp = props.searchParams
+    // setBlogDet(temp as Props);
+    supabase
+      .from("blogs")
+      .select()
+      .eq("id", +temp.id)
+      .then(({ data, error }) => setBlogDet(data as any));
+    
   }, []);
   return (
     <ThemeProvider theme={theme}>
@@ -36,7 +43,7 @@ export default function BlogPage(props: any) {
         <Grid container spacing={1} sx={{ mt: 10 }}>
           <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
             <Typography variant="h2" sx={{ fontWeight: 700, fontSize: "3rem" }}>
-              {blogDet.heading}
+              {blogDet?.length > 0 ? blogDet[0].heading: ""}
             </Typography>
           </Grid>
           <Grid
@@ -48,7 +55,7 @@ export default function BlogPage(props: any) {
               variant="body1"
               sx={{ fontWeight: 500, fontSize: "0.75rem" }}
             >
-              {moment(blogDet.created_at, "", true).format("Do MMMM")}
+              {moment(blogDet?.length ? blogDet[0].created_at: "", "", true).format("Do MMMM")}
             </Typography>
           </Grid>
           <Grid
@@ -56,9 +63,9 @@ export default function BlogPage(props: any) {
             xs={12}
             sx={{ display: "flex", justifyContent: "center", mt: 2 }}
           >
-            {blogDet.cover ? (
+            {blogDet?.length ? (
               <Image
-                src={imgUrl + blogDet.cover?.replace(" ", "%20")}
+                src={imgUrl + blogDet[0].cover?.replace(" ", "%20")}
                 alt="banner"
                 height={700}
                 width={800}
@@ -81,7 +88,7 @@ export default function BlogPage(props: any) {
               sx={{ fontWeight: 600, fontSize: "1.5rem" }}
               align="left"
             >
-              {blogDet.content}
+              {blogDet?.length ? blogDet[0].content: ""}
             </Typography>
           </Grid>
           <Grid
@@ -95,22 +102,37 @@ export default function BlogPage(props: any) {
               mt: 2,
             }}
           >
-             <Typography variant="h2" sx={{ fontWeight: 700, fontSize: "3rem" }} align={"center"}>Short reads for market insights and macro trends</Typography>
+            <Typography
+              variant="h2"
+              sx={{ fontWeight: 700, fontSize: "3rem" }}
+              align={"center"}
+            >
+              Short reads for market insights and macro trends
+            </Typography>
           </Grid>
-            <Grid item xs={7} sx={{
+          <Grid
+            item
+            xs={7}
+            sx={{
               display: "flex",
               justifyContent: "center",
               mr: "auto",
               ml: "auto",
               mt: 2,
-            }}>
-              <Stack direction={"row"} spacing={6}>
-              <RecommendedBlogCards/>
-              <RecommendedBlogCards/>
-              </Stack>
-            </Grid>
+            }}
+          >
+            <Stack direction={"row"} spacing={6}>
+              {blogDet?.length > 0 ? (
+                JSON.parse(blogDet[0].linked_blogs_id).map((item: any, index: number) =>  <RecommendedBlogCards key={index} blog={item}/>)
+              ) : (
+                <>
+                  <RecommendedBlogCards />
+                  <RecommendedBlogCards />
+                </>
+              )}
+            </Stack>
+          </Grid>
         </Grid>
-        
       </Box>
       <Footer />
     </ThemeProvider>

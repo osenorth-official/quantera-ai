@@ -124,12 +124,7 @@ export default function BlogPage(props: any) {
             <Stack direction={"row"} spacing={6}>
               {blogDet?.length > 0 ? (
                 JSON.parse(blogDet[0].linked_blogs_id).map((item: any, index: number) =>  <RecommendedBlogCards key={index} blog={item}/>)
-              ) : (
-                <>
-                  <RecommendedBlogCards />
-                  <RecommendedBlogCards />
-                </>
-              )}
+              ) : null}
             </Stack>
           </Grid>
         </Grid>

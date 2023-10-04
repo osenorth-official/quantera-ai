@@ -8,6 +8,7 @@
     overflow: hidden;
     width: 30vw; /* Adjust the width to 100% for mobile responsiveness */
     margin: 20px;
+    
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.202);
   }
   

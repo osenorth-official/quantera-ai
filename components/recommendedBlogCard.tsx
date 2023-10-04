@@ -1,11 +1,12 @@
 "use client"
 import { useEffect, useState } from "react";
-import { Card, CardContent, Grid, Stack, Typography } from "@mui/material";
+import { Card, CardContent, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import moment from "moment";
 
 export default function RecommendedBlogCards(props: any) {
+  const isMobile = useMediaQuery("(max-width: 600px)");
 
   const blogsList = props.blog;
   const supabase = createClientComponentClient();
@@ -18,15 +19,15 @@ export default function RecommendedBlogCards(props: any) {
       style={{
         marginLeft: "1%",
         borderColor: "black",
-        width: 500,
-        borderWidth: 3,
+        width: isMobile ? "80vw" : 500,
+        borderWidth: 2,
         borderRadius: 8,
         maxHeight: 300
       }}
       sx={{ boxShadow: 5 }}
     >
       <CardContent>
-        <Grid container spacing={1}>
+        <Grid container spacing={1} style={{display: 'flex' , alignItems: 'center'}}>
           <Grid item xs={6}>
             <Image
               src={blogsList ? imgUrl + blogsList['thumbnail']?.replace(" ", "%20") :"/24c2337e-6b18-4702-be69-6f5a968e95ed-3.png"}

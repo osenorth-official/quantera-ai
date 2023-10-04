@@ -91,7 +91,7 @@ export default function Footer() {
           reserved.
         </Typography>
       </Grid>
-      <Grid item xs={12} md={6} sx={{ mt: { xs: 5, md: 0 } }}>
+      <Grid item xs={12} md={6} sx={{ mt: { xs: 5, md: 0 } }} style={{ display : 'flex' , flexDirection: 'column' , alignItems: 'flex-end' ,  minWidth : '56%'}}>
         <Typography
           variant="h5"
           style={{ color: "white", fontSize: "2rem", fontWeight: 900 }}

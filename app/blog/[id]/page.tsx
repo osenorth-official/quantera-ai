@@ -2,13 +2,14 @@
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/theme/theme";
 import Navbar from "@/components/navbar";
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import Footer from "@/components/footer";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import moment from "moment";
 import RecommendedBlogCards from "@/components/recommendedBlogCard";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import Footermobile from "@/components/footermobile";
 
 interface Props {
   heading: string;
@@ -21,6 +22,7 @@ interface Props {
 export default function BlogPage(props: any) {
   const [blogDet, setBlogDet] = useState({} as any);
   const supabase = createClientComponentClient();
+  const isMobile = useMediaQuery("(max-width: 600px)");
   
   const imgUrl =
     "https://yjasfeanlannyjroczqf.supabase.co/storage/v1/object/public/blog-images/";
@@ -37,9 +39,19 @@ export default function BlogPage(props: any) {
     
   }, []);
   return (
-    <ThemeProvider theme={theme}>
-      <Navbar currRef={undefined} />
-      <Box sx={{ display: "flex", minHeight: "80vh", minWidth: "100vw" }}>
+     <ThemeProvider theme={theme}>
+  <Navbar currRef={undefined} />
+  <Box
+    sx={{
+      display: "flex",
+      flexDirection: "column",
+      minHeight: "80vh",
+      minWidth: "100vw",
+      alignItems: "center", // Center items horizontally
+      justifyContent: "center", // Center items vertically
+      textAlign: "center", // Center text content
+    }}
+  >
         <Grid container spacing={1} sx={{ mt: 10 }}>
           <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
             <Typography variant="h2" sx={{ fontWeight: 700, fontSize: "3rem" }}>
@@ -69,6 +81,7 @@ export default function BlogPage(props: any) {
                 alt="banner"
                 height={700}
                 width={800}
+                style={{maxWidth: isMobile ? "80vw" : "100vw"}}
               />
             ) : null}
           </Grid>
@@ -104,7 +117,7 @@ export default function BlogPage(props: any) {
           >
             <Typography
               variant="h2"
-              sx={{ fontWeight: 700, fontSize: "3rem" }}
+              sx={{ fontWeight: 700, fontSize: isMobile ? "2rem" : "3rem" }}
               align={"center"}
             >
               Short reads for market insights and macro trends
@@ -121,7 +134,7 @@ export default function BlogPage(props: any) {
               mt: 2,
             }}
           >
-            <Stack direction={"row"} spacing={6}>
+            <Stack direction={isMobile ? "column" : "row"} style={{display: 'flex', alignItems: 'center', marginBottom: isMobile ?'5rem' : '0'}} spacing={6}>
               {blogDet?.length > 0 ? (
                 JSON.parse(blogDet[0].linked_blogs_id).map((item: any, index: number) =>  <RecommendedBlogCards key={index} blog={item}/>)
               ) : null}
@@ -129,7 +142,7 @@ export default function BlogPage(props: any) {
           </Grid>
         </Grid>
       </Box>
-      <Footer />
+      {isMobile ? <Footermobile /> : <Footer />}
     </ThemeProvider>
   );
 }

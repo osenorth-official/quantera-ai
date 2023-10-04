@@ -12,7 +12,14 @@ const cardStyle = {
   marginBottom: "16px",
   borderColor: "rgba(0, 0, 0)",
   border: "1.5px solid",
-  boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.5)"
+  boxShadow: "8px 8px 8px rgba(0, 0, 0, 0.2)",
+   // Mobile styles
+   '@media (max-width: 600px)': {
+    minHeight: '200px',
+    width: '80%',
+    marginLeft: '2.3rem',
+    marginRight: '2rem'
+  }
 };
 
 const imageStyle = {
@@ -44,13 +51,13 @@ export default function Section5() {
     <Grid container spacing={2} justifyContent="center">
       <Grid alignItems="center" item xs={12} sm={8} md={8} lg={8} xl={8}>
         <Typography variant="h3" sx={{ mt: 10, ml: isMobile ? "3rem" : "8rem", fontSize: ["2.4rem", "3.2rem"], fontWeight: 900 }}>
-          Streamline your workflow
+        <span style={{background: 'linear-gradient(45deg, #FF6432 , #7B2EFF)',  WebkitBackgroundClip: "text",  color: "transparent",}}>  Streamline </span>your workflow
         </Typography>
         <Typography variant="body1" sx={{ mt: 2, ml: isMobile ? "3rem" : "8rem", fontSize: ["1rem", "1.5rem"], fontWeight: 600 }}>
           A platform that will smoothly integrate into your workstream.
         </Typography>
       </Grid>
-      <Grid item xs={12} sm={4} md={4} lg={4} xl={4} sx={{ mt: isMobile ? "2rem" : "6rem", ml: isMobile ? "5rem" : "0rem" }}>
+      <Grid item xs={12} sm={4} md={4} lg={4} xl={4} sx={{ mt: isMobile ? "2rem" : "6rem", ml: isMobile ? "3rem" : "0rem" }}>
         <Rating
           name="read-only"
           value={4.5}
@@ -69,7 +76,7 @@ export default function Section5() {
       <Grid item xs={12} sx={{ mt: isMobile ? "2rem" : "3rem" }}>
         <Stack direction={isMobile ? "column" : "row"} spacing={0} justifyContent="center">
           <Box sx={isMobile ? null : desktopCardWrapperStyle}>
-            <Card variant="outlined" sx={{ ...cardStyle, width: isMobile ? "100%" : "400px" }}>
+            <Card variant="outlined" sx={{ ...cardStyle, width: isMobile ? "100%" : "350px" }}>
               <CardContent>
                 <Image
                   src="/noun-insight-407185221.svg"
@@ -86,7 +93,7 @@ export default function Section5() {
                 </Typography>
               </CardContent>
             </Card>
-            <Card variant="outlined" sx={{ ...cardStyle, width: isMobile ? "100%" : "400px" }}>
+            <Card variant="outlined" sx={{ ...cardStyle, width: isMobile ? "100%" : "350px" }}>
               <CardContent>
                 <Image
                   src="/noun-insight-4071852.svg"
@@ -103,7 +110,7 @@ export default function Section5() {
                 </Typography>
               </CardContent>
             </Card>
-            <Card variant="outlined" sx={{ ...cardStyle, width: isMobile ? "100%" : "400px" }}>
+            <Card variant="outlined" sx={{ ...cardStyle, width: isMobile ? "100%" : "350px" }}>
               <CardContent>
                 <Image
                   src="/noun-insight-4071852-1.svg"

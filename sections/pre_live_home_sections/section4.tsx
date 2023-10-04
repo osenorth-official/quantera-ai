@@ -16,7 +16,7 @@ export default function Section4() {
     <Grid container spacing={2}>
       <Grid item xs={12} sx={{ mt: 10 }}>
         <Typography variant="h2" align="center"  sx={gradientText}>
-          ...features that work for <span style={{background: 'linear-gradient(to right, orange , purple)',  WebkitBackgroundClip: "text",  color: "transparent",}}>  you.</span>
+          ...features that work for <span style={{background: 'linear-gradient(45deg, #FF6432 , #7B2EFF)',  WebkitBackgroundClip: "text",  color: "transparent",}}>  you.</span>
         </Typography>
       </Grid>
       <Grid item container  alignItems="center" xs={12} sx={{ mt: 5 , marginLeft: { xs: "2rem", sm: "4rem" }, }}>
@@ -88,7 +88,7 @@ export default function Section4() {
         </Grid>
       </Grid>
       <Grid item xs={12} sx={{ mt: 5 }}>
-        <Typography variant="body1" align="center" sx={{ fontSize: "1.5rem", fontWeight: 900 }}>
+        <Typography variant="body1" align="center" sx={{ fontSize: "1.5rem", fontWeight: 900 , marginBottom: '4rem' }}>
           ...and much more.
         </Typography>
       </Grid>

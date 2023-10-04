@@ -12,6 +12,7 @@ import Image from "next/image";
 import { useTheme } from "@mui/material/styles";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import CustomSnackbar from "@/components/snackbar";
+import styles from '../../app/styles1.module.css'; // Import the CSS file
 
 export default function TopBanner() {
   const supabase = createClientComponentClient();
@@ -58,16 +59,16 @@ export default function TopBanner() {
         <Typography
           variant="h1"
           component="h1"
-          sx={{ fontWeight: 900, fontSize: sm ? "3rem" : "5rem" }}
+          sx={{ fontWeight: 900, fontSize: sm ? "3rem" : "5rem", marginLeft: sm ? "1rem" : "0" , marginTop: sm ? "3rem" : "0"}}
         >
-          <span style={{ backgroundColor: "black", color: "white" }}>
+          <span style={{ backgroundColor: "black", color: "white", }}>
             Empowering
           </span>
           <span> </span>
           investors <br /> through AI powered <br />
           insights.
         </Typography>
-        <Typography variant="body1" sx={{ mt: 1, fontWeight: 600 }}>
+        <Typography variant="body1" sx={{ mt: 1, fontWeight: 600 ,  marginLeft: sm ? "1rem" : "0"}}>
           Eliminate hours wasted finding, cleaning, visualizing and transforming
           data using <br /> the power of AI. <br />
           Register and get a free premium report to your inbox.
@@ -110,26 +111,31 @@ export default function TopBanner() {
         </Grid>
       </Grid>
       <Grid
-        item
-        xs={12}
-        sx={{
-          ml: "auto",
-          mr: "auto",
-          mt: sm ? 2 : 0,
-          p: 0,
-          position: "relative",
-          minHeight: sm ? "25vh" : "80vh",
-          maxHeight: sm ? "25vh" : "none",
-        }}
-      >
-        <Image
-          src="/Banner.png"
-          alt="banner"
-          layout="fill"
-          objectFit="contain" // Change objectFit to "contain" to fit the image within the container
-          quality={100}
-        />
-      </Grid>
+  style={{ display: "flex", justifyContent: "center", alignItems: "flex-end" }}
+  item
+  xs={12}
+  sx={{
+    ml: "auto",
+    mr: "auto",
+    mt: sm ? 2 : 0,
+    p: 0,
+    position: "relative",
+    minHeight: sm ? "25vh" : "80vh",
+    maxHeight: sm ? "25vh" : "none",
+  }}
+>
+  <Image
+    src="/Banner.png"
+    alt="banner"
+    layout="responsive"
+    width={10}
+    height={600}
+    objectFit="contain"
+    quality={80}
+    className={styles.bannerImage} // Apply the CSS class using className prop
+  />
+</Grid>
+
     </Grid>
   );
 }

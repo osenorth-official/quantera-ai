@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   Grid,
   Typography,
@@ -14,14 +14,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { Margin } from "@mui/icons-material";
 
-export default function Footer() {
+export default function Footermobile() {
   const supabase = createClientComponentClient();
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState(false);
 
   const onGetPremiumReport = async () => {
     setEmailError(false);
-    const emailReg = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
+    const emailReg = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
     if (!email.match(emailReg)) {
       setEmailError(true);
       return;
@@ -34,14 +34,14 @@ export default function Footer() {
     setEmail("");
   };
 
-  const  keyPress = (e:any) => {
-    if(e.keyCode == 13){
+  const keyPress = (e: { keyCode: number; }) => {
+    if (e.keyCode === 13) {
       onGetPremiumReport();
     }
-    if(email === ""){
-      setEmailError(false)
+    if (email === "") {
+      setEmailError(false);
     }
- }
+  };
 
   return (
     <Grid
@@ -51,41 +51,40 @@ export default function Footer() {
         bgcolor: "black",
         mt: { xs: "5rem", md: "12.5rem" },
         display: "flex",
-        flexDirection: { xs: "column", md: "row" },
+        flexDirection: "column",
+        alignItems: "center",
         minHeight: "35vh",
-        minWidth: "100vw",
+        marginTop: "3rem",
         p: { xs: 2, md: 11 },
       }}
     >
       <Grid item xs={12} md={5} sx={{ mb: { xs: 2, md: 0 } }}>
-        <Image src="/logo12.png" alt="banner" height={60} width={240} style={{marginBottom: "20px"}} />
+        <Image src="/logo12.png" alt="banner" height={60} width={240} style={{ marginBottom: "20px"  , marginLeft : '2rem' , marginTop: "2rem"}} />
         <Typography
           variant="body1"
-          style={{ color: "white", fontSize: "1.25rem", fontWeight: 600 }}
-          align="left"
+          style={{ color: "white", fontSize: "1rem", fontWeight: 600 }}
+          align="center"
         >
           Data visualization and stock insights have
           <br />
           taken a back seat. We bring data back to
           <br /> being readable.
         </Typography>
-        <Stack direction="row" spacing={1} sx={{ ml: -1.25, mb: 2, mt: 2 }}>
-          <IconButton aria-label="LinkedIn" onClick={() => window.open("https://www.linkedin.com/company/quanteraai", "_blank")}>
-            <LinkedInIcon style={{ color: "white", fontSize: 35 }} />
+        <Stack direction="row" spacing={1} sx={{ ml: -1.25, mb: 2, mt: 2,  display: 'flex' , justifyContent:"center"}}>
+          <IconButton
+            aria-label="LinkedIn"
+            onClick={() => window.open("https://www.linkedin.com/company/quanteraai", "_blank")}
+          >
+            <LinkedInIcon style={{ color: "white", fontSize: 30 }} />
           </IconButton>
           <IconButton aria-label="Discord">
-            <Image
-              src="/discord-mark-white.svg"
-              alt="banner"
-              height={30}
-              width={30}
-            />
+            <Image src="/discord-mark-white.svg" alt="banner" height={30} width={30} />
           </IconButton>
         </Stack>
         <Typography
           variant="body1"
-          style={{ color: "white", fontSize: "0.875rem", fontWeight: 600 }}
-          align="left"
+          style={{ color: "white", fontSize: "0.675rem", fontWeight: 600 }}
+          align="center"
         >
           <CopyrightIcon /> {new Date().getFullYear()} Quantera AI. All rights
           reserved.
@@ -94,15 +93,14 @@ export default function Footer() {
       <Grid item xs={12} md={6} sx={{ mt: { xs: 5, md: 0 } }}>
         <Typography
           variant="h5"
-          style={{ color: "white", fontSize: "2rem", fontWeight: 900 }}
-          align="right"
+          style={{ color: "white", fontSize: "1rem", fontWeight: 900 }}
+          align="center"
         >
           Receive a free premium report by signing up
         </Typography>
         <TextField
           label="Email"
           variant="outlined"
-         
           sx={{
             width: { xs: "100%", md: "30vw" },
             p: 0,
@@ -110,7 +108,6 @@ export default function Footer() {
             bgcolor: "white",
             borderRadius: 2,
             mt: 5,
-            marginLeft: { xs: 0, md: "13rem" }, // Apply margin left only in desktop view
           }}
           value={email}
           size="small"
@@ -138,15 +135,9 @@ export default function Footer() {
             style: { padding: 0 },
           }}
         />
-        {/* <Typography
-          variant="body1"
-          style={{ color: "white", marginTop: 5, textAlign: "right" }}
-        >
-          Explore app
-        </Typography> */}
         <Typography
           variant="body1"
-          style={{ color: "white", marginTop: 5, textAlign: "right" }}
+          style={{ color: "white", marginTop: 15, textAlign: "center", marginBottom: 30 }}
         >
           Contact us
         </Typography>

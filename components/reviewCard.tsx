@@ -8,16 +8,18 @@ export default function ReviewCard() {
     <Card
       variant="outlined"
       style={{
-        marginLeft: isMobile ? 0 : "1%",
+        marginLeft: isMobile ? 0 : 10,
         borderColor: "black",
-        maxWidth: isMobile ? "100%" : 400, 
-        borderWidth: 3,
+        maxWidth: isMobile ? "70%" : 400, 
+        borderWidth: 2,
         borderRadius: 8,
         marginBottom: isMobile ? "1rem" : 0,
         height: isMobile ? "8rem" : "11rem", 
+        paddingTop: "0px !important",
+        boxShadow: "8px 8px 8px rgba(0, 0, 0, 0.2)",
       
       }}
-      sx={{ boxShadow: 5 }}
+      
     >
       <CardContent>
         <Grid container spacing={1}>

@@ -8,10 +8,13 @@ import {
   Section4,
   Section5,
   Section6,
+  
   Section7,
 } from "@/sections/pre_live_home_sections";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Footermobile from "@/components/footermobile";
+import Section6mob from "@/sections/pre_live_home_sections/section6mob";
 import CustomTable from "@/components/customTable";
 import CustomTableMobile from "@/components/customTableMobile";
 import { ThemeProvider } from "@mui/material/styles";
@@ -79,7 +82,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             minHeight: "100vh",
-            padding: "10px", // Adjust padding for responsiveness
+            
           }}
         >
           <Section4 />
@@ -89,7 +92,9 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             bgcolor: "#73F3C4",
-            padding: "10px", // Adjust padding for responsiveness
+            paddingTop: "1rem", // Adjust padding for responsiveness
+            paddingBottom: "9rem",
+           
           }}
         >
           <Section5 />
@@ -101,7 +106,8 @@ export default function Home() {
           }}
           id="section6"
         >
-          <Section6 currRef={ref} />
+          
+          {isMobile ? <Section6mob currRef={ref} /> : <Section6 currRef={ref} />} {/* Conditionally render CustomTable based on screen size */}
         </Box>
       <Box sx={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }} id="section7">
         {isMobile ? <CustomTableMobile /> : <CustomTable />} {/* Conditionally render CustomTable based on screen size */}
@@ -115,7 +121,7 @@ export default function Home() {
           <Section7 />
         </Box>
       </Box>
-      <Footer />
+      {isMobile ? <Footermobile /> : <Footer />}
     </ThemeProvider>
   );
 }

@@ -68,6 +68,10 @@ export default function Section7() {
             textTransform: "none",
             fontSize: "1rem",
             fontWeight: 900,
+           
+          }}
+          sx={{
+            width: { xs: "60vw", md: "15vw" }, 
           }}
           endIcon={<ArrowForwardIcon />}
           disableElevation
@@ -81,7 +85,7 @@ export default function Section7() {
           Get in touch
         </Button>
       </Grid>
-      <Grid container item xs={12} sx={{ mt: 5, ml: 10 }}>
+      <Grid container item xs={12} sx={{ mt: 5, ml: 7 }}>
         <Grid
           item
           xs={12}

@@ -29,7 +29,7 @@ export default function Section6({ currRef }: { currRef: any }) {
     {cardsPerRow.map((rowCards, rowIndex) => (
       <Grid key={rowIndex} container spacing={2} justifyContent="center">
         {Array.from({ length: rowCards }).map((_, index) => (
-          <Grid key={index} item xs={12} sm={6} md={3}>
+          <Grid key={index} item xs={12} sm={6} md={3} style={{paddingTop:"0px"}}>
             <ReviewCard />
           </Grid>
         ))}

@@ -141,7 +141,7 @@ export default function CustomTable() {
         borderColor: "black",
         borderWidth: 2,
         borderRadius: 5,
-        boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.5)",
+        boxShadow: "8px 8px 8px rgba(0, 0, 0, 0.2)",
         p: 5.2,
       }}
     >
@@ -190,7 +190,7 @@ export default function CustomTable() {
           />
           <label htmlFor="color_mode" data-on="Annually" data-off="Monthly" className={styles.switchInner}></label>
         </label>
-     </div>
+        </div>
             
             </TableCell>
             <TableCell>

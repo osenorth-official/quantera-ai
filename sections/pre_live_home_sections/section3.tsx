@@ -15,9 +15,10 @@ export default function Section3(props: any) {
         <Typography
           variant="h3"
           align="center"
+          style={{ marginRight: isMobile ? '1rem' : '0' , marginLeft: isMobile ? '1rem' : '0' ,  marginTop: isMobile ? '3rem' : '0' }}
          sx={gradientText}
         >
-        Discover our <span style={{background: 'linear-gradient(to right, orange , purple)',  WebkitBackgroundClip: "text",  color: "transparent",}}>  powerful</span> features.
+        Discover our <span style={{background: 'linear-gradient(45deg, #FF6432 , #7B2EFF)',  WebkitBackgroundClip: "text",  color: "transparent" }}>  powerful</span> features.
     </Typography>
         <Typography variant="body1" align="center" sx={{ mt: 3 }}>
           Lorem Ipsum.

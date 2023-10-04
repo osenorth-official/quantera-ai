@@ -14,7 +14,7 @@ import { Margin } from "@mui/icons-material";
 
 interface ColumnProps {
   label: string;
-  price: number;
+  price: string;
   description: string;
   buttonText: string;
   buttonIcon?: boolean;
@@ -38,9 +38,10 @@ export default function CustomTable() {
     buttonText,
     buttonIcon,
   }: ColumnProps) => {
+    const showDollarSign = label === "Free" || label === "Premium";
     return (
-      <Grid item xs={12} sm={6} md={4}>
-        <Paper
+        <Grid item xs={12} sm={6} md={4} sx={{ mt: 1 }}> {/* Add vertical spacing here */}       
+         <Paper
           variant="outlined"
           sx={{
             p: 2,
@@ -48,14 +49,21 @@ export default function CustomTable() {
             flexDirection: "column",
             alignItems: "center",
             height: "100%",
-            border: "2.5px solid",
-            boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.5)"
-
+            border: "2px solid",
+            boxShadow: "8px 8px 8px rgba(0, 0, 0, 0.2)",
+            marginLeft: "2rem",
+            marginRight: "2rem",
+            borderRadius : '8px',
+            textAlign: 'center',
+            gap: "1rem"
           }}
         >
-          <Typography variant="h5">{label}</Typography>
+          <Typography variant="h5" fontWeight={600}>{label}</Typography>
           <Typography variant="h4">
-            <span style={{ fontSize: "2rem", fontWeight: 900 }}>$</span> {price}
+          {showDollarSign && (
+            <span style={{ fontSize: "2rem", fontWeight: 700 }}>$</span>
+          )}{" "}
+          {price}
           </Typography>
           <Typography variant="body1">{description}</Typography>
           <Stack sx={{ mt: 2 }}>
@@ -69,6 +77,7 @@ export default function CustomTable() {
                 marginTop: 2,
                 fontSize: "1rem",
                 fontWeight: 800,
+                minWidth: '60vw',
               }}
               disableElevation
               endIcon={buttonIcon ? <ArrowForwardIcon /> : null}
@@ -82,7 +91,7 @@ export default function CustomTable() {
   };
 
   return (
-    <>
+    <div style={{display:"flex", flexDirection:"column", marginTop: '3rem'}}>
       <div className={styles.container}>
         <label className={`${styles.switch} ${isDarkMode ? styles.darkMode : ""}`}>
           <input
@@ -101,27 +110,27 @@ export default function CustomTable() {
           ></label>
         </label>
       </div>
-      <Grid container spacing={2}>
+      <Grid container spacing={3} >
         {renderColumn({
           label: "Free",
-          price: 0,
+          price: "0",
           description: "Base features that cover 80%+ of the platform.",
           buttonText: "Get Started",
         })}
         {renderColumn({
           label: "Premium",
-          price: alignment === "Annually" ? 199 : 20,
+          price: alignment === "Annually" ? "199" : "20",
           description: "Listen to live earnings all in one spot and insights delivered to you.",
           buttonText: "Get Started",
         })}
         {renderColumn({
-          label: "Signup",
-          price: 0,
+          label: "Pro",
+          price:'Signup' ,
           description: "Talk to 30 years of financial data, sign up to be the first to know.",
           buttonText: "Early Access",
           buttonIcon: true,
         })}
       </Grid>
-    </>
+    </div>
   );
 }

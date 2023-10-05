@@ -132,6 +132,7 @@ export default function TopBanner() {
     height={600}
     objectFit="contain"
     quality={80}
+    unoptimized
     className={styles.bannerImage} // Apply the CSS class using className prop
   />
 </Grid>

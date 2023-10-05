@@ -25,7 +25,7 @@ export default function Section3(props: any) {
         </Typography>
       </Grid>
       <Grid container item xs={12} sx={{ mt: 2, ml: isMobile ? "0%" : "2%" }}>
-        <Image src="/Group_37.png" width={isMobile ? 800 : 1600} height={isMobile ? 400 : 800} alt="Image" />
+        <Image src="/Group_37.png" width={isMobile ? 800 : 1600} height={isMobile ? 400 : 800} alt="Image" unoptimized/>
       </Grid>
     </Grid>
   );

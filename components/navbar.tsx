@@ -73,9 +73,10 @@ export default function Navbar(props: any) {
             aria-label="menu"
             sx={{ mr: 2 }}
             onClick={() => push("/landingPage")}
-            style={{ backgroundColor: "transparent" }}
+            style={{ backgroundColor: "transparent", boxShadow: "none" }}
+            
           >
-            <Image src="/logo AI_dark.png" alt="logo" width={150} height={60} />
+            <Image src="/logo AI_dark.png" alt="logo" width={150} height={60} unoptimized/>
           </IconButton>
           <Box
             style={{ backgroundColor: "transparent" }}

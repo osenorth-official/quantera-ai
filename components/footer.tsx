@@ -58,7 +58,7 @@ export default function Footer() {
       }}
     >
       <Grid item xs={12} md={5} sx={{ mb: { xs: 2, md: 0 } }}>
-        <Image src="/logo12.png" alt="banner" height={60} width={240} style={{marginBottom: "20px"}} />
+        <Image src="/logo12.png" alt="banner" height={60} width={240} style={{marginBottom: "20px"}} unoptimized/>
         <Typography
           variant="body1"
           style={{ color: "white", fontSize: "1.25rem", fontWeight: 600 }}

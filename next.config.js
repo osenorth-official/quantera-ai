@@ -1,14 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async redirects() {
-        return [
-          {
-            source: '/',
-            destination: '/landingPage',
-            permanent: true,
-          },
-        ]
-      },
+   
       images: {
         remotePatterns: [
           {
@@ -19,6 +11,8 @@ const nextConfig = {
           },
         ],
       },
+      trailingSlash: true,
+      output: 'export',
 }
 
 module.exports = nextConfig

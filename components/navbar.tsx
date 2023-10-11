@@ -63,6 +63,8 @@ export default function Navbar(props: any) {
   };
 
   return (
+    <div
+    style={{  backgroundColor: "#FFFBF5"}}>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="relative" color="transparent" elevation={0}>
         <Toolbar>
@@ -150,5 +152,6 @@ export default function Navbar(props: any) {
         </Menu>
       </AppBar>
     </Box>
+    </div>
   );
 }

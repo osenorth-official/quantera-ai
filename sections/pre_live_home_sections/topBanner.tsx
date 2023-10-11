@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Grid,
   Typography,
@@ -22,6 +22,21 @@ export default function TopBanner() {
   const md = useMediaQuery(theme.breakpoints.down("md"));
   const sm = useMediaQuery(theme.breakpoints.down("sm"));
   const [openSnackbar, setOpenSnackbar] = useState(false);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   const onGetPremiumReport = async () => {
     setEmailError(false);
@@ -49,6 +64,20 @@ export default function TopBanner() {
  }
 
   return (
+    <div
+    className={`${styles.parallaxBackground} parallax-background`}
+    style={{
+      backgroundImage: 'url("/blurry_gradient.png")',
+      backgroundColor: "#FFFBF5",
+      backgroundSize: 'cover',  // or 'contain' depending on your requirement
+      backgroundPosition: '-55vw center',  // Set the background position to left center
+      backgroundRepeat: 'no-repeat',
+      display: 'flex',
+      alignItems: 'center',  // Center vertically
+      zIndex: '1',
+      backgroundPositionY: `calc(50% - ${scrollPosition * 1.5}px)`, // Increased multiplier for a more visible parallax effect
+    }}
+  >
     <Grid container spacing={2}>
       <Grid item xs={12} md={!md ? 7 : 12} sx={{ m: sm ? 2 : 15 }}>
         <CustomSnackbar
@@ -79,7 +108,7 @@ export default function TopBanner() {
             <TextField
               label="Email"
               variant="outlined"
-              sx={{ width: sm ? "100%" : "35vw", p: 0 }}
+              sx={{ width: sm ? "100%" : "35vw", p: 0, backgroundColor: "white" }}
               value={email}
               size="small"
               error={emailError}
@@ -138,5 +167,7 @@ export default function TopBanner() {
 </Grid>
 
     </Grid>
+    </div>
   );
+
 }

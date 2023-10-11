@@ -2,7 +2,7 @@ import { CardContent, Card, CardMedia, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 import moment from "moment";
 import { useState } from "react";
-import styles from "../app/BlogCards.module.css"; // Import CSS styles
+import styles from "@/BlogCards.module.css"; // Import CSS styles
 
 export default function BlogCards(props: any) {
   const item = props.item;

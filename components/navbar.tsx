@@ -36,15 +36,15 @@ export default function Navbar(props: any) {
   }, [userDetails]);
 
   const onPricingClick = () => {
-    if (pathname !== "/landingPage") {
-      push("/landingPage#section7");
+    if (pathname !== "/") {
+      push("/#section7");
     }
     props.currRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const onFeatureClick = () => {
-    if (pathname !== "/landingPage") {
-      push("/landingPage#section3");
+    if (pathname !== "/") {
+      push("/#section3");
     }
     props.featureRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -72,7 +72,7 @@ export default function Navbar(props: any) {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
-            onClick={() => push("/landingPage")}
+            onClick={() => push("/")}
             style={{ backgroundColor: "transparent", boxShadow: "none" }}
             
           >

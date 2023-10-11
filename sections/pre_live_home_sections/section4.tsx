@@ -49,7 +49,7 @@ export default function Section4() {
               Listen to quaterly <br /> earnings
             </Typography>
             <Typography variant="body1" align="left" sx={{ fontSize: "1rem", fontWeight: 500, color: "#4A4A4A", mt: 1 }}>
-               call report from your favorite stocks
+                Earnings call report from your favorite stocks
             </Typography>
           </CardSection4>
         </Grid>

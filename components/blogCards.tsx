@@ -20,7 +20,7 @@ export default function BlogCards(props: any) {
   return (
     <Card
       variant="outlined"
-      className={styles.card} // Apply the CSS class for responsive styles
+      //className={styles.card} // Apply the CSS class for responsive styles
       onClick={onBlogClick}
       style={{borderColor: "black",
         borderWidth: "2px",

@@ -30,19 +30,15 @@ export default function BlogPage(props: any) {
     "https://yjasfeanlannyjroczqf.supabase.co/storage/v1/object/public/blog-images/";
 
   useEffect(() => {
-    // console.log(props.searchParams)
-    // const temp = props.searchParams
-    // setBlogDet(temp as Props);
-    console.log("here")
-    console.log("Props: ",searchParams.get('id'))
-    const id = searchParams.get('id')
+    console.log( searchParams.get('id'))
+    const id = localStorage.getItem("currentID")
     supabase
       .from("blogs")
       .select()
       .eq("id", + !id)
       .then(({ data, error }) => setBlogDet(data as any));
     
-  }, [supabase]);
+  }, []);
   return (
      <ThemeProvider theme={theme}>
   <Navbar currRef={undefined} />

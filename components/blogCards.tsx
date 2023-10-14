@@ -14,7 +14,7 @@ export default function BlogCards(props: any) {
   const onBlogClick = () => {
     const queryParams = { id: props.item.id };
     const query = new URLSearchParams(queryParams).toString();
-    console.log("ID: ",queryParams)
+    localStorage.setItem("currentID",item.id)
     push(`/blog/${item.id}?${query}`);
   };
 

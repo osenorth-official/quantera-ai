@@ -33,12 +33,14 @@ export default function BlogPage(props: any) {
 
 	useEffect(() => {
 		const id = pathname.split("/").pop();
-		console.log(id);
-		supabase
-			.from("blogs")
-			.select()
-			.eq("id", +id)
-			.then(({ data, error }) => setBlogDet(data as any));
+		if (id) {
+			console.log(id);
+			supabase
+				.from("blogs")
+				.select()
+				.eq("id", +id)
+				.then(({ data, error }) => setBlogDet(data as any));
+		}
 	}, [pathname]);
 	return (
 		<ThemeProvider theme={theme}>

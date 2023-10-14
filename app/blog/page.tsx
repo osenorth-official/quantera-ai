@@ -8,6 +8,7 @@ import BlogCards from "@/components/blogCards";
 import { useState, useEffect } from "react";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import Footermobile from "@/components/footermobile";
+import Head from 'next/head'
 
 
 export default function Blog() {
@@ -24,6 +25,9 @@ export default function Blog() {
   }, []);
   return (
      <div  style={{ backgroundColor: "#FFFBF5"}}>
+       <Head>
+        <link rel="stylesheet" href="../BlogCards.module.css" />
+      </Head>
        <Navbar currRef={undefined} />
      <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
      <div style={{ flex: "1", display: "flex", flexDirection: "column", alignItems: "center", padding: "1rem" }}>

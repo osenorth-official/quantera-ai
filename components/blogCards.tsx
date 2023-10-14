@@ -20,8 +20,18 @@ export default function BlogCards(props: any) {
   return (
     <Card
       variant="outlined"
-      className={styles.card} // Apply the CSS class for responsive styles
+      //className={styles.card} // Apply the CSS class for responsive styles
       onClick={onBlogClick}
+      style={{borderColor: "black",
+        borderWidth: "2px",
+        borderRadius: "10px",
+        cursor: "pointer",
+        minHeight: "400px",
+        overflow: "hidden",
+        width: "30vw",
+        margin: "20px",
+        boxShadow: "8px 8px 8px rgba(0, 0, 0, 0.202)"
+      }}
     >
       <CardMedia
         component="img"

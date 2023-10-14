@@ -10,10 +10,9 @@ import moment from "moment";
 import RecommendedBlogCards from "@/components/recommendedBlogCard";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import Footermobile from "@/components/footermobile";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 interface Props {
-	params: { id: string };
-	searchParams: { [key: string]: string | string[] | undefined };
 	heading: string;
 	created_at: string;
 	cover: string;
@@ -21,24 +20,26 @@ interface Props {
 	linked_blogs_id: string;
 }
 
-export default function BlogPage({ params }: Props) {
+export default function BlogPage(props: any) {
 	const [blogDet, setBlogDet] = useState({} as any);
 	const supabase = createClientComponentClient();
 	const isMobile = useMediaQuery("(max-width: 600px)");
+	const searchParams = useSearchParams();
+	const router = useRouter();
+	const pathname = usePathname();
 
 	const imgUrl =
 		"https://yjasfeanlannyjroczqf.supabase.co/storage/v1/object/public/blog-images/";
 
 	useEffect(() => {
-		const { id } = params;
+		const id = pathname.split("/").pop();
 		console.log(id);
 		supabase
 			.from("blogs")
 			.select()
 			.eq("id", +id)
 			.then(({ data, error }) => setBlogDet(data as any));
-	}, [params, supabase]);
-
+	}, [pathname]);
 	return (
 		<ThemeProvider theme={theme}>
 			<Navbar currRef={undefined} />
@@ -87,7 +88,6 @@ export default function BlogPage({ params }: Props) {
 								height={700}
 								width={800}
 								style={{ maxWidth: isMobile ? "80vw" : "100vw" }}
-								unoptimized={true}
 							/>
 						) : null}
 					</Grid>

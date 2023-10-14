@@ -41,7 +41,7 @@ export default function BlogPage(props: any) {
 				.eq("id", +id)
 				.then(({ data, error }) => setBlogDet(data as any));
 		}
-	}, [pathname]);
+	}, [pathname, supabase]);
 	return (
 		<ThemeProvider theme={theme}>
 			<Navbar currRef={undefined} />

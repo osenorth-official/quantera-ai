@@ -10,6 +10,7 @@ import moment from "moment";
 import RecommendedBlogCards from "@/components/recommendedBlogCard";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import Footermobile from "@/components/footermobile";
+import { useSearchParams } from 'next/navigation'
 
 interface Props {
   heading: string;
@@ -23,18 +24,21 @@ export default function BlogPage(props: any) {
   const [blogDet, setBlogDet] = useState({} as any);
   const supabase = createClientComponentClient();
   const isMobile = useMediaQuery("(max-width: 600px)");
+  const searchParams = useSearchParams()
   
   const imgUrl =
     "https://yjasfeanlannyjroczqf.supabase.co/storage/v1/object/public/blog-images/";
 
   useEffect(() => {
-    console.log(props.searchParams)
-    const temp = props.searchParams
+    // console.log(props.searchParams)
+    // const temp = props.searchParams
     // setBlogDet(temp as Props);
+    console.log("Props: ",searchParams.get('id'))
+    const id = searchParams.get('id')
     supabase
       .from("blogs")
       .select()
-      .eq("id", +temp.id)
+      .eq("id", + id)
       .then(({ data, error }) => setBlogDet(data as any));
     
   }, []);

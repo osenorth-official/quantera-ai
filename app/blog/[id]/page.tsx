@@ -33,6 +33,7 @@ export default function BlogPage(props: any) {
     // console.log(props.searchParams)
     // const temp = props.searchParams
     // setBlogDet(temp as Props);
+    console.log("here")
     console.log("Props: ",searchParams.get('id'))
     const id = searchParams.get('id')
     supabase
@@ -41,7 +42,7 @@ export default function BlogPage(props: any) {
       .eq("id", + !id)
       .then(({ data, error }) => setBlogDet(data as any));
     
-  }, []);
+  }, [supabase]);
   return (
      <ThemeProvider theme={theme}>
   <Navbar currRef={undefined} />

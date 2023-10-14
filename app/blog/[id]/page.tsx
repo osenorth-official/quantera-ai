@@ -11,6 +11,7 @@ import RecommendedBlogCards from "@/components/recommendedBlogCard";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import Footermobile from "@/components/footermobile";
 import { useSearchParams } from 'next/navigation'
+import { useRouter } from "next/router";
 
 interface Props {
   heading: string;
@@ -24,18 +25,20 @@ export default function BlogPage(props: any) {
   const [blogDet, setBlogDet] = useState({} as any);
   const supabase = createClientComponentClient();
   const isMobile = useMediaQuery("(max-width: 600px)");
-  const searchParams = useSearchParams()
+  const searchParams = useSearchParams();
+  const router = useRouter();
   
   const imgUrl =
     "https://yjasfeanlannyjroczqf.supabase.co/storage/v1/object/public/blog-images/";
 
   useEffect(() => {
-    console.log( searchParams.get('id'))
-    const id = localStorage.getItem("currentID")
+    
+    const { id } = router.query as {id: string} 
+    console.log( id)
     supabase
       .from("blogs")
       .select()
-      .eq("id", + !id)
+      .eq("id", + id)
       .then(({ data, error }) => setBlogDet(data as any));
     
   }, []);

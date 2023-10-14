@@ -124,7 +124,7 @@ export default function BlogPage(props: any) {
               sx={{ fontWeight: 700, fontSize: isMobile ? "2rem" : "3rem" }}
               align={"center"}
             >
-              Short reads for market insights and macro trends
+              Short reads for  insights and macro trends
             </Typography>
           </Grid>
           <Grid

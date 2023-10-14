@@ -38,7 +38,7 @@ export default function BlogPage(props: any) {
     supabase
       .from("blogs")
       .select()
-      .eq("id", + id)
+      .eq("id", + !id)
       .then(({ data, error }) => setBlogDet(data as any));
     
   }, []);
